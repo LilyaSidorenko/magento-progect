@@ -1,0 +1,76 @@
+.comparison-page {
+	a {
+		text-transform: none;
+	}
+}
+
+.comparison {
+	margin: 60px auto 100px;
+	min-width: 525px;
+	text-align: center;
+}
+
+.comparison tr {
+	border-bottom: 1px solid $white-grey;
+}
+
+.comparison tr:last-child {
+	border-bottom: none;
+}
+
+.comparison td {
+	padding: 50px 15px;
+	max-width: 285px;
+}
+
+.comparison__label {
+	border-right: 1px solid $white-grey;
+	color: $black_absolute;
+	font-size: $font-size;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.comparison .comparison__product-cell {
+	padding: 0 15px 46px;
+	text-align: left;
+}
+
+.comparison__product-wrapper {
+	width: 255px;
+}
+
+.product__review-block {
+	margin-top: 5px;
+}
+
+.product__leave-review {
+	color: $grey_regular;
+	font-size: $font-size-xs;
+	line-height: 22px;
+}
+
+.comparison__sku-cell {
+	color: $black_absolute;
+	font-size: $font-size;
+	text-transform: uppercase;
+}
+
+.comparison__description-cell {
+	color: $black_absolute;
+	font-size: $font-size;
+	line-height: 24px;
+	text-align: left;
+}
+
+.comparison__description-cell ul {
+	margin-top: 25px;
+	padding-left: 15px;
+	list-style: disc;
+}
+
+.comparison__activity-cell {
+	color: $black_absolute;
+	font-size: $font-size;
+	text-transform: uppercase;
+}

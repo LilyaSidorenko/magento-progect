@@ -1,0 +1,24 @@
+@media only screen and (max-width: 666px) {
+
+	.brand-page {
+
+		.main-container {
+			margin-bottom: 50px;
+		}
+
+		.main {
+			float: none;
+			padding: 0 5px;
+			width: 100%;
+		}
+
+		.slick-arrow {
+			top: 0;
+		}
+
+		.brand-page__slider-item {
+			padding: 0;
+		}
+	}
+
+}
