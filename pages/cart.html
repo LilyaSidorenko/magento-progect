@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cart</title>
 	<link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
@@ -137,7 +138,7 @@
 		<tbody class="purchase__list">
 <!-- ROW OF PRODUCT START -->
 			<tr class="purchase__item">
-				<td>
+				<td class="purchase__image-cell">
 					<img src="../images/static/product-2.jpg" alt="product-4" class="purchase__image">
 				</td>
 				<td>
@@ -155,8 +156,8 @@
 				<td>
 					<form class="purchase__product-quantity-wrapper">
                         <div class="purchase__product-quantity-handlers">
-                            <div class="purchase__product-quantity-handler purchase__product-quantity-handler--increase"></div>
-                            <div class="purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></div>
+                            <button class="purchase__product-quantity-handler purchase__product-quantity-handler--increase"></button>
+                            <button class="purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></button>
                         </div>
 						<input class="purchase__product-quantity" type="number" name="quantity" min="0">
 					</form>
@@ -172,7 +173,7 @@
 <!-- ROW OF PRODUCT END -->
 <!-- ROW OF PRODUCT START -->
 			<tr class="purchase__item">
-				<td>
+				<td class="purchase__image-cell">
 					<img src="../images/static/product-4.jpg" alt="product-4" class="purchase__image">
 				</td>
 				<td>
@@ -190,8 +191,8 @@
 				<td>
 					<form class="purchase__product-quantity-wrapper">
                         <div class="purchase__product-quantity-handlers">
-                            <div class="purchase__product-quantity-handler purchase__product-quantity-handler--increase"></div>
-                            <div class="purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></div>
+                            <button class="purchase__product-quantity-handler purchase__product-quantity-handler--increase"></button>
+                            <button class="purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></button>
                         </div>
 						<input class="purchase__product-quantity" type="number" name="quantity" min="0">
 					</form>
@@ -207,7 +208,7 @@
 <!-- ROW OF PRODUCT END -->
 <!-- ROW OF PRODUCT START -->
 			<tr class="purchase__item">
-				<td>
+				<td class="purchase__image-cell">
 					<img src="../images/static/product-6.jpg" alt="product-4" class="purchase__image">
 				</td>
 				<td>
@@ -225,8 +226,8 @@
 				<td>
 					<form class="purchase__product-quantity-wrapper">
                         <div class="purchase__product-quantity-handlers">
-                            <div class="purchase__product-quantity-handler purchase__product-quantity-handler--increase"></div>
-                            <div class="purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></div>
+                            <button class="purchase__product-quantity-handler purchase__product-quantity-handler--increase"></button>
+                            <button class="purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></button>
                         </div>
 						<input class="purchase__product-quantity" type="number" name="quantity" min="0">
 					</form>
@@ -244,7 +245,7 @@
 		<tfoot class="purchase__handlers">
 			<tr class="purchase__update">
 				<td colspan="2">
-					<button class="purchase__update-button">UPDATE CART</button>
+					<button class="purchase__update-button link-with-arrow">UPDATE CART</button>
 				</td>
 				<td class="purchase__subtotal" colspan="3">
 					<span class="purchase__subtotal-label">SUBTOTAL:</span>

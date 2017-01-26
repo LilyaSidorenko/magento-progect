@@ -9,6 +9,7 @@ jQuery(function($) {
     
   });
 
+
   $('.product__comment-button--hide-block').click(function(event) {
 
     var $emergeBlock = $(event.target).closest('.product__emerge-block');
@@ -23,6 +24,7 @@ jQuery(function($) {
     event.preventDefault();
     
   });
+
 
   $('.product__comment-button--edit-comment').click(function(event) {
 
@@ -39,4 +41,19 @@ jQuery(function($) {
     event.preventDefault();
     
   });
+
+
+  $(window).on('swipeleft', function(event) {
+    $('.sidebar').addClass('sidebar--show');console.log('faic');
+
+    event.preventDefault();
+  });
+
+
+  $(window).on('swiperight', function(event) {
+    $('.sidebar').removeClass('sidebar--show');
+
+    event.preventDefault();
+  });
+
 });

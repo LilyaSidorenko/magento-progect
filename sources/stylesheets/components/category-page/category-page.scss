@@ -89,12 +89,18 @@ select:-moz-focusring {
 	.main-container {
 		margin-top: 50px;
 		margin-bottom: 98px;
+		@include clearfix;
 	}
 
 	.main {
 		float: left;
 		width: 77%;
 		padding: 25px 30px 0 30px;
+		@include media-breakpoint-down(small-tablet) {
+			float: none;
+			padding: 0 5px;
+			width: 100%;
+		}
 	}
 
 	.sidebar__main-link:hover {

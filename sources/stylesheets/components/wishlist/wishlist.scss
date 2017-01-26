@@ -15,12 +15,30 @@
 	.main-container {
 		margin-top: 61px;
 		margin-bottom: 99px;
+		@include clearfix;
 	}
 
 	.main {
 		float: left;
 		width: 77%;
 		padding: 25px 30px 0 30px;
+		@include media-breakpoint-down(small-tablet) {
+			padding: 25px 15px 0 15px;
+			width: 100%;
+		}
+	}
+
+	.sidebar {
+		transition: all 400ms;
+		@include media-breakpoint-down(small-tablet) {
+			position: fixed;
+			top: 156px;
+			left: 100%;
+		}
+	}
+
+	.sidebar--show {
+		left: 0;
 	}
 
 	.sidebar__item {
@@ -35,14 +53,21 @@
 		content: "";
 	}
 
+	.list-handlers__handler-block:first-child {
+		margin-right: 30px;
+	}
+
 	.pagination__list {
 		width: 55%;
+		@include media-breakpoint-down(small-tablet) {
+			width: 100%;
+		}
 	}
 }
 
 .clear-wishlist-button {
 	float: right;
-	margin-left: 5%;
+	margin-left: 50px;
 	padding: 0;
 	border: none;
 	background: none;

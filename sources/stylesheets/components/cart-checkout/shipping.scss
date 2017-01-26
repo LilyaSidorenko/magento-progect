@@ -1,9 +1,18 @@
+.buyer-data__address {
+	@include clearfix;
+}
+
 .buyer-data__shipping {
 	margin: 100px 0;
+	@include clearfix;
+	@include media-breakpoint-down(small-tablet) {
+		margin: 50px 0;
+	}
 }
 
 .address__form {
 	padding: 34px 0;
+	@include clearfix;
 }
 
 .address__input {
@@ -12,6 +21,10 @@
 	width: 45%;
 	height: 60px;
 	line-height: 57px;
+	@include media-breakpoint-down(small-tablet) {
+		float: none;
+		width: 100%;
+	}
 }
 
 .address__input::-webkit-input-placeholder {
@@ -38,6 +51,9 @@
 
 .address__input:nth-child(odd) {
 	margin-right: 10%;
+	@include media-breakpoint-down(small-tablet) {
+		margin-right: 0;
+	}
 }
 
 .address__input:last-child {
@@ -50,10 +66,18 @@
 	display: inline-block;
 	margin-top: 104px;
 	width: 45%;
+	@include media-breakpoint-down(small-tablet) {
+		float: none;
+		margin-top: 0;
+		width: 100%;
+	}
 }
 
 .address__select-wrapper:nth-child(odd) {
 	margin-right: 10%;
+	@include media-breakpoint-down(small-tablet) {
+		margin-right: 0;
+	}
 }
 
 .address__select-wrapper:last-child {
@@ -67,6 +91,7 @@
 	border: none;
 	border-bottom: 1px solid $black_absolute;
 	border-radius: 0;
+	background-color: $white_absolute;
 	color: $black_absolute;
 	font-family: Avanti, sans-serif;
 	font-size: $font-size;
@@ -95,6 +120,10 @@
 	font-size: $font-size;
 	resize: none;
 	outline: none;
+	@include media-breakpoint-down(small-tablet) {
+		margin-right: 0;
+		width: 100%;
+	}
 }
 
 .address__textarea::-webkit-input-placeholder {

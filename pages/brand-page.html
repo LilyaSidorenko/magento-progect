@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brand page</title>
     <link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
@@ -333,8 +333,8 @@
                     <span class="displaying-indicator--total">43</span>
                     items
                 </p>
-                <div class="list-handlers__handler">
-                    <div class="list-handlers__handler-block list-handlers__buttons-block">
+                <div class="list-handlers__handlers-block">
+                    <div class="list-handlers__handler list-handlers__buttons-block">
                         <a href="#" class="list-handlers__button list-handlers__button--horizontal">
                             <span></span>
                             <span></span>
@@ -345,26 +345,28 @@
                             <span></span>
                         </a>
                     </div>
-                    <fieldset class="list-handlers__handler-block">
-                        <label for="list-handlers__select--show" class="list-handlers__label">Show:</label>
-                        <div class="custom-select">
-                            <select id="list-handlers__select--show" class="list-handlers__select">
-                                <option value="15">15</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <fieldset class="list-handlers__handler-block">
-                        <label for="list-handlers__select--sort" class="list-handlers__label">Sort By:</label>
-                        <div class="custom-select">
-                            <select id="list-handlers__select--sort" class="list-handlers__select">
-                                <option value="Name">Name</option>
-                                <option value="Price">Price</option>
-                                <option value="Name">Name</option>
-                            </select>
-                        </div>
-                    </fieldset>
+                    <div class="list-handlers__handler">
+                        <fieldset class="list-handlers__select-block">
+                            <label for="list-handlers__select--sort" class="list-handlers__label">Sort By:</label>
+                            <div class="custom-select">
+                                <select id="list-handlers__select--sort" class="list-handlers__select">
+                                    <option value="Name">Name</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Name">Name</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="list-handlers__select-block">
+                            <label for="list-handlers__select--show" class="list-handlers__label">Show:</label>
+                            <div class="custom-select">
+                                <select id="list-handlers__select--show" class="list-handlers__select">
+                                    <option value="15">15</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
             </div>
             <!-- LIST HANDLERS END -->
@@ -400,8 +402,8 @@
                         <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
-                                <a href="#" class="product__button product__button--fav"></a>
-                                <a href="#" class="product__button product__button--compare product__button--disappears"></a>
+                                <a href="#" class="product__button product__button--fav product__button--fav-active"></a>
+                                <a href="#" class="product__button product__button--compare product__button--compare-active product__button--disappears"></a>
                             </div>
                         </div>
                     </div>

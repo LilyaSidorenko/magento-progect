@@ -1,3 +1,7 @@
+.buyer-data__payment {
+	@include clearfix;
+}
+
 .payment__form {
 	padding: 30px 0 50px;
 	border-bottom: 1px solid $white-grey;
@@ -36,6 +40,9 @@
 
 .payment__inner-box {
 	padding-left: 35px;
+	@include media-breakpoint-down(small-tablet) {
+		padding: 0;
+	}
 }
 
 .payment__same-data-checkbox {
@@ -49,6 +56,10 @@
 	color: $black_absolute;
 	font-size: $font-size;
 	line-height: 16px;
+	@include media-breakpoint-down(small-tablet) {
+		display: inline-block;
+		width: 80%;
+	}
 }
 
 .payment__same-data-label:before {
@@ -77,6 +88,9 @@
 	position: relative;
 	margin-top: 17px;
 	width: 350px;
+	@include media-breakpoint-down(small-tablet) {
+		width: auto;
+	}
 }
 
 .payment__card-number {
@@ -117,6 +131,13 @@
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
+	@include media-breakpoint-down(small-tablet) {
+		position: static;
+		top: 0;
+		display: block;
+		margin: 9px;
+		transform: none;
+	}
 }
 
 .payment__card-number-label--visa {
@@ -145,6 +166,7 @@
 
 .payment__card-verification-wrapper {
 	width: 285px;
+	@include clearfix;
 }
 
 .payment__card-verification-label {
@@ -193,6 +215,7 @@
 	line-height: 60px;
 	color: $black_absolute;
 	font-size: $font-size;
+	@include clearfix;
 }
 
 .payment__card-date-label {
@@ -244,6 +267,9 @@
 .payment__gift-card-box {
 	padding: 54px 0 50px;
 	border-bottom: 1px solid $white-grey;
+	@include media-breakpoint-down(small-tablet) {
+		padding: 25px 5px;
+	}
 }
 
 .payment__gift-card {
@@ -251,6 +277,9 @@
 	height: 55px;
 	padding-left: 20px;
 	line-height: 55px;
+	@include media-breakpoint-down(small-tablet) {
+		width: 88%;
+	}
 }
 
 .payment__gift-card::-webkit-input-placeholder {
@@ -304,4 +333,7 @@
 	font-weight: bold;
 	line-height: 50px;
 	text-align: center;
+	@include media-breakpoint-down(small-tablet) {
+		margin: 50px auto;
+	}
 }

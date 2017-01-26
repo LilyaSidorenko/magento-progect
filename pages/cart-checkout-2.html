@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Cart Checkout step 2</title>
 	<link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
@@ -17,8 +18,8 @@
 <!-- HEADER END -->
 <div class="cart-checkout-page container">
 <!-- PROGRESS BLOCK START -->
-	<div class="step-block clearfix">
-		<div class="step-block__big-line clearfix">
+	<div class="step-block">
+		<div class="step-block__big-line">
 			<div class="step-block__line step-block__line--active"></div>
 			<div class="step-block__line step-block__line--active"></div>
 			<div class="step-block__line"></div>
@@ -38,11 +39,11 @@
 	</div>
 <!-- PROGRESS BLOCK END -->
 <!-- MAIN CONTENT PAGE START -->
-	<div class="cart-check__main-content clearfix">
+	<div class="cart-check__main-content">
 <!-- INFO ABOUT BUYER START -->
 		<div class="buyer-data">
 <!-- PAYMENT START -->
-			<section class="buyer-data__payment payment clearfix">
+			<section class="buyer-data__payment payment">
 				<h2 class="payment__header cart-check__header">PAYMENT</h2>
 				<form class="payment__form">
 					<input type="radio" id="method1" class="payment__radio" name="payment-method">
@@ -64,11 +65,11 @@
 							<input type="text" id="payment__card-number" class="payment__card-number" placeholder="Credit card number" maxlength="16" pattern="\d{16}">
 							<label for="payment__card-number" class="payment__card-number-label payment__card-number-label--visa"></label>
 						</fieldset>
-						<fieldset class="payment__card-verification-wrapper clearfix">
+						<fieldset class="payment__card-verification-wrapper">
 							<label class="payment__card-verification-label">Card verification number:</label>
 							<input type="password" class="payment__card-verification-input" maxlength="3" pattern="\d{3}">
 						</fieldset>
-						<fieldset class="payment__card-date-wrapper clearfix">
+						<fieldset class="payment__card-date-wrapper">
 							<label class="payment__card-date-label">Expiration date:</label>
 							<div class="payment__card-date-input-wrapper">
 								<input type="text" class="payment__card-date-input" placeholder="MM" maxlength="2" pattern="\d{2}">
@@ -92,10 +93,10 @@
 			<h2 class="order-data__header cart-check__header">ORDER SUMMARY</h2>
 			<div class="order-data__order-block order">
 <!-- ORDER ITEM START -->
-				<div class="order__item clearfix">
+				<div class="order__item">
 					<div class="order__image-frame"><img src="../images/static/product-4.jpg" alt="product-4" class="order__image"></div>
 					<div class="order__description-box">
-						<h4 class="order__product-header">Mango People T-shirt</h4>
+						<h4 class="order__product-header"><a href="#" class="order__product-header--link">Mango People T-shirt</a></h4>
 						<p class="order__product-code">SKU: <span class="order__product-code-value">11e25a-068</span></p>
 						<p class="order__product-characteristic order__product-characteristic--color">
 							<span class="order__product-characteristic-label order__product-characteristic-label--color">COLOR:</span>
@@ -114,10 +115,10 @@
 				</div>
 <!-- ORDER ITEM END -->
 <!-- ORDER ITEM START -->
-				<div class="order__item clearfix">
+				<div class="order__item">
 					<div class="order__image-frame"><img src="../images/static/product-2.jpg" alt="product-4" class="order__image"></div>
 					<div class="order__description-box">
-						<h4 class="order__product-header">Mango People T-shirt</h4>
+						<h4 class="order__product-header"><a href="#" class="order__product-header--link">Mango People T-shirt</a></h4>
 						<p class="order__product-code">SKU: <span class="order__product-code-value">11e25a-068</span></p>
 						<p class="order__product-characteristic order__product-characteristic--color">
 							<span class="order__product-characteristic-label order__product-characteristic-label--color">COLOR:</span>
@@ -136,10 +137,10 @@
 				</div>
 <!-- ORDER ITEM END -->
 <!-- ORDER ITEM START -->
-				<div class="order__item clearfix">
+				<div class="order__item">
 					<div class="order__image-frame"><img src="../images/static/product-1.jpg" alt="product-4" class="order__image"></div>
 					<div class="order__description-box">
-						<h4 class="order__product-header">Mango People T-shirt</h4>
+						<h4 class="order__product-header"><a href="#" class="order__product-header--link">Mango People T-shirt</a></h4>
 						<p class="order__product-code">SKU: <span class="order__product-code-value">11e25a-068</span></p>
 						<p class="order__product-characteristic order__product-characteristic--color">
 							<span class="order__product-characteristic-label order__product-characteristic-label--color">COLOR:</span>
@@ -190,5 +191,13 @@
 	</p>
 </footer>
 <!-- FOOTER END -->
+<!-- JS LINKS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="../js/libs/jquery.mobile-events.min.js"></script>
+	<script src="../js/libs/slick.min.js"></script>
+	<script src="../js/custom/jquery-search.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/cart-checkout-page.js"></script>
+<!-- JS LINKS END -->
 </body>
 </html>

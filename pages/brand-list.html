@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BrandList</title>
 	<link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
@@ -124,7 +125,7 @@
 <!-- BREADCRUMBS START -->
 	<div class="breadcrumbs">
 		<div class="breadcrumbs__container container">
-			<ul class="breadcrumbs__list clearfix">
+			<ul class="breadcrumbs__list">
 				<li class="breadcrumbs__item">
 					<a href="#" class="breadcrumbs__link">Home</a>
 				</li>
@@ -138,7 +139,7 @@
 <!-- MAIN CONTENT OF PAGE START -->
 	<main class="main">
 <!-- LIST HANDLERS START -->
-		<div class="list-handlers clearfix">
+		<div class="list-handlers">
 			<p class="displaying-indicator">
 				Displaying
 				<span class="displaying-indicator--displayed">11</span>
@@ -148,26 +149,30 @@
 			</p>
 			<div class="list-handlers__handler">
 				<fieldset class="list-handlers__handler-block">
-					<label for="list-handlers__select--sort" class="list-handlers__label">Sort By:</label>
-					<select id="list-handlers__select--sort" name="list-handlers__select--sort" class="list-handlers__select">
-						<option value="Name">Name</option>
-						<option value="Price">Price</option>
-						<option value="Name">Name</option>
-					</select>
+					<label for="list-handlers__select--show" class="list-handlers__label">Show:</label>
+					<div class="custom-select">
+						<select id="list-handlers__select--show" class="list-handlers__select">
+							<option value="15">15</option>
+							<option value="25">25</option>
+							<option value="50">50</option>
+						</select>
+					</div>
 				</fieldset>
 				<fieldset class="list-handlers__handler-block">
-					<label for="list-handlers__select--show" class="list-handlers__label">Show:</label>
-					<select id="list-handlers__select--show" name="list-handlers__select--show" class="list-handlers__select">
-						<option value="15">15</option>
-						<option value="25">25</option>
-						<option value="50">50</option>
-					</select>
+					<label for="list-handlers__select--sort" class="list-handlers__label">Sort By:</label>
+					<div class="custom-select">
+						<select id="list-handlers__select--sort" class="list-handlers__select">
+							<option value="Name">Name</option>
+							<option value="Price">Price</option>
+							<option value="Name">Name</option>
+						</select>
+					</div>
 				</fieldset>
 			</div>
 		</div>
 <!-- LIST HANDLERS END -->
 <!-- LIST OF BRANDS START -->
-		<ul class="brand-list clearfix">
+		<ul class="brand-list">
 <!-- BRAND ITEM START -->
 			<li class="brand-list__item">
 				<a href="#" class="brand-list__link">
@@ -303,7 +308,7 @@
 		</ul>
 <!-- LIST OF BRANDS END -->
 <!-- PAGINATION START -->
-		<div class="pagination clearfix">
+		<div class="pagination">
 			<p class="displaying-indicator">
 				Displaying
 				<span class="displaying-indicator--displayed">11</span>
@@ -315,7 +320,7 @@
 				<li class="pagination__item">
 					<a href="#" class="pagination__button pagination__button--prev"></a>
 				</li>
-				<li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+				<li class="pagination__item"><a href="#" class="pagination__link pagination__link--active">1</a></li>
 				<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
 				<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
 				<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>

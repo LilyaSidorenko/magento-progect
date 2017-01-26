@@ -1,11 +1,21 @@
 .catalog {
 	padding: 58px 0 0 0;
 	@include clearfix;
+	@include media-breakpoint-down(small-tablet) {
+		padding: 0;
+	}
 }
 
 .product {
+	position: relative;
 	margin: 0 0 100px 0;
 	@include clearfix;
+}
+
+.product:last-child {
+	@include media-breakpoint-down(small-tablet) {
+		margin-bottom: 0;
+	}
 }
 
 .product__image-frame {
@@ -15,7 +25,10 @@
 	height: 280px;
 	overflow: hidden;
 	text-align: center;
-	background-color: $grey_regular;
+	/*background-color: $grey_regular;*/
+	@include media-breakpoint-down(small-tablet) {
+		height: auto;
+	}
 }
 
 .product__delete-button {
@@ -48,6 +61,7 @@
 	bottom: 0;
 	width: calc(100% + 50px);
 	transition: all 600ms;
+	@include clearfix;
 }
 
 .product__comment-block {
@@ -125,11 +139,17 @@
 	float: left;
 	padding: 0 0 0 30px;
 	width: 70%;
+	@include media-breakpoint-down(small-tablet) {
+		padding-left: 15px;
+	}
 }
 
 .product__header-box {
 	position: relative;
 	margin: 35px 0 0 0;
+	@include media-breakpoint-down(small-tablet) {
+		margin: 0;
+	}
 }
 
 .product__header {
@@ -162,6 +182,9 @@
 .product__rating {
 	display: inline-block;
 	vertical-align: middle;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 13px;
+	}
 }
 
 .product__rating-star {
@@ -184,19 +207,46 @@
 .product__links-block {
 	margin: 58px 0 0 0;
 	@include clearfix;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 20px;
+	}
 }
 
 .product__button {
+	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.product__button:active {
+	top: 2px;
 }
 
 .product__button--fav {
 	margin: 0 31px;
 	@include sprite($i_heart);
+	@include media-breakpoint-down(small-tablet) {
+		margin: 0 15px;
+	}
+}
+
+.product__button--fav:hover {
+	@include sprite($i_heart-active);
+}
+
+.product__button--fav-active {
+	@include sprite($i_heart-active);
 }
 
 .product__button--compare {
 	margin: 3px 0;
 	@include sprite($i_compare);
+}
+
+.product__button--compare:hover {
+	@include sprite($i_compare-active);
+}
+
+.product__button--compare-active {
+	@include sprite($i_compare-active);
 }

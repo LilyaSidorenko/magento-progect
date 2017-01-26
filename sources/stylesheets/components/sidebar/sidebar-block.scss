@@ -2,6 +2,9 @@
 	position: relative;
 	padding-bottom: 50px;
 	border-bottom: 1px solid $grey_regular;
+	@include media-breakpoint-down(small-tablet) {
+		display: none;
+	}
 }
 
 .sidebar-block__header {
@@ -22,6 +25,7 @@
 .sidebar-block__item {
 	position: relative;
 	margin-bottom: 30px;
+	@include clearfix;
 }
 
 .sidebar-block__checkbox {

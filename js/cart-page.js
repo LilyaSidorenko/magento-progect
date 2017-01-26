@@ -12,11 +12,12 @@ jQuery(function($) {
       inputValue--;
     }
 
+    event.preventDefault();
+
     if (inputValue < 0) return;
     
     $input.val(inputValue);
-
-    event.preventDefault();
+    
   });
 
 });

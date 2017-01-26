@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cart Checkout step 1</title>
 	<link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
@@ -17,8 +18,8 @@
 <!-- HEADER END -->
 <div class="cart-checkout-page container">
 <!-- PROGRESS BLOCK START -->
-	<div class="step-block clearfix">
-		<div class="step-block__big-line clearfix">
+	<div class="step-block">
+		<div class="step-block__big-line">
 			<div class="step-block__line step-block__line--active"></div>
 			<div class="step-block__line"></div>
 			<div class="step-block__line"></div>
@@ -38,13 +39,13 @@
 	</div>
 <!-- PROGRESS BLOCK END -->
 <!-- MAIN CONTENT PAGE START -->
-	<div class="cart-check__main-content clearfix">
+	<div class="cart-check__main-content">
 <!-- INFO ABOUT BUYER START -->
 		<div class="buyer-data">
 <!-- ADDRESS START -->
-			<section class="buyer-data__address address clearfix">
+			<section class="buyer-data__address address">
 				<h2 class="address__header cart-check__header">SHIPPING ADDRESS</h2>
-				<form class="address__form clearfix">
+				<form class="address__form">
 					<input type="text" placeholder="Recipient name" class="address__input">
 					<input type="text" placeholder="Phone number" class="address__input">
 					<input type="text" placeholder="E-mail" class="address__input">
@@ -74,7 +75,7 @@
 			</section>
 <!-- ADDRESS END -->
 <!-- SHIPPING START -->
-			<section class="buyer-data__shipping shipping clearfix">
+			<section class="buyer-data__shipping shipping">
 				<h2 class="shipping__header cart-check__header">SHIPPING METHODS</h2>
 				<form class="shipping__form">
 					<input type="radio" id="shipping-method1" class="shipping__radio" name="shipping-method">
@@ -94,10 +95,10 @@
 			<h2 class="order-data__header cart-check__header">ORDER SUMMARY</h2>
 			<div class="order-data__order-block order">
 <!-- ORDER ITEM START -->
-				<div class="order__item clearfix">
+				<div class="order__item">
 					<div class="order__image-frame"><img src="../images/static/product-4.jpg" alt="product-4" class="order__image"></div>
 					<div class="order__description-box">
-						<h4 class="order__product-header">Mango People T-shirt</h4>
+						<h4 class="order__product-header"><a href="#" class="order__product-header--link">Mango People T-shirt</a></h4>
 						<p class="order__product-code">SKU: <span class="order__product-code-value">11e25a-068</span></p>
 						<p class="order__product-characteristic order__product-characteristic--color">
 							<span class="order__product-characteristic-label order__product-characteristic-label--color">COLOR:</span>
@@ -116,10 +117,10 @@
 				</div>
 <!-- ORDER ITEM END -->
 <!-- ORDER ITEM START -->
-				<div class="order__item clearfix">
+				<div class="order__item">
 					<div class="order__image-frame"><img src="../images/static/product-2.jpg" alt="product-4" class="order__image"></div>
 					<div class="order__description-box">
-						<h4 class="order__product-header">Mango People T-shirt</h4>
+						<h4 class="order__product-header"><a href="#" class="order__product-header--link">Mango People T-shirt</a></h4>
 						<p class="order__product-code">SKU: <span class="order__product-code-value">11e25a-068</span></p>
 						<p class="order__product-characteristic order__product-characteristic--color">
 							<span class="order__product-characteristic-label order__product-characteristic-label--color">COLOR:</span>
@@ -138,10 +139,10 @@
 				</div>
 <!-- ORDER ITEM END -->
 <!-- ORDER ITEM START -->
-				<div class="order__item clearfix">
+				<div class="order__item">
 					<div class="order__image-frame"><img src="../images/static/product-1.jpg" alt="product-4" class="order__image"></div>
 					<div class="order__description-box">
-						<h4 class="order__product-header">Mango People T-shirt</h4>
+						<h4 class="order__product-header"><a href="#" class="order__product-header--link">Mango People T-shirt</a></h4>
 						<p class="order__product-code">SKU: <span class="order__product-code-value">11e25a-068</span></p>
 						<p class="order__product-characteristic order__product-characteristic--color">
 							<span class="order__product-characteristic-label order__product-characteristic-label--color">COLOR:</span>
@@ -192,5 +193,13 @@
 	</p>
 </footer>
 <!-- FOOTER END -->
+<!-- JS LINKS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="../js/libs/jquery.mobile-events.min.js"></script>
+	<script src="../js/libs/slick.min.js"></script>
+	<script src="../js/custom/jquery-search.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/cart-checkout-page.js"></script>
+<!-- JS LINKS END -->
 </body>
 </html>

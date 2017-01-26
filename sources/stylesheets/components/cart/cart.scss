@@ -9,6 +9,9 @@
 	font-size: $font-size-xl;
 	font-weight: bold;
 	text-align: center;
+	@include media-breakpoint-down(small-tablet) {
+		font-size: $font-size-l;
+	}
 }
 
 .purchase {
@@ -18,6 +21,9 @@
 
 .purchase__header {
 	text-align: left;
+	@include media-breakpoint-down(small-tablet) {
+		display: none;
+	}
 }
 
 .purchase__header th {
@@ -31,17 +37,38 @@
 .purchase__item td {
 	padding: 50px 30px 50px 0;
 	vertical-align: middle;
+	@include media-breakpoint-down(small-tablet) {
+		box-sizing: border-box;
+		display: block;
+		float: right;
+		width: 66%;
+		padding: 15px 5px;
+	}
+}
+
+.purchase__image-cell {
+	@include media-breakpoint-down(small-tablet) {
+		float: left !important;
+		width: 34% !important;
+	}
 }
 
 .purchase__image {
 	max-width: 255px;
 	max-height: 280px;
+	@include media-breakpoint-down(small-tablet) {
+		max-width: 100%;
+		max-height: 100%;
+	}
 }
 
 .purchase__product-header {
 	color: $black_absolute;
 	font-family: Exodus;
 	font-size: 20px;
+	@include media-breakpoint-down(small-tablet) {
+		font-size: 16px;
+	}
 }
 
 .purchase__product-code {
@@ -60,6 +87,9 @@
 	color: $black_absolute;
 	font-size: $font-size;
 	font-weight: bold;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 25px;
+	}
 }
 
 .purchase__product-color-label {
@@ -80,6 +110,9 @@
 	font-size: $font-size;
 	font-weight: bold;
 	color: $black_absolute;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 15px;
+	}
 }
 
 .purchase__product-size-label {
@@ -104,6 +137,11 @@
 	border-color: $white-grey;
 	line-height: 58px;
 	text-align: center;
+	@include media-breakpoint-down(small-tablet) {
+		width: 100%;
+		font-size: $font-size-m;
+		line-height: 35px;
+	}
 }
 
 .purchase__product-quantity::-webkit-inner-spin-button, 
@@ -133,6 +171,9 @@
 	background-color: $white_absolute;
 	cursor: pointer;
 	outline: none;
+	@include media-breakpoint-down(small-tablet) {
+		height: 49%;
+	}
 }
 
 .purchase__product-quantity-handler:before {
@@ -159,6 +200,9 @@
 	font-size: 16px;
 	font-weight: bold;
 	color: $black_absolute;
+	@include media-breakpoint-down(small-tablet) {
+		font-size: $font-size-l;
+	}
 }
 
 .purchase__select-wrapper {
@@ -195,18 +239,24 @@
 }
 
 .purchase__delete-button {
-	position: absolute;
 	top: 20%;
-	cursor: pointer;
+	@include media-breakpoint-down(small-tablet) {
+		position: relative;
+		top: 0;
+		margin: 15px;
+	}
 }
 
 .purchase__edit-button {
-	display: block;
+	display: inline-block;
 	@include sprite($i_pencil);
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
 	outline: none;
+	@include media-breakpoint-down(small-tablet) {
+		margin: 15px;
+	}
 }
 
 .purchase__handlers td {
@@ -214,18 +264,22 @@
 }
 
 .purchase__update td {
-	padding-bottom: 48px;
+	padding: 0 5px 48px;
+	@include media-breakpoint-down(small-tablet) {
+		display: block;
+		padding-bottom: 25px;
+	}
 }
 
 .purchase__update-button {
 	padding: 0;
 	border: none;
 	background: none;
-	font-size: $font-size;
-	font-weight: bold;
-	color: $black_absolute;
 	cursor: pointer;
 	outline: none;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 25px;
+	}
 }
 
 .purchase__update-button:after {
@@ -243,8 +297,7 @@
 }
 
 .purchase__subtotal-label {
-	display: inline-block;
-	margin-right: 100px;
+	float: left;
 }
 
 .purchase__subtotal-value {
@@ -256,7 +309,11 @@
 }
 
 .purchase__promocode td {
-	padding: 50px 0;
+	padding: 50px 5px;
+	@include media-breakpoint-down(small-tablet) {
+		display: block;
+		padding: 25px 5px;
+	}
 }
 
 .purchase__promocode-input {
@@ -264,6 +321,9 @@
 	width: 300px;
 	height: 55px;
 	font-size: $font-size;
+	@include media-breakpoint-down(small-tablet) {
+		width: auto;
+	}
 }
 
 .purchase__promocode-button {
@@ -286,12 +346,16 @@
 }
 
 .purchase__grand-total-label {
-	display: inline-block;
-	margin-right: 100px;
+	float: left;
 }
 
 .purchase__links td {
-	padding: 50px 0;
+	padding: 50px 5px;
+	@include media-breakpoint-down(small-tablet) {
+		display: block;
+		padding: 25px 5px;
+		@include clearfix;
+	}
 }
 
 .purchase__continue-shopping {
@@ -311,8 +375,8 @@
 
 .purchase__go-to-checkout {
 	float: right;
-	padding: 0 25%;
-	width: 32%;
+	display: block;
+	width: 82%;
 	height: 50px;
 	background: $black_absolute;
 	color: $white_absolute;
@@ -320,4 +384,8 @@
 	font-weight: bold;
 	line-height: 50px;
 	text-align: center;
+	@include media-breakpoint-down(small-tablet) {
+		margin: 0 auto;
+		width: 100%;
+	}
 }

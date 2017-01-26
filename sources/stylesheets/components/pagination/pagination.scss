@@ -1,32 +1,53 @@
 .pagination {
 	@include clearfix;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 50px;
+	}
+}
+
+.pagination {
+
+	.clear-wishlist-button {
+		line-height: 24px;
+	}
+	
 }
 
 .pagination__list {
 	float: right;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
 	display: flex;
 	width: 77%;
-	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
 	justify-content: space-between;
+	@include media-breakpoint-down(small-tablet) {
+		float: none;
+		margin-top: 15px;
+		width: 100%;
+	}
 }
 
 .pagination__item {
+	@include media-breakpoint-down(small-tablet) {
+		margin: 10px;
+	}
 }
 
 .pagination__button {
-	display: block;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+.pagination__button:before {
+	content: "";
+	display: inline-block;
 	margin: 8px 0;
 	@include sprite($i_link-arrow);
 }
 
-.pagination__button--prev {
+.pagination__button--prev:before {
 	transform: rotate(180deg);
-}
-
-.pagination__button--next {
 }
 
 .pagination__link {

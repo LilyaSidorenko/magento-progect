@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Category page</title>
     <link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
@@ -124,7 +125,7 @@
     <!-- BREADCRUMBS START -->
     <div class="breadcrumbs">
         <div class="breadcrumbs__container">
-            <ul class="breadcrumbs__list clearfix">
+            <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
                     <a href="#" class="breadcrumbs__link">Home</a>
                 </li>
@@ -139,7 +140,7 @@
     </div>
     <!-- BREADCRUMBS END -->
     <!-- CONTENT OF PAGE START -->
-    <div class="main-container container clearfix">
+    <div class="main-container container">
         <!-- SIDEBAR START -->
         <aside class="sidebar">
             <ul class="sidebar__list">
@@ -290,7 +291,7 @@
         <!-- MAIN CONTENT START -->
         <main class="main">
             <!-- LIST HANDLERS START -->
-            <div class="list-handlers clearfix">
+            <div class="list-handlers">
                 <p class="displaying-indicator">
                     Displaying
                     <span class="displaying-indicator--displayed">11</span>
@@ -298,8 +299,8 @@
                     <span class="displaying-indicator--total">43</span>
                     items
                 </p>
-                <div class="list-handlers__handler">
-                    <div class="list-handlers__handler-block list-handlers__buttons-block">
+                <div class="list-handlers__handlers-block">
+                    <div class="list-handlers__handler list-handlers__buttons-block">
                         <a href="#" class="list-handlers__button list-handlers__button--horizontal">
                             <span></span>
                             <span></span>
@@ -310,31 +311,35 @@
                             <span></span>
                         </a>
                     </div>
-                    <fieldset class="list-handlers__handler-block">
-                        <label for="list-handlers__select--show" class="list-handlers__label">Show:</label>
-                        <select id="list-handlers__select--show" name="list-handlers__select--show"
-                                class="list-handlers__select">
-                            <option value="15">15</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                        </select>
-                    </fieldset>
-                    <fieldset class="list-handlers__handler-block">
-                        <label for="list-handlers__select--sort" class="list-handlers__label">Sort By:</label>
-                        <select id="list-handlers__select--sort" name="list-handlers__select--sort"
-                                class="list-handlers__select">
-                            <option value="Name">Name</option>
-                            <option value="Price">Price</option>
-                            <option value="Name">Name</option>
-                        </select>
-                    </fieldset>
+                    <div class="list-handlers__handler">
+                        <fieldset class="list-handlers__select-block">
+                            <label for="list-handlers__select--sort" class="list-handlers__label">Sort By:</label>
+                            <div class="custom-select">
+                                <select id="list-handlers__select--sort" class="list-handlers__select">
+                                    <option value="Name">Name</option>
+                                    <option value="Price">Price</option>
+                                    <option value="Name">Name</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="list-handlers__select-block">
+                            <label for="list-handlers__select--show" class="list-handlers__label">Show:</label>
+                            <div class="custom-select">
+                                <select id="list-handlers__select--show" class="list-handlers__select">
+                                    <option value="15">15</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
             </div>
             <!-- LIST HANDLERS END -->
             <!-- CATALOG START -->
-            <section class="catalog clearfix">
+            <section class="catalog">
                 <!-- PRODUCT BLOCK START -->
-                <div class="product clearfix">
+                <div class="product">
                     <div class="product__image-frame">
                         <img src="../images/static/product-1.jpg" alt="product" class="product__image">
                     </div>
@@ -360,18 +365,18 @@
                             soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
                             voluptates fugit sint sed, dolore dolores consectetur!
                         </p>
-                        <div class="product__links-block clearfix">
+                        <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
-                                <a href="#" class="product__button product__button--fav"></a>
-                                <a href="#" class="product__button product__button--compare product__button--disappears"></a>
+                                <a href="#" class="product__button product__button--fav product__button--fav-active"></a>
+                                <a href="#" class="product__button product__button--compare product__button--compare-active product__button--disappears"></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- PRODUCT BLOCK END -->
                 <!-- PRODUCT BLOCK START -->
-                <div class="product clearfix">
+                <div class="product">
                     <div class="product__image-frame">
                         <img src="../images/static/product-2.jpg" alt="product" class="product__image">
                     </div>
@@ -396,7 +401,7 @@
                             soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
                             voluptates fugit sint sed, dolore dolores consectetur!
                         </p>
-                        <div class="product__links-block clearfix">
+                        <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
                                 <a href="#" class="product__button product__button--fav"></a>
@@ -407,7 +412,7 @@
                 </div>
                 <!-- PRODUCT BLOCK END -->
                 <!-- PRODUCT BLOCK START -->
-                <div class="product clearfix">
+                <div class="product">
                     <div class="product__image-frame">
                         <img src="../images/static/product-3.jpg" alt="product" class="product__image">
                     </div>
@@ -432,7 +437,7 @@
                             soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
                             voluptates fugit sint sed, dolore dolores consectetur!
                         </p>
-                        <div class="product__links-block clearfix">
+                        <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
                                 <a href="#" class="product__button product__button--fav"></a>
@@ -443,7 +448,7 @@
                 </div>
                 <!-- PRODUCT BLOCK END -->
                 <!-- PRODUCT BLOCK START -->
-                <div class="product clearfix">
+                <div class="product">
                     <div class="product__image-frame">
                         <img src="../images/static/product-4.jpg" alt="product" class="product__image">
                     </div>
@@ -468,7 +473,7 @@
                             soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
                             voluptates fugit sint sed, dolore dolores consectetur!
                         </p>
-                        <div class="product__links-block clearfix">
+                        <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
                                 <a href="#" class="product__button product__button--fav"></a>
@@ -479,7 +484,7 @@
                 </div>
                 <!-- PRODUCT BLOCK END -->
                 <!-- PRODUCT BLOCK START -->
-                <div class="product clearfix">
+                <div class="product">
                     <div class="product__image-frame">
                         <img src="../images/static/product-5.jpg" alt="product" class="product__image">
                     </div>
@@ -504,7 +509,7 @@
                             soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
                             voluptates fugit sint sed, dolore dolores consectetur!
                         </p>
-                        <div class="product__links-block clearfix">
+                        <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
                                 <a href="#" class="product__button product__button--fav"></a>
@@ -515,7 +520,7 @@
                 </div>
                 <!-- PRODUCT BLOCK END -->
                 <!-- PRODUCT BLOCK START -->
-                <div class="product clearfix">
+                <div class="product">
                     <div class="product__image-frame">
                         <img src="../images/static/product-6.jpg" alt="product" class="product__image">
                     </div>
@@ -540,7 +545,7 @@
                             soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
                             voluptates fugit sint sed, dolore dolores consectetur!
                         </p>
-                        <div class="product__links-block clearfix">
+                        <div class="product__links-block">
                             <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                             <div class="right-side">
                                 <a href="#" class="product__button product__button--fav"></a>
@@ -553,7 +558,7 @@
             </section>
             <!-- CATALOG END -->
             <!-- PAGINATION START -->
-            <div class="pagination clearfix">
+            <div class="pagination">
                 <p class="displaying-indicator">
                     Displaying
                     <span class="displaying-indicator--displayed">11</span>
@@ -565,7 +570,7 @@
                     <li class="pagination__item">
                         <a href="#" class="pagination__button pagination__button--prev"></a>
                     </li>
-                    <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link pagination__link--active">1</a></li>
                     <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
                     <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
                     <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
