@@ -102,6 +102,7 @@
   &__cart {
     &:before {
       @include sprite($i_cart);
+      margin-right: 5px;
     }
   }
 
