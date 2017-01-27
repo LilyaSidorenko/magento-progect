@@ -25,6 +25,7 @@
         background: url("../../images/email-icon.png") 10px center no-repeat;
     }
     &__button {
+        position: relative;
         font-size: 20px;
         text-transform: uppercase;
         background: transparent;
@@ -33,6 +34,15 @@
         font-weight: bold;
         font-family: $font-regular;
         cursor: pointer;
+        transition: top,left 400ms;
+    }
+    &__button:hover {
+        color: $grey_regular;
+    }
+    &__button:active {
+        top: 2px;
+        left: 2px;
+        color: $grey_regular;
     }
     &__title {
         font-weight: bold;

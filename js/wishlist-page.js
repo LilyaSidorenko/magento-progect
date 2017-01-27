@@ -43,17 +43,15 @@ jQuery(function($) {
   });
 
 
-  $(window).on('swipeleft', function(event) {
-    $('.sidebar').addClass('sidebar--show');console.log('faic');
+  $(window).swipe({
+    swipe: function(event, direction) {
 
-    event.preventDefault();
-  });
-
-
-  $(window).on('swiperight', function(event) {
-    $('.sidebar').removeClass('sidebar--show');
-
-    event.preventDefault();
+      if (direction === 'left') {
+          $('.sidebar').addClass('sidebar--show');
+      } else if (direction === 'right') {
+          $('.sidebar').removeClass('sidebar--show');
+      }
+    }
   });
 
 });

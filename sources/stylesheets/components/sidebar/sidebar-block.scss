@@ -2,7 +2,7 @@
 	position: relative;
 	padding-bottom: 50px;
 	border-bottom: 1px solid $grey_regular;
-	@include media-breakpoint-down(small-tablet) {
+	@include media-breakpoint-down(tablet) {
 		display: none;
 	}
 }

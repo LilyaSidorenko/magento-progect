@@ -42,7 +42,7 @@
 		display: block;
 		float: right;
 		width: 66%;
-		padding: 15px 5px;
+		padding: 15px 5%;
 	}
 }
 
@@ -267,7 +267,7 @@
 	padding: 0 5px 48px;
 	@include media-breakpoint-down(small-tablet) {
 		display: block;
-		padding-bottom: 25px;
+		padding: 0 5% 25px;
 	}
 }
 
@@ -312,7 +312,7 @@
 	padding: 50px 5px;
 	@include media-breakpoint-down(small-tablet) {
 		display: block;
-		padding: 25px 5px;
+		padding: 25px 5%;
 	}
 }
 
@@ -353,7 +353,7 @@
 	padding: 50px 5px;
 	@include media-breakpoint-down(small-tablet) {
 		display: block;
-		padding: 25px 5px;
+		padding: 25px 5%;
 		@include clearfix;
 	}
 }

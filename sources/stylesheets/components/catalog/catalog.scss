@@ -216,10 +216,12 @@
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+	transition: top,left 600ms;
 }
 
 .product__button:active {
 	top: 2px;
+	left: 2px;
 }
 
 .product__button--fav {

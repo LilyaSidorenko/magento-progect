@@ -3,17 +3,20 @@
 	.product {
 		float: left;
 		width: 31%;
-		margin-right: 3.5%;
 		@include media-breakpoint-down(small-tablet) {
 			float: none;
 			width: 100%;
-			margin-right: 0;
 		}
 
 	}
 
-	.product:nth-child(2n+3) {
-		margin-right: 0;
+	.product:nth-child(3n+2) {
+		margin-left: 3.5%;
+		margin-right: 3.5%;
+		@include media-breakpoint-down(small-tablet) {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	.product__image-frame {

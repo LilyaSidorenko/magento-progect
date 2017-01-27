@@ -1,0 +1,35 @@
+.sidebar.sidebar-slider {
+	transition: all 400ms;
+	@include media-breakpoint-down(small-tablet) {
+		position: fixed;
+		top: 0;
+		left: 100%;
+		height: 100%;
+		overflow-y: scroll;
+	}
+}
+
+.sidebar-slider.sidebar--show {
+	left: 0;
+}
+
+.sidebar-slider {
+
+	.sidebar__list {
+		@include media-breakpoint-down(small-tablet) {
+			margin: 0;
+		}
+	}
+
+	.sidebar__item {
+		border-color: $white-grey;
+	}
+
+	.sidebar__item:first-child {
+		border-top: 1px solid $white-grey;
+	}
+
+	.sidebar__main-link:after {
+		content: "";
+	}
+}

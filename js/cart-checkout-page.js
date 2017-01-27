@@ -1,16 +1,16 @@
 'use strict';
 
 jQuery(function($) {
-  $(window).on('swipeleft', function(event) {
-    $('.order-data__order-block').addClass('order-data__order-block--active');
 
-    event.preventDefault();
+  $(window).swipe({
+    swipe: function(event, direction) {
+
+      if (direction === 'left') {
+          $('.order-data__order-block').addClass('order-data__order-block--active');
+      } else if (direction === 'right') {
+          $('.order-data__order-block').removeClass('order-data__order-block--active');
+      }
+    }
   });
-
-
-  $(window).on('swiperight', function(event) {
-    $('.order-data__order-block').removeClass('order-data__order-block--active');
-
-    event.preventDefault();
-  });
+  
 });

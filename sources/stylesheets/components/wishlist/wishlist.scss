@@ -28,38 +28,10 @@
 		}
 	}
 
-	.sidebar {
-		transition: all 400ms;
-		@include media-breakpoint-down(small-tablet) {
-			position: fixed;
-			top: 156px;
-			left: 100%;
-		}
-	}
-
-	.sidebar--show {
-		left: 0;
-	}
-
-	.sidebar__item {
-		border-color: $white-grey;
-	}
-
-	.sidebar__item:first-child {
-		border-top: 1px solid $white-grey;
-	}
-
-	.sidebar__main-link:after {
-		content: "";
-	}
-
-	.list-handlers__handler-block:first-child {
-		margin-right: 30px;
-	}
-
 	.pagination__list {
 		width: 55%;
-		@include media-breakpoint-down(small-tablet) {
+		@include media-breakpoint-down(desktop) {
+			margin-top: 15px;
 			width: 100%;
 		}
 	}
@@ -76,6 +48,11 @@
 	color: $black_absolute;
 	cursor: pointer;
 	outline: none;
+	@include media-breakpoint-down(small-tablet) {
+		float: none;
+		margin: 5px;
+		margin-right: 50px;
+	}
 }
 
 .share-button {
@@ -89,6 +66,10 @@
 	color: $black_absolute;
 	cursor: pointer;
 	outline: none;
+	@include media-breakpoint-down(small-tablet) {
+		float: none;
+		margin: 5px;
+	}
 }
 
 .share-button:after {

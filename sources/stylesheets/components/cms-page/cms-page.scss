@@ -1,4 +1,8 @@
 .cms-page {
+	@include clearfix;
+}
+
+.cms-page {
 	* {
 		box-sizing: border-box;
 	}
@@ -15,49 +19,57 @@
 	.main-container {
 		margin-top: 61px;
 		margin-bottom: 99px;
+		@include clearfix;
 	}
 
 	.main {
 		float: left;
 		width: 77%;
 		padding: 0 30px;
-	}
-
-	.sidebar__item {
-		border-color: $white-grey;
-	}
-
-	.sidebar__item:first-child {
-		border-top: 1px solid $white-grey;
-	}
-
-	.sidebar__main-link:after {
-		content: "";
-	}
-
-	.pagination__list {
-		width: 55%;
+		@include media-breakpoint-down(small-tablet) {
+			padding: 0;
+			width: 100%;
+		}
 	}
 
 	.newsletter {
 		margin: 100px 0;
+		@include media-breakpoint-down(small-tablet) {
+			margin: 50px 0;
+		}
 	}
 
 	.newsletter__item {
 		padding-left: 30px;
+		@include media-breakpoint-down(small-tablet) {
+			padding-left: 20px;
+		}
 	}
 
 	.newsletter__email {
-		padding-top: 0;
-		padding-bottom: 0;
 		width: 74%;
 		height: 58px;
 		line-height: 58px;
+		@include media-breakpoint-down(tablet) {
+			width: 90%;
+		}
+		@include media-breakpoint-down(small-tablet) {
+			width: 100%;
+		}
+	}
+
+	.newsletter__button {
+		@include media-breakpoint-down(tablet) {
+			margin-top: 20px;
+		}
 	}
 }
 
 .cms-page__text-block {
 	margin-top: 100px;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 50px;
+	}
 }
 
 .cms-page__header {
@@ -65,6 +77,9 @@
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
+	@include media-breakpoint-down(small-tablet) {
+		padding: 0 5%;
+	}
 }
 
 .cms-page__text {
@@ -73,4 +88,7 @@
 	font-size: $font-size;
 	line-height: 24px;
 	white-space: pre-line;
+	@include media-breakpoint-down(small-tablet) {
+		padding: 0 5%;
+	}
 }
