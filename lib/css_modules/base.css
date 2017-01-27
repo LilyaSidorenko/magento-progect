@@ -1,0 +1,250 @@
+@font-face {
+  font-family: Avanti;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti.ttf") format("truetype");
+  src: url("../../fonts/Avanti.otf");
+}
+
+@font-face {
+  font-family: Exodus;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Exodus.ttf") format("truetype");
+  src: url("../../fonts/Exodus.otf");
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-family: Avanti, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/*hidden block*/
+
+.is-hidden {
+  display: none !important;
+}
+
+/*margin for component*/
+
+.is-margin-right {
+  margin-right: 50px;
+}
+
+/*on create-advert page make margin for btn pink-empty small*/
+
+.is-advert-page {
+  margin: 60px 0 0;
+}
+
+/*text align center*/
+
+.text {
+  color: #000000;
+  font-size: 14px;
+}
+
+.text-gray {
+  color: #aaaaaa;
+}
+
+.text-special {
+  color: #99cc00;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text.bold {
+  font-weight: bold;
+}
+
+.text.upper {
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-side {
+  float: right;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+}

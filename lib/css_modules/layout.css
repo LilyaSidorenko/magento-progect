@@ -1,0 +1,676 @@
+.menu__item.active:after,
+.menu__item:hover:after {
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+@font-face {
+  font-family: Avanti;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti.ttf") format("truetype");
+  src: url("../../fonts/Avanti.otf");
+}
+
+@font-face {
+  font-family: Exodus;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Exodus.ttf") format("truetype");
+  src: url("../../fonts/Exodus.otf");
+}
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+
+.header {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  background: #fff;
+}
+
+.header__wrap {
+  position: relative;
+  padding: 28px 0;
+}
+
+.header__logo {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    width: 40%;
+  }
+}
+
+.header__logo img {
+  margin: 0 auto;
+}
+
+.header__profile {
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 14px;
+}
+
+.header__profile .settings {
+  margin-bottom: 10px;
+}
+
+.header__profile .custom-select {
+  margin-left: 20px;
+}
+
+.menu .header__profile .custom-select {
+  margin-left: 5px;
+  line-height: 3;
+}
+
+.menu .header__profile .custom-select select {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .header__profile {
+    width: 30%;
+  }
+}
+
+.menu .header__profile {
+  text-align: left;
+  width: 100%;
+}
+
+.header__login,
+.header__cart,
+.header__search {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.header__login:before,
+.header__cart:before,
+.header__search:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu .header__login,
+.menu .header__cart,
+.menu .header__search {
+  margin-left: 5px;
+  line-height: 3;
+  font-size: 20px;
+}
+
+.header__search {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.header__search:before {
+  background-image: url(../../lib/sprites/spritesheet.png);
+  background-position: -112px 0px;
+  width: 19px;
+  height: 19px;
+}
+
+@media (max-width: 767px) {
+  .header__search {
+    position: static;
+  }
+}
+
+.header__login:before {
+  background-image: url(../../lib/sprites/spritesheet.png);
+  background-position: -112px -49px;
+  width: 16px;
+  height: 18px;
+}
+
+.header__login:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../../lib/sprites/spritesheet.png);
+  background-position: -142px -80px;
+  width: 5px;
+  height: 3px;
+  margin-left: 5px;
+}
+
+.header__cart:before {
+  background-image: url(../../lib/sprites/spritesheet.png);
+  background-position: 0px -84px;
+  width: 20px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+.menu {
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.menu__item {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 40px;
+  line-height: 3;
+}
+
+.menu__item:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../../lib/sprites/spritesheet.png);
+  background-position: -142px -80px;
+  width: 5px;
+  height: 3px;
+  margin-left: 5px;
+}
+
+.menu__item.active a,
+.menu__item:hover a {
+  text-decoration: none;
+}
+
+.menu__item.active:after,
+.menu__item:hover:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.menu__item.active .submenu,
+.menu__item:hover .submenu {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .menu__item {
+    margin-right: 15px;
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menu-button {
+    -webkit-transition: 0.1s -webkit-transform linear;
+    transition: 0.1s transform linear;
+    position: relative;
+    background: 0;
+    float: left;
+    height: 2.5rem;
+    width: 35px;
+    z-index: 1;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+  }
+
+  .menu-button__wrap {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .bar,
+  .bar::before,
+  .bar::after {
+    -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    position: absolute;
+    background: #000;
+    margin: auto;
+    width: 100%;
+    height: 0.2rem;
+    content: '';
+    top: 50%;
+    left: 0;
+  }
+
+  .bar {
+    margin-top: -0.2rem;
+  }
+
+  .bar::before {
+    top: -0.6rem;
+  }
+
+  .bar::after {
+    top: 0.6rem;
+  }
+
+  .bar::before,
+  .bar::after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .active .bar {
+    background: 0;
+  }
+
+  .active .bar::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .active .bar::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .active .bar::before,
+  .active .bar::after {
+    top: 0;
+  }
+
+  .active .bar,
+  .active .bar::before,
+  .active .bar::after {
+    -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  }
+
+  .menu {
+    width: 250px;
+    height: 100%;
+    background: #eaeaea;
+    position: fixed;
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    padding-top: 6.2rem;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-open .menu {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu__item {
+    padding: 10px 5px;
+    display: block;
+  }
+
+  .menu__item a {
+    font-size: 20px;
+  }
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  padding: 60px 0 10px 0;
+  margin-top: -20px;
+  font-size: 0;
+}
+
+.submenu__item {
+  width: 33.333%;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 2;
+  padding: 0 35px;
+}
+
+.submenu__title {
+  display: block;
+  border-bottom: 1px solid #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.submenu__link {
+  text-transform: none;
+  display: block;
+}
+
+.submenu__list {
+  margin-bottom: 20px;
+}
+
+.search {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 30px 30px 30px;
+  width: 280px;
+  z-index: -1;
+  margin-right: -20px;
+  margin-top: -10px;
+}
+
+.search__addition {
+  display: none;
+}
+
+.search.active {
+  display: block;
+}
+
+.search__input {
+  padding: 10px 30px 10px 10px;
+  line-height: 1.5;
+  z-index: 2;
+}
+
+.search__input--l {
+  width: 100%;
+}
+
+.search__input--s {
+  width: 36%;
+}
+
+.search__text {
+  text-transform: none;
+  margin-right: 4px;
+  font-style: italic;
+}
+
+.search__options {
+  text-transform: none;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.search__options .close {
+  display: none;
+}
+
+.search__options a {
+  text-transform: none;
+}
+
+.search__button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .search {
+    width: 100%;
+    margin-top: 80px;
+    left: 0;
+  }
+}
+
+.footer {
+  position: relative;
+  background: #101010;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__logo {
+  margin: 80px 0 40px 0;
+}
+
+.footer__coop {
+  color: #333333;
+}
+
+.footer__link {
+  color: #fff;
+}
+
+.additional-menu {
+  margin-bottom: 40px;
+}
+
+.additional-menu__item {
+  position: relative;
+  display: inline-block;
+  color: #999999;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .additional-menu__item {
+    display: block;
+  }
+}
+
+.additional-menu__item:after {
+  content: '|';
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .additional-menu__item:after {
+    content: none;
+  }
+}
+
+.additional-menu__item:last-child:after {
+  content: none;
+}
+
+.additional-menu__item:hover,
+.additional-menu__item:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.additional-menu__item:hover:after,
+.additional-menu__item:active:after {
+  color: #999999;
+}
+
+.socials {
+  margin-bottom: 100px;
+}
+
+.socials__item {
+  padding: 0 12px;
+  vertical-align: middle;
+  text-align: center;
+  width: 20px;
+  display: inline-block;
+}
+
+.socials__item img {
+  vertical-align: middle;
+}
+
+.socials__item--special {
+  background: #dddddd;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.socials__item--special:hover {
+  background: #000000;
+}
+
+.socials__item:hover {
+  opacity: 0.8;
+}
+
+.g-main-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1149px) {
+  .g-main-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.g-margin-bottom {
+  margin-bottom: 60px;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.special-link:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../../lib/sprites/spritesheet.png);
+  background-position: -52px -121px;
+  width: 20px;
+  height: 7px;
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  a {
+    font-size: 20px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea {
+  border-width: 0 0 1px 0;
+  border-color: #000000;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input.placeholder,
+textarea.placeholder {
+  color: #000000;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #000000;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #000000;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #000000;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  input,
+  textarea {
+    font-size: 20px;
+  }
+}
