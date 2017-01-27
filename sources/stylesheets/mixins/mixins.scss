@@ -70,14 +70,18 @@
     position: absolute;
     display: block;
 }
-@each $font-face in Avanti, Exodus {
+@each $font-face in Avanti {
   @font-face {
     font-family: $font-face; font-style: normal; font-weight: normal;
     src: url('../../fonts/#{$font-face}.ttf') format('truetype');
-    src: url('../../fonts/#{$font-face}.otf'),
   }
 }
-
+@each $font-face in Exodus {
+  @font-face {
+    font-family: $font-face; font-style: normal; font-weight: normal;
+    src: url('../../fonts/#{$font-face}.otf');
+  }
+}
 @function z($layer){
   $layers: (
           'base': 1,

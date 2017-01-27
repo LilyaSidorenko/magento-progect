@@ -11,4 +11,14 @@
   .slick-next {
     right: 10px;
   }
+
+  .slick-dots {
+    top: 100%;
+    bottom: auto;
+    margin-top: 10px;
+  }
+  .slick-dots li button, .slick-dots .slick-active button {
+    width: 10px;
+    height: 12px;
+  }
 }

@@ -10,6 +10,7 @@
 
         @include media-breakpoint-down(small-tablet) {
             display: block;
+            margin-bottom: 10px;
         }
 
         &:after {

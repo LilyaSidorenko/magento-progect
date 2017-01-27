@@ -61,12 +61,14 @@
     &__img {
         width: 45%;
         display: inline-block;
+        height: 100%;
 
         @include media-breakpoint-down(small-tablet) {
             width: 30%;
+            height: auto;
         }
         img {
-            height: 540px;
+            height: inherit;
         }
     }
     &__title {
@@ -86,7 +88,7 @@
         margin-bottom: 20px;
 
         @include media-breakpoint-down(small-tablet) {
-            font-size: 37px;
+            font-size: 30px;
         }
     }
     &__link {
@@ -95,8 +97,10 @@
     &__wrap {
         background: $background_color;
         padding: 30px;
-        max-height: 600px;
-
+        height: 600px;
+        @include media-breakpoint-down(small-tablet) {
+            height: auto;
+        }
     }
     &__price {
         margin-bottom: 50px;

@@ -3,14 +3,12 @@
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/Avanti.ttf") format("truetype");
-  src: url("../../fonts/Avanti.otf");
 }
 
 @font-face {
   font-family: Exodus;
   font-style: normal;
   font-weight: normal;
-  src: url("../../fonts/Exodus.ttf") format("truetype");
   src: url("../../fonts/Exodus.otf");
 }
 
@@ -156,7 +154,7 @@ table {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -166,6 +164,12 @@ body {
   font-size: 14px;
   font-family: Avanti, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+body:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 div {

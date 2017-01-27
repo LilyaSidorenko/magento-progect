@@ -41,11 +41,6 @@
         @include media-breakpoint-down(small-tablet) {
             width: 100%;
             padding: 20px;
-            border-bottom: 1px solid $additional_text_color;
-
-            &:last-child {
-                border-bottom: 0;
-            }
         }
     }
     &__name {
@@ -58,6 +53,10 @@
         color: $main_text_color;
         font-family: $font-special;
         margin-bottom: 40px;
+        @include media-breakpoint-down(small-tablet) {
+            font-size: 38px;
+
+        }
 
     }
     &__title {

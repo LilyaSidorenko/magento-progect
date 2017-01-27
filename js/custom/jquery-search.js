@@ -17,8 +17,8 @@
         });
 
         $('body').on('click', function (e) {
-            var container = $("header");
-            if (container.has(e.target).length === 0){
+            var container = $(".header");
+            if (container.has(e.target).length == 0){
                    $('.js-search').removeClass('active');
            }
         })

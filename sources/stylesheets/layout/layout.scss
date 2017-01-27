@@ -1,5 +1,5 @@
-@import '../theme/theme';
 @import '../mixins/mixins';
+@import '../theme/theme';
 @import '../sprites';
 @import 'headers/headers';
 @import 'headers/menu';
@@ -28,20 +28,35 @@ a {
     font-size: $font-size;
     color: $grey_absolute;
     text-decoration: none;
+    font-family: $font-regular;
 
     &:hover {
         text-decoration: underline;
     }
 
     &.special-link {
+        @extend %transitionSlow;
+
         &:after {
             @include sprite-inline;
             @include sprite($i_link-arrow);
             margin-left: 10px;
+            @extend %transitionSlow;
+
+        }
+        &:hover {
+            text-decoration: none;
+            font-weight: bold;
+            @extend %transitionSlow;
+
+            &:after {
+                transform: translate(10px,0);
+                @extend %transitionSlow;
+            }
         }
     }
     @include media-breakpoint-down(small-tablet) {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 h2 {
@@ -61,12 +76,14 @@ input, textarea {
     background: transparent;
     font-size: 14px;
     box-sizing: border-box;
+    font-family: $font-regular;
+
 
     @include placeholder{
         color: $grey_absolute;
     }
 
     @include media-breakpoint-down(small-tablet) {
-        font-size: 20px;
+        font-size: 16px;
     }
 }

@@ -3,64 +3,14 @@
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/Avanti.ttf") format("truetype");
-  src: url("../../fonts/Avanti.otf");
 }
 
 @font-face {
   font-family: Exodus;
   font-style: normal;
   font-weight: normal;
-  src: url("../../fonts/Exodus.ttf") format("truetype");
   src: url("../../fonts/Exodus.otf");
 }
-
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
 
 .custom-select {
   display: inline-block;
@@ -230,8 +180,29 @@ The `sprites` mixin generates identical output to the CSS template
   margin-top: 102px;
 }
 
-.main-slider img {
-  max-width: 100%;
+@media (max-width: 767px) {
+  .main-slider {
+    min-height: 600px;
+  }
+
+  .main-slider img {
+    height: 600px;
+    width: auto;
+    float: right;
+    margin-right: -440px;
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 379px) {
+  .main-slider {
+    min-height: 400px;
+  }
+
+  .main-slider img {
+    height: 400px;
+    margin-right: -300px;
+  }
 }
 
 /* Slider */
@@ -269,9 +240,9 @@ The `sprites` mixin generates identical output to the CSS template
   height: 17px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .slick-prev {
-    top: 2%;
+    top: 4%;
   }
 }
 
@@ -285,9 +256,9 @@ The `sprites` mixin generates identical output to the CSS template
   transform: rotate(180deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .slick-next {
-    bottom: 2%;
+    bottom: 4%;
   }
 }
 
@@ -303,9 +274,17 @@ The `sprites` mixin generates identical output to the CSS template
   text-align: center;
 }
 
+@media (max-width: 1023px) {
+  .slick-dots {
+    top: 15%;
+  }
+}
+
 @media (max-width: 767px) {
   .slick-dots {
-    top: 12%;
+    bottom: 5%;
+    top: auto;
+    right: 5%;
   }
 }
 
@@ -322,6 +301,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .slick-dots li:last-child button:after {
   content: none;
+}
+
+@media (max-width: 767px) {
+  .slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 
 .slick-dots li button {
@@ -374,6 +360,7 @@ The `sprites` mixin generates identical output to the CSS template
     border-radius: 50%;
     font-size: 0;
     margin: 0 0 8px 0;
+    display: inline-block;
   }
 }
 
@@ -514,6 +501,18 @@ The `sprites` mixin generates identical output to the CSS template
   right: 10px;
 }
 
+.brands-slider .slick-dots {
+  top: 100%;
+  bottom: auto;
+  margin-top: 10px;
+}
+
+.brands-slider .slick-dots li button,
+.brands-slider .slick-dots .slick-active button {
+  width: 10px;
+  height: 12px;
+}
+
 .categories {
   font-size: 0;
   text-align: center;
@@ -564,11 +563,6 @@ The `sprites` mixin generates identical output to the CSS template
   .categories__item {
     width: 100%;
     padding: 20px;
-    border-bottom: 1px solid #999999;
-  }
-
-  .categories__item:last-child {
-    border-bottom: 0;
   }
 }
 
@@ -582,6 +576,12 @@ The `sprites` mixin generates identical output to the CSS template
   color: #000000;
   font-family: Exodus, sans-serif;
   margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .categories__text {
+    font-size: 38px;
+  }
 }
 
 .categories__title {
@@ -689,16 +689,18 @@ The `sprites` mixin generates identical output to the CSS template
 .product-top__img {
   width: 45%;
   display: inline-block;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
   .product-top__img {
     width: 30%;
+    height: auto;
   }
 }
 
 .product-top__img img {
-  height: 540px;
+  height: inherit;
 }
 
 .product-top__title {
@@ -723,7 +725,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 @media (max-width: 767px) {
   .product-top__name {
-    font-size: 37px;
+    font-size: 30px;
   }
 }
 
@@ -734,7 +736,13 @@ The `sprites` mixin generates identical output to the CSS template
 .product-top__wrap {
   background: #f9f9f9;
   padding: 30px;
-  max-height: 600px;
+  height: 600px;
+}
+
+@media (max-width: 767px) {
+  .product-top__wrap {
+    height: auto;
+  }
 }
 
 .product-top__price {
@@ -766,6 +774,7 @@ The `sprites` mixin generates identical output to the CSS template
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
+  padding-right: 10px;
 }
 
 @media (max-width: 767px) {

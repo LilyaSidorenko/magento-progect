@@ -12,7 +12,7 @@
         display: inline-block;
         vertical-align: middle;
         box-sizing: border-box;
-
+        padding-right: 10px;
         @include media-breakpoint-down(small-tablet) {
             width: 100%;
             padding: 20px;
