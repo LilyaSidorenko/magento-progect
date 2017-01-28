@@ -1,24 +1,19 @@
 .brand-page {
+		margin: 50px auto 98px;
+		max-width: 1140px;
+		@include clearfix;
+		@include media-breakpoint-down(small-tablet) {
+			margin-bottom: 50px;
+		}
+}
+
+.brand-page {
 	* {
 		box-sizing: border-box;
 	}
 
 	a {
 		text-transform: none;
-	}
-
-	.container {
-		margin: 0 auto;
-		max-width: 1140px;
-	}
-
-	.main-container {
-		margin-top: 50px;
-		margin-bottom: 98px;
-		@include clearfix;
-		@include media-breakpoint-down(small-tablet) {
-			margin-bottom: 50px;
-		}
 	}
 
 	.main {

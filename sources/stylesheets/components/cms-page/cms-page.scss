@@ -1,4 +1,6 @@
 .cms-page {
+	margin: 61px auto 99px;
+	max-width: 1140px;
 	@include clearfix;
 }
 
@@ -9,17 +11,6 @@
 
 	a {
 		text-transform: none;
-	}
-
-	.container {
-		margin: 0 auto;
-		max-width: 1140px;
-	}
-
-	.main-container {
-		margin-top: 61px;
-		margin-bottom: 99px;
-		@include clearfix;
 	}
 
 	.main {

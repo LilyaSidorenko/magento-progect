@@ -7,14 +7,19 @@
 	<link rel="stylesheet" href="../lib/dist/style.min.css">
 </head>
 <body>
+
 <!-- HEADER -->
 <header class="header">
     <div class="g-main-wrapper header__wrap">
-
+        <div class="menu-button__wrap">
+            <button class="js-menu menu-button" type="button">
+                <span class="bar"></span>
+            </button>
+        </div>
         <nav class="menu" role='navigation'>
             <ul>
                 <li class="menu__item"><a href="#">Women</a>
-<!-- HEADER submenu-->
+                    <!-- HEADER submenu-->
                     <div class="submenu">
                         <div class="submenu__item">
                             <h4 class="submenu__title">Women</h4>
@@ -60,7 +65,8 @@
                             </div>
                         </div>
                     </div>
-<!-- HEADER submenu END-->
+
+                    <!-- HEADER submenu END-->
 
                 </li>
 
@@ -69,14 +75,34 @@
                 <li class="menu__item"><a href="#">Junior</a></li>
 
                 <li class="menu__item"><a href="#">Deals</a></li>
+
+
             </ul>
+            <div class="header__profile mobile-only">
+                <div class="settings">
+                    <div class="custom-select">
+                        <select>
+                            <option>UA</option>
+                            <option>US</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+
+                        <select>
+                            <option>UAH</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__cart">Cart</div>
+            </div>
         </nav>
-        <div class="header__logo">
+        <a href="#" class="header__logo">
             <img src="../images/logo/logo.png">
-        </div>
+        </a>
         <div class="header__profile">
 
-            <div class="settings">
+            <div class="settings desktop-only">
                 <div class="custom-select">
                     <select>
                         <option>UA</option>
@@ -102,40 +128,38 @@
                             <span class="search__text">Price</span>
                             <input class="search__input search__input--s" type="text" placeholder="From">//
                             <input class="search__input search__input--s" type="text" placeholder="To">
-                            <button class="search__button">Search</button>
+                            <button class="btn search__button">Search</button>
                         </div>
                     </form>
                     <span class="search__options">
-                    <span class="js-search-more more">+ More options</span>
-                    <span class="js-search-close close">— Close options</span>
+                    <a class=" js-search-more more">+ More options</a>
+                    <a class=" js-search-close close">— Close options</a>
                 </span>
                 </div>
             </div>
-            <div class="header__login">
-                <a href="#">Login</a>
-            </div>
+            <div class="header__login desktop-only"><a href="#">Login</a></div>
             <div class="header__cart">Cart</div>
         </div>
     </div>
 
 </header>
 <!-- HEADER END -->
+<!-- BREADCRUMBS START -->
+<div class="breadcrumbs">
+	<div class="breadcrumbs__container">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<span class="breadcrumbs__current-page">Compare products</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- BREADCRUMBS END -->
 <!-- COMPARISON PAGE START -->
 <div class="comparison-page">
-<!-- BREADCRUMBS START -->
-	<div class="breadcrumbs">
-		<div class="breadcrumbs__container">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__item">
-					<a href="#" class="breadcrumbs__link">Home</a>
-				</li>
-				<li class="breadcrumbs__item">
-					<span class="breadcrumbs__current-page">Compare products</span>
-				</li>
-			</ul>
-		</div>
-	</div>
-<!-- BREADCRUMBS END -->
 <!-- COMPARISON TABLE START -->
 	<table class="comparison">
 		<tbody>
@@ -311,6 +335,7 @@
 </div>
 <!-- COMPARISON PAGE END -->
 <!-- FOOTER -->
+
 <footer class="footer">
     <img src="../images/logo/logo-big.png" class="footer__logo">
     <nav class="additional-menu">
@@ -325,7 +350,7 @@
         <a href="#" class="socials__item">
             <img src="../images/twitter.png">
         </a>
-        <a href="#" class="socials__item">
+        <a href="#" class="socials__item ">
             <img src="../images/gg+.png">
         </a>
         <a href="#" class="socials__item">
@@ -349,11 +374,12 @@
 </footer>
 <!-- FOOTER END -->
 <!-- JS LINKS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../js/libs/slick.min.js"></script>
-<script src="../js/custom/jquery-search.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/comparison-page.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../js/libs/slick.min.js"></script>
+	<script src="../js/custom/jquery-search.js"></script>
+	<script src="../js/custom/jquery-menu.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/comparison-page.js"></script>
 <!-- JS LINKS END -->
 </body>
 </html>

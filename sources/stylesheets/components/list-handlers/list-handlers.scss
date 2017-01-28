@@ -55,6 +55,7 @@
 .list-handlers__handler .list-handlers__select {
 	padding: 3px 3px 3px 0;
 	background-color: $white_absolute;
+	font-family: Avanti, sans-serif;
 	font-style: italic;
 	text-transform: none;
 	@include media-breakpoint-down(small-tablet) {

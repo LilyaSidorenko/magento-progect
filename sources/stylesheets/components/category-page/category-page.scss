@@ -19,12 +19,6 @@ select:-moz-focusring {
     text-shadow: 0 0 0 #000;
 }
 
-.clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
 .link-with-arrow {
 	color: $black_absolute;
 	font-size: $font-size;
@@ -73,23 +67,18 @@ select:-moz-focusring {
 }
 
 .category-page {
+	margin: 50px auto 98px;
+	max-width: 1140px;
+	@include clearfix;
+}
+
+.category-page {
 	* {
 		box-sizing: border-box;
 	}
 
 	a {
 		text-transform: none;
-	}
-
-	.container {
-		margin: 0 auto;
-		max-width: 1140px;
-	}
-
-	.main-container {
-		margin-top: 50px;
-		margin-bottom: 98px;
-		@include clearfix;
 	}
 
 	.main {

@@ -2,6 +2,9 @@
 	margin: 101px auto 50px;
 	padding: 100px 0 0 0;
 	max-width: 1110px;
+	@include media-breakpoint-down(small-tablet) {
+		padding: 50px 0 0 0;
+	}
 }
 
 .cart-page__header {
@@ -229,9 +232,15 @@
 .purchase__select-wrapper:after {
 	content: "";
 	position: absolute;
-	top: 20px;
+	top: 50%;
 	right: 10px;
+	transform: translateY(-50%);
 	@include sprite($i_arrows);
+}
+
+.purchase__no-selection {
+	padding-left: 10px;
+	color: $black_absolute;
 }
 
 .purchase__buttons {
