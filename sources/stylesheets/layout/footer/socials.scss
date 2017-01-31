@@ -6,10 +6,12 @@
         vertical-align: middle;
         text-align: center;
         width: 20px;
+        height: 20px;
         display: inline-block;
 
         img {
             vertical-align: middle;
+            height: 100%;
         }
 
         &--special {
@@ -20,6 +22,9 @@
 
             &:hover {
                 background: $grey_absolute;
+            }
+            @include media-breakpoint-down(tablet) {
+                margin-left: 5px;
             }
         }
 

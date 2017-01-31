@@ -1,6 +1,7 @@
 .tabs {
   margin-bottom: 20px;
   border-bottom: 1px solid lighten($special_text_color, 20%);
+  @include clearfix;
   li {
     float: left;
     width: 20%;
@@ -19,9 +20,13 @@
     color: $grey_absolute;
     padding: 20px 0;
 
-    &:hover, &.active {
+    &:hover {
       border-bottom: 2px solid $grey_absolute;
+      text-decoration: none;
+    }
+    &.active {
       font-weight: bold;
+      border-bottom: 2px solid $grey_absolute;
       text-decoration: none;
     }
   }

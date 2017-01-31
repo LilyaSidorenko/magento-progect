@@ -11,26 +11,24 @@
   &__info {
     float: left;
     width: 60%;
+    @include media-breakpoint-down(small-tablet) {
+      width: 100%;
+    }
   }
   &__content {
     float: left;
     width: 40%;
 
     padding-left: 20px;
+    display: inline-block;
+    vertical-align: top;
 
     @include clearfix;
 
-    &--left {
-      display: inline-block;
-      vertical-align: top;
 
-      width: 79%;
-    }
-    &--right {
-      display: inline-block;
-      vertical-align: top;
-
-      width: 20%;
+    @include media-breakpoint-down(small-tablet) {
+      width: 100%;
+      padding-left: 0;
     }
   }
   &__wrap {
@@ -55,6 +53,9 @@
   }
   &__attributes {
     margin: 40px 0;
+    @include media-breakpoint-only(tablet) {
+      margin: 10px 0;
+    }
   }
   &__price {
     padding: 30px 10px;
@@ -72,6 +73,10 @@
     font-size: 12px;
     color: $main_text_color;
     line-height: 1.5;
+
+    @include media-breakpoint-only(tablet) {
+      margin: 10px 0;
+    }
   }
   &__quantity {
     input {
@@ -80,6 +85,30 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+    }
+
+    @include media-breakpoint-only(tablet) {
+      &.input-number {
+        margin-bottom: 10px;
+      }
+    }
+    @include media-breakpoint-down(small-tablet) {
+      float: left;
+    }
+  }
+  .socials {
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+  }
+  @include media-breakpoint-only(tablet) {
+    .product__button {
+      margin: 0 10px;
+    }
+  }
+  &__add {
+    @include media-breakpoint-down(small-tablet) {
+      float: right;
     }
   }
 }

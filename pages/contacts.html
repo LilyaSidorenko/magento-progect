@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../lib/dist/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgLHgoZClf7MQQie7O5QhFajKFCI3Baz4&signed_in=true"></script>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="g-main-wrapper header__wrap">
+        <div class="menu-button__wrap">
+            <button class="js-menu menu-button" type="button">
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav class="menu" role='navigation'>
+            <ul>
+                <li class="menu__item"><a href="#">Women</a>
+                    <!-- HEADER submenu-->
+                    <div class="submenu">
+                        <div class="submenu__item">
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Swimwear/Underwear</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                            </nav>
+                        </div>
+                        <div class="submenu__item">
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                            </nav>
+
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                            </nav>
+                        </div>
+                        <div class="submenu__item">
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                            </nav>
+
+                            <div class="submenu__banner">
+                                <img src="../images/static/banner.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HEADER submenu END-->
+
+                </li>
+
+                <li class="menu__item"><a href="#">Man</a></li>
+
+                <li class="menu__item"><a href="#">Junior</a></li>
+
+                <li class="menu__item"><a href="#">Deals</a></li>
+
+
+            </ul>
+            <div class="header__profile mobile-only">
+                <div class="settings">
+                    <div class="custom-select">
+                        <select>
+                            <option>UA</option>
+                            <option>US</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+
+                        <select>
+                            <option>UAH</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__cart">Cart</div>
+            </div>
+        </nav>
+        <a href="#" class="header__logo">
+            <img src="../images/logo/logo.png">
+        </a>
+        <div class="header__profile">
+
+            <div class="settings desktop-only">
+                <div class="custom-select">
+                    <select>
+                        <option>UA</option>
+                        <option>US</option>
+                    </select>
+                </div>
+                <div class="custom-select">
+
+                    <select>
+                        <option>UAH</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header__search js-search-button">
+                <div class="search js-search">
+                    <form>
+                        <input class="search__input search__input--l" type="text" placeholder="Product name">
+
+
+                        <div class="search__addition js-search-addition">
+                            <input class="search__input search__input--l" type="text" placeholder="SKU">
+                            <span class="search__text">Price</span>
+                            <input class="search__input search__input--s" type="text" placeholder="From">//
+                            <input class="search__input search__input--s" type="text" placeholder="To">
+                            <button class="btn search__button">Search</button>
+                        </div>
+                    </form>
+                    <span class="search__options">
+                    <a class=" js-search-more more">+ More options</a>
+                    <a class=" js-search-close close">— Close options</a>
+                </span>
+                </div>
+            </div>
+            <div class="header__login desktop-only"><a href="#">Login</a></div>
+            <div class="header__cart">Cart</div>
+        </div>
+    </div>
+
+</header>
+<!-- HEADER END -->
+
+<div class="contacts">
+    <div id="map" class="contacts__map g-margin-bottom"></div>
+    <div class="g-main-wrapper g-margin-bottom">
+        <div class="contacts__form">
+            <h3 class="contacts__title">SEND US A MESSAGE</h3>
+            <form>
+                <div class="contacts__wrap">
+                    <input type="text" placeholder="Your name" class="form-input form-input--name">
+                    <input type="text" placeholder="Your email" class="form-input form-input--name">
+                    <input type="text" placeholder="Your Phone number" class="form-input form-input--name">
+
+                </div>
+                <div class="contacts__wrap">
+
+                    <input type="text" placeholder="Subject" class="form-input">
+                    <textarea rows="6" placeholder="Your review" class="form-input"></textarea>
+
+                    <div class="text-right">
+                        <button class="btn">Add review</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="contacts__info ">
+            <h3 class="contacts__title">You can find us</h3>
+
+            <p>12700, Park Central Drive, Suite 2000, New-York,
+                TX 75251</p>
+
+            <p>+1-866-789-5381</p>
+
+            <p>info@bjorn.com</p>
+
+            <p>Mon - Fri: 9am to 10pm
+                Sat: 9am to 5pm EST
+                (excluding US holidays)</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <img src="../images/logo/logo-big.png" class="footer__logo">
+    <nav class="additional-menu">
+        <a href="#" class="additional-menu__item">Customer Service</a>
+        <a href="#" class="additional-menu__item">Privacy and Cookie Policy</a>
+        <a href="#" class="additional-menu__item">Orders and Returns</a>
+        <a href="#" class="additional-menu__item">About US</a>
+        <a href="#" class="additional-menu__item">Contact</a>
+    </nav>
+
+    <div class="socials">
+        <a href="#" class="socials__item">
+            <img src="../images/twitter.png">
+        </a>
+        <a href="#" class="socials__item ">
+            <img src="../images/gg+.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/pinterest.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/rss.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/fb.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/eath.png">
+        </a>
+
+    </div>
+    <p class="footer__coop">
+        Copyrights © 2016 by <a href="#" class="footer__link">BJORN</a>. All Rights Reserved.
+    </p>
+
+</footer>
+<!-- FOOTER END -->
+
+<!-- JS LINKS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="../js/libs/slick.min.js"></script>
+<script src="../js/custom/jquery-search.js"></script>
+<script src="../js/custom/jquery-menu.js"></script>
+<script src="../js/custom/jquery-maps.js"></script>
+<script src="../js/main.js"></script>
+<!-- JS LINKS END -->
+
+</body>
+
+</html>

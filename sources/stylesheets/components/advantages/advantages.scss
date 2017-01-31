@@ -15,7 +15,15 @@
         &:last-child {
             margin-right: 0;
         }
+        @include media-breakpoint-only(tablet) {
+            width: 49%;
+            margin-right: 0;
+            margin-bottom: 10px;
 
+            &:nth-child(odd) {
+                margin-right: 2%;
+            }
+        }
         @include media-breakpoint-down(small-tablet) {
             width: 100%;
             margin-right: 0;
@@ -40,7 +48,7 @@
         white-space: nowrap;
     }
     &__img {
-        width: 18%;
+        max-width: 18%;
         display: inline-block;
         vertical-align: middle;
         padding-right: 15px;

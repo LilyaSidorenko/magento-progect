@@ -5,18 +5,33 @@
   overflow: hidden;
 
 
-  .thumbs {
-    display: block;
+  @include media-breakpoint-down(tablet) {
+    margin-bottom: 40px;
+  }
+  @include media-breakpoint-only(tablet) {
+    height: 500px;
+  }
+  @include media-breakpoint-down(large-mobile) {
+    height: 400px;
 
-    float: left;
+  }
+  @include media-breakpoint-down(mobile) {
+    height: 250px;
+  }
+  .thumbs {
+    display: inline-block;
+    vertical-align: top;
+    width: 18%;
+    margin-right: 5%;
     li {
       margin: 3px 2px;
     }
 
     .thumb-img {
       display: block;
-      height: 92px;
+      max-height: 92px;
       margin-bottom: 20px;
+      box-sizing: border-box;
 
       &:hover {
         border: 1px solid $grey_absolute;
@@ -26,11 +41,24 @@
   }
 
   .large-image {
-    float: right;
+    display: inline-block;
+    vertical-align: top;
     height: 700px;
-    width: 86%;
+    width: 74%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+
+
+    &:hover {
+      cursor: url('../../images/lupa.png');
+    }
+
+    @include media-breakpoint-down(large-mobile) {
+      height: 400px;
+    }
+    @include media-breakpoint-down(mobile) {
+      height: 300px;
+    }
   }
 }    

@@ -12,7 +12,5 @@
   font-weight: bold;
   cursor: pointer;
 
-  @include media-breakpoint-down(small-tablet) {
-    font-size: 20px;
-  }
+
 }

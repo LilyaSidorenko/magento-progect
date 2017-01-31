@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="../lib/dist/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
 </head>
 <body>
@@ -11,7 +12,11 @@
 <!-- HEADER -->
 <header class="header">
     <div class="g-main-wrapper header__wrap">
-
+        <div class="menu-button__wrap">
+            <button class="js-menu menu-button" type="button">
+                <span class="bar"></span>
+            </button>
+        </div>
         <nav class="menu" role='navigation'>
             <ul>
                 <li class="menu__item"><a href="#">Women</a>
@@ -61,6 +66,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- HEADER submenu END-->
 
                 </li>
@@ -70,14 +76,34 @@
                 <li class="menu__item"><a href="#">Junior</a></li>
 
                 <li class="menu__item"><a href="#">Deals</a></li>
+
+
             </ul>
+            <div class="header__profile mobile-only">
+                <div class="settings">
+                    <div class="custom-select">
+                        <select>
+                            <option>UA</option>
+                            <option>US</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+
+                        <select>
+                            <option>UAH</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__cart">Cart</div>
+            </div>
         </nav>
-        <div class="header__logo">
+        <a href="#" class="header__logo">
             <img src="../images/logo/logo.png">
-        </div>
+        </a>
         <div class="header__profile">
 
-            <div class="settings">
+            <div class="settings desktop-only">
                 <div class="custom-select">
                     <select>
                         <option>UA</option>
@@ -103,18 +129,16 @@
                             <span class="search__text">Price</span>
                             <input class="search__input search__input--s" type="text" placeholder="From">//
                             <input class="search__input search__input--s" type="text" placeholder="To">
-                            <button class="search__button">Search</button>
+                            <button class="btn search__button">Search</button>
                         </div>
                     </form>
                     <span class="search__options">
-                    <span class="js-search-more more">+ More options</span>
-                    <span class="js-search-close close">— Close options</span>
+                    <a class=" js-search-more more">+ More options</a>
+                    <a class=" js-search-close close">— Close options</a>
                 </span>
                 </div>
             </div>
-            <div class="header__login">
-                <a href="#">Login</a>
-            </div>
+            <div class="header__login desktop-only"><a href="#">Login</a></div>
             <div class="header__cart">Cart</div>
         </div>
     </div>
@@ -173,7 +197,6 @@
 
         </div>
         <div class="product-view__content">
-            <div class="product-view__content--left">
                 <div class="product-view__wrap">
                     <h3 class="product-view__title">Anna Christina</h3>
                     <div class="product__rating">
@@ -213,7 +236,7 @@
                         <button class="input-number-increment" data-increment></button>
                         <button class="input-number-decrement" data-decrement></button>
                     </div>
-                    <div class="g-margin-bottom">
+                    <div class="g-margin-bottom product-view__add">
                         <button class="btn">Add to cart</button>
                         <a href="#" class="product__button product__button--fav"></a>
                         <a href="#"
@@ -245,7 +268,6 @@
                 </div>
             </div>
 
-        </div>
     </div>
     <div class="g-margin-bottom">
         <ul class="tabs" data-tabgroup="first-tab-group">
@@ -397,18 +419,15 @@
             </div>
             <div class="product__text-box">
                 <div class="product__header-box">
-                    <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with
-                        hood</a></h4>
-                    <div class="right-side">
-                        <div class="product__rating">
-                            <div class="star-ratings-sprite"><span style="width:52%"
-                                                                   class="star-ratings-sprite-rating"></span></div>
-
-                            <a href="#" class="product__reviews">
-                                (<span class="product__reviews--number">14</span>)
-                                Reviews
-                            </a>
+                    <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with hood</a></h4>
+                    <div class="product__rating right-side">
+                        <div class="product__rating-star star-ratings-sprite">
+                            <span style="width:52%" class="star-ratings-sprite-rating"></span>
                         </div>
+                        <a href="#" class="product__reviews">
+                            (<span class="product__reviews--number">14</span>)
+                            Reviews
+                        </a>
                     </div>
                     <p class="product__price">
                         <span class="product__price--old">$140.50</span>
@@ -423,130 +442,117 @@
                 <div class="product__links-block">
                     <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
                     <div class="right-side">
-                        <a href="#" class="product__button product__button--fav"></a>
-                        <a href="#" class="product__button product__button--compare product__button--disappears"></a>
+                        <a href="#" class="product__button product__button--fav product__button--fav-active"></a>
+                        <a href="#" class="product__button product__button--compare product__button--compare-active product__button--disappears"></a>
                     </div>
                 </div>
             </div>
+        </div><div class="product">
+        <div class="product__image-frame">
+            <img src="../images/static/product-1.jpg" alt="product" class="product__image">
         </div>
-        <div class="product">
-            <div class="product__image-frame">
-                <img src="../images/static/product-1.jpg" alt="product" class="product__image">
-            </div>
-            <div class="product__text-box">
-                <div class="product__header-box">
-                    <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with
-                        hood</a></h4>
-                    <div class="right-side">
-                        <div class="product__rating">
-                            <div class="star-ratings-sprite"><span style="width:52%"
-                                                                   class="star-ratings-sprite-rating"></span></div>
-
-                            <a href="#" class="product__reviews">
-                                (<span class="product__reviews--number">14</span>)
-                                Reviews
-                            </a>
-                        </div>
+        <div class="product__text-box">
+            <div class="product__header-box">
+                <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with hood</a></h4>
+                <div class="product__rating right-side">
+                    <div class="product__rating-star star-ratings-sprite">
+                        <span style="width:52%" class="star-ratings-sprite-rating"></span>
                     </div>
-                    <p class="product__price">
-                        <span class="product__price--old">$140.50</span>
-                        <span class="product__price--actual">$65.50</span>
-                    </p>
+                    <a href="#" class="product__reviews">
+                        (<span class="product__reviews--number">14</span>)
+                        Reviews
+                    </a>
                 </div>
-                <p class="product__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, corrupti dignissimos
-                    soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
-                    voluptates fugit sint sed, dolore dolores consectetur!
+                <p class="product__price">
+                    <span class="product__price--old">$140.50</span>
+                    <span class="product__price--actual">$65.50</span>
                 </p>
-                <div class="product__links-block">
-                    <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
-                    <div class="right-side">
-                        <a href="#" class="product__button product__button--fav"></a>
-                        <a href="#" class="product__button product__button--compare product__button--disappears"></a>
-                    </div>
+            </div>
+            <p class="product__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, corrupti dignissimos
+                soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
+                voluptates fugit sint sed, dolore dolores consectetur!
+            </p>
+            <div class="product__links-block">
+                <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
+                <div class="right-side">
+                    <a href="#" class="product__button product__button--fav product__button--fav-active"></a>
+                    <a href="#" class="product__button product__button--compare product__button--compare-active product__button--disappears"></a>
                 </div>
             </div>
         </div>
-        <div class="product">
-            <div class="product__image-frame">
-                <img src="../images/static/product-1.jpg" alt="product" class="product__image">
-            </div>
-            <div class="product__text-box">
-                <div class="product__header-box">
-                    <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with
-                        hood</a></h4>
-                    <div class="right-side">
-                        <div class="product__rating">
-                            <div class="star-ratings-sprite"><span style="width:52%"
-                                                                   class="star-ratings-sprite-rating"></span></div>
-
-                            <a href="#" class="product__reviews">
-                                (<span class="product__reviews--number">14</span>)
-                                Reviews
-                            </a>
-                        </div>
+    </div><div class="product">
+        <div class="product__image-frame">
+            <img src="../images/static/product-1.jpg" alt="product" class="product__image">
+        </div>
+        <div class="product__text-box">
+            <div class="product__header-box">
+                <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with hood</a></h4>
+                <div class="product__rating right-side">
+                    <div class="product__rating-star star-ratings-sprite">
+                        <span style="width:52%" class="star-ratings-sprite-rating"></span>
                     </div>
-                    <p class="product__price">
-                        <span class="product__price--old">$140.50</span>
-                        <span class="product__price--actual">$65.50</span>
-                    </p>
+                    <a href="#" class="product__reviews">
+                        (<span class="product__reviews--number">14</span>)
+                        Reviews
+                    </a>
                 </div>
-                <p class="product__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, corrupti dignissimos
-                    soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
-                    voluptates fugit sint sed, dolore dolores consectetur!
+                <p class="product__price">
+                    <span class="product__price--old">$140.50</span>
+                    <span class="product__price--actual">$65.50</span>
                 </p>
-                <div class="product__links-block">
-                    <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
-                    <div class="right-side">
-                        <a href="#" class="product__button product__button--fav"></a>
-                        <a href="#" class="product__button product__button--compare product__button--disappears"></a>
-                    </div>
+            </div>
+            <p class="product__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, corrupti dignissimos
+                soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
+                voluptates fugit sint sed, dolore dolores consectetur!
+            </p>
+            <div class="product__links-block">
+                <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
+                <div class="right-side">
+                    <a href="#" class="product__button product__button--fav product__button--fav-active"></a>
+                    <a href="#" class="product__button product__button--compare product__button--compare-active product__button--disappears"></a>
                 </div>
             </div>
         </div>
-        <div class="product">
-            <div class="product__image-frame">
-                <img src="../images/static/product-1.jpg" alt="product" class="product__image">
-            </div>
-            <div class="product__text-box">
-                <div class="product__header-box">
-                    <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with
-                        hood</a></h4>
-                    <div class="right-side">
-                        <div class="product__rating">
-                            <div class="star-ratings-sprite"><span style="width:52%"
-                                                                   class="star-ratings-sprite-rating"></span></div>
-
-                            <a href="#" class="product__reviews">
-                                (<span class="product__reviews--number">14</span>)
-                                Reviews
-                            </a>
-                        </div>
+    </div><div class="product">
+        <div class="product__image-frame">
+            <img src="../images/static/product-1.jpg" alt="product" class="product__image">
+        </div>
+        <div class="product__text-box">
+            <div class="product__header-box">
+                <h4 class="product__header"><a href="#" class="product__header-link">Amazing trousers with hood</a></h4>
+                <div class="product__rating right-side">
+                    <div class="product__rating-star star-ratings-sprite">
+                        <span style="width:52%" class="star-ratings-sprite-rating"></span>
                     </div>
-                    <p class="product__price">
-                        <span class="product__price--old">$140.50</span>
-                        <span class="product__price--actual">$65.50</span>
-                    </p>
+                    <a href="#" class="product__reviews">
+                        (<span class="product__reviews--number">14</span>)
+                        Reviews
+                    </a>
                 </div>
-                <p class="product__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, corrupti dignissimos
-                    soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
-                    voluptates fugit sint sed, dolore dolores consectetur!
+                <p class="product__price">
+                    <span class="product__price--old">$140.50</span>
+                    <span class="product__price--actual">$65.50</span>
                 </p>
-                <div class="product__links-block">
-                    <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
-                    <div class="right-side">
-                        <a href="#" class="product__button product__button--fav"></a>
-                        <a href="#" class="product__button product__button--compare product__button--disappears"></a>
-                    </div>
+            </div>
+            <p class="product__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio modi, corrupti dignissimos
+                soluta dolorem consequatur corporis perspiciatis vitae odit est, placeat, numquam nulla
+                voluptates fugit sint sed, dolore dolores consectetur!
+            </p>
+            <div class="product__links-block">
+                <a href="#" class="product__shop-link link-with-arrow">SHOP NOW</a>
+                <div class="right-side">
+                    <a href="#" class="product__button product__button--fav product__button--fav-active"></a>
+                    <a href="#" class="product__button product__button--compare product__button--compare-active product__button--disappears"></a>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 </div>
 <!-- FOOTER -->
-
 <footer class="footer">
     <img src="../images/logo/logo-big.png" class="footer__logo">
     <nav class="additional-menu">
@@ -561,7 +567,7 @@
         <a href="#" class="socials__item">
             <img src="../images/twitter.png">
         </a>
-        <a href="#" class="socials__item">
+        <a href="#" class="socials__item ">
             <img src="../images/gg+.png">
         </a>
         <a href="#" class="socials__item">
@@ -583,6 +589,7 @@
     </p>
 
 </footer>
+
 <!-- FOOTER END -->
 
 <!-- JS LINKS -->
