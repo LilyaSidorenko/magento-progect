@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="../lib/dist/style.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="g-main-wrapper header__wrap">
+        <div class="menu-button__wrap">
+            <button class="js-menu menu-button" type="button">
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav class="menu" role='navigation'>
+            <ul>
+                <li class="menu__item"><a href="#">Women</a>
+                    <!-- HEADER submenu-->
+                    <div class="submenu">
+                        <div class="submenu__item">
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Swimwear/Underwear</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                            </nav>
+                        </div>
+                        <div class="submenu__item">
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                            </nav>
+
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                            </nav>
+                        </div>
+                        <div class="submenu__item">
+                            <h4 class="submenu__title">Women</h4>
+                            <nav class="submenu__list">
+                                <a href="#" class="submenu__link">Dresses</a>
+                                <a href="#" class="submenu__link">Sweaters/Knits</a>
+                                <a href="#" class="submenu__link">Leggings/Pants</a>
+                                <a href="#" class="submenu__link">Dresses</a>
+                            </nav>
+
+                            <div class="submenu__banner">
+                                <img src="../images/static/banner.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HEADER submenu END-->
+
+                </li>
+
+                <li class="menu__item"><a href="#">Man</a></li>
+
+                <li class="menu__item"><a href="#">Junior</a></li>
+
+                <li class="menu__item"><a href="#">Deals</a></li>
+
+
+            </ul>
+            <div class="header__profile mobile-only">
+                <div class="settings">
+                    <div class="custom-select">
+                        <select>
+                            <option>UA</option>
+                            <option>US</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+
+                        <select>
+                            <option>UAH</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__cart">Cart</div>
+            </div>
+        </nav>
+        <a href="#" class="header__logo">
+            <img src="../images/logo/logo.png">
+        </a>
+        <div class="header__profile">
+
+            <div class="settings desktop-only">
+                <div class="custom-select">
+                    <select>
+                        <option>UA</option>
+                        <option>US</option>
+                    </select>
+                </div>
+                <div class="custom-select">
+
+                    <select>
+                        <option>UAH</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header__search js-search-button">
+                <div class="search js-search">
+                    <form>
+                        <input class="search__input search__input--l" type="text" placeholder="Product name">
+
+
+                        <div class="search__addition js-search-addition">
+                            <input class="search__input search__input--l" type="text" placeholder="SKU">
+                            <span class="search__text">Price</span>
+                            <input class="search__input search__input--s" type="text" placeholder="From">//
+                            <input class="search__input search__input--s" type="text" placeholder="To">
+                            <button class="btn search__button">Search</button>
+                        </div>
+                    </form>
+                    <span class="search__options">
+                    <a class=" js-search-more more">+ More options</a>
+                    <a class=" js-search-close close">— Close options</a>
+                </span>
+                </div>
+            </div>
+            <div class="header__login desktop-only"><a href="#">Login</a></div>
+            <div class="header__cart">Cart</div>
+        </div>
+    </div>
+
+</header>
+<!-- HEADER END -->
+<!-- BREADCRUMBS START -->
+<div class="breadcrumbs">
+	<div class="breadcrumbs__container">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="#" class="breadcrumbs__link">Home</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<span class="breadcrumbs__current-page">My Dashboard</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- BREADCRUMBS END -->
+<!-- DASHBOARD PAGE START -->
+<div class="dashboard-page">
+<!-- SIDEBAR START -->
+	<aside class="sidebar sidebar-slider">
+<!-- SIDEBAR MENU START -->
+		<ul class="sidebar__list">
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">Account Dashboard</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">Account Information</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">Adress Book</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">My Downloadable Products</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">My Orders</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">My Credit Cards</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">Newsletter Subscriptions</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">Billing Agreements</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link">My Product Reviews</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__main-link sidebar__main-link--current">My Wish List</a>
+			</li>
+		</ul>
+<!-- SIDEBAR MENU END -->
+<!-- SIDEBAR BLOCK START -->
+		<div class="sidebar__sidebar-block sidebar-block compare-block">
+			<h4 class="sidebar-block__header compare-block__header">
+				Compare Products
+				<sup class="sidebar-block__header--sup compare-block__header--sup"><span class="sidebar-block__header--number compare-block__header--number">3</span> items</sup>
+			</h4>
+			<ul class="sidebar-block__list compare-block__list">
+				<li class="sidebar-block__item compare-block__item">
+					<div class="sidebar-block__image-frame compare-block__image-frame">
+						<a href="#" class="sidebar-block__name--link compare-block__name--link"><img src="../images/static/product-1.jpg" alt="product" class="sidebar-block__image compare-block__image"></a>
+					</div>
+					<p class="sidebar-block__name compare-block__name"><a href="#" class="sidebar-block__name--link compare-block__name--link">Orion Two-Tone Fitted Jacket</a></p>
+					<button class="sidebar-block__button compare-block__button delete-button"></button>
+				</li>
+				<li class="sidebar-block__item compare-block__item">
+					<div class="sidebar-block__image-frame compare-block__image-frame">
+						<a href="#" class="sidebar-block__name--link compare-block__name--link"><img src="../images/static/product-2.jpg" alt="product" class="sidebar-block__image compare-block__image"></a>
+					</div>
+					<p class="sidebar-block__name compare-block__name"><a href="#" class="sidebar-block__name--link compare-block__name--link">Grey Fitted Jacket</a></p>
+					<button class="sidebar-block__button compare-block__button delete-button"></button>
+				</li>
+				<li class="sidebar-block__item compare-block__item">
+					<div class="sidebar-block__image-frame compare-block__image-frame">
+						<a href="#" class="sidebar-block__name--link compare-block__name--link"><img src="../images/static/product-3.jpg" alt="product" class="sidebar-block__image compare-block__image"></a>
+					</div>
+					<p class="sidebar-block__name compare-block__name"><a href="#" class="sidebar-block__name--link compare-block__name--link">Orion Two-Tone Fitted Jacket</a></p>
+					<button class="sidebar-block__button compare-block__button delete-button"></button>
+				</li>
+			</ul>
+			<div class="sidebar-block__buttons-block compare-block__buttons-block">
+				<a href="#" class="sidebar-block__link compare-block__link link-with-arrow">COMPARE</a>
+				<button class="sidebar-block__clear-compare-list compare-block__clear-compare-list delete-button"></button>
+			</div>
+		</div>
+<!-- SIDEBAR BLOCK END -->
+<!-- SIDEBAR BLOCK START -->
+		<div class="sidebar__sidebar-block sidebar-block recent-orders-block">
+			<h4 class="sidebar-block__header recent-orders-block__header">
+				Recent orders
+				<sup class="sidebar-block__header--sup recent-orders-block__header--sup"><span class="sidebar-block__header--number recent-orders-block__header--number">2</span> items</sup>
+			</h4>
+			<ul class="sidebar-block__list recent-orders-block__list">
+				<li class="sidebar-block__item recent-orders-block__item">
+					<input type="checkbox" id="last-order-check-1" class="sidebar-block__checkbox recent-orders-block__checkbox" name="last-order" value="product4">
+					<label for="last-order-check-1" class="sidebar-block__label recent-orders-block__label"></label>
+					<div class="sidebar-block__image-frame recent-orders-block__image-frame recent-orders-block__image-frame">
+						<a href="#" class="sidebar-block__name--link recent-orders-block__name--link"><img src="../images/static/product-4.jpg" alt="product" class="sidebar-block__image recent-orders-block__image"></a>
+					</div>
+					<p class="sidebar-block__name recent-orders-block__name"><a href="#" class="sidebar-block__name--link recent-orders-block__name--link">Orion Two-Tone Fitted Jacket</a></p>
+				</li>
+				<li class="sidebar-block__item recent-orders-block__item">
+					<input type="checkbox" id="last-order-check-2" class="sidebar-block__checkbox recent-orders-block__checkbox" name="last-order" value="product4">
+					<label for="last-order-check-2" class="sidebar-block__label recent-orders-block__label"></label>
+					<div class="sidebar-block__image-frame recent-orders-block__image-frame recent-orders-block__image-frame">
+						<a href="#" class="sidebar-block__name--link recent-orders-block__name--link"><img src="../images/static/product-5.jpg" alt="product" class="sidebar-block__image recent-orders-block__image"></a>
+					</div>
+					<p class="sidebar-block__name recent-orders-block__name"><a href="#" class="sidebar-block__name--link recent-orders-block__name--link">Grey Fitted Jacket</a></p>
+				</li>
+			</ul>
+			<div class="sidebar-block__buttons-block">
+				<a href="#" class="sidebar-block__link link-with-arrow">ADD TO CART</a>
+			</div>
+		</div>
+<!-- SIDEBAR BLOCK END -->
+	</aside>
+<!-- SIDEBAR END -->
+<!-- MAIN CONTENT START -->
+	<main class="main">
+<!-- RECENT ORDERS START -->
+		<section class="dashboard-page__section recent-orders">
+			<h2 class="dashboard-page__header">RECENT ORDERS
+				<a href="#" class="dashboard-page__header-link link-with-arrow">VIEW ALL</a>
+			</h2>
+			<table class="recent-orders__table">
+				<thead class="recent-orders__thead">
+					<tr>
+						<th>Order #</th>
+						<th>Date</th>
+						<th>Ship To</th>
+						<th>Order Total</th>
+						<th>Status</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody class="recent-orders__tbody">
+					<tr>
+						<td>000000785</td>
+						<td>23.12.16</td>
+						<td>Anna Stepler</td>
+						<td>$225.60</td>
+						<td>Pending</td>
+						<td><a href="#">View order</a><span class="double-slasher">//</span><a href="#">Reorder</a></td>
+					</tr>
+					<tr>
+						<td>000000785</td>
+						<td>23.12.16</td>
+						<td>Anna Stepler</td>
+						<td>$225.60</td>
+						<td>Pending</td>
+						<td><a href="#">View order</a><span class="double-slasher">//</span><a href="#">Reorder</a></td>
+					</tr>
+					<tr>
+						<td>000000785</td>
+						<td>23.12.16</td>
+						<td>Anna Stepler</td>
+						<td>$225.60</td>
+						<td>Pending</td>
+						<td><a href="#">View order</a><span class="double-slasher">//</span><a href="#">Reorder</a></td>
+					</tr>
+					<tr>
+						<td>000000785</td>
+						<td>23.12.16</td>
+						<td>Anna Stepler</td>
+						<td>$225.60</td>
+						<td>Pending</td>
+						<td><a href="#">View order</a><span class="double-slasher">//</span><a href="#">Reorder</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+<!-- RECENT ORDERS END -->
+		<section class="dashboard-page__section dashboard-page__section--small contact-info">
+			<h2 class="dashboard-page__header">CONTACT INFORMATION</h2>
+			<p class="contact-info__name">Anna Stepler</p>
+			<p class="contact-info__email">anna.stepler@gmail.com</p>
+			<div class="contact-info__links">
+				<a href="#">Edit</a><span class="double-slasher">//</span><a href="#">Change Password</a>
+			</div>
+		</section>
+		<section class="dashboard-page__section dashboard-page__section--small newsletters">
+			<h2 class="dashboard-page__header">NEWSLETTERS</h2>
+			<p>You don't subscribe to our newsletter</p>
+			<div class="newsletters__links">
+				<a href="#">Edit</a>
+			</div>
+		</section>
+		<section class="dashboard-page__section dashboard-page__section--small default-billing">
+			<h2 class="dashboard-page__header">DEFAULT BILLING ADDRESS</h2>
+			<p class="default-billing__address">Anna Stepler
+			Brooklyn, 5th Street
+			New York 11215
+			United States
+			+291-75-8612899</p>
+			<div class="default-billing__links">
+				<a href="#">Edit address</a>
+			</div>
+		</section>
+		<section class="dashboard-page__section dashboard-page__section--small default-shipping">
+			<h2 class="dashboard-page__header">DEFAULT SHIPPING ADDRESS</h2>
+			<p class="default-shipping__address">Anna Stepler
+			Brooklyn, 5th Street
+			New York 11215
+			United States
+			+291-75-8612899</p>
+			<div class="default-shipping__links">
+				<a href="#">Edit address</a>
+			</div>
+		</section>
+<!-- RECENT REVIEWS START -->
+		<section class="dashboard-page__section recent-reviews">
+			<h2 class="dashboard-page__header">MY RECENT REVIEWS
+				<a href="#" class="dashboard-page__header-link link-with-arrow">VIEW ALL</a>
+			</h2>
+<!-- REVIEW START -->
+			<div class="recent-reviews__review">
+				<div class="recent-reviews__image-frame">
+					<img src="../images/static/product-1.jpg" alt="product" class="recent-reviews__image">
+				</div>
+				<div class="recent-reviews__text-box">
+					<h4 class="recent-reviews__product-header"><a href="#" class="recent-reviews__product-link">Amazing trousers with hood</a></h4>
+					<div class="recent-reviews__date">28 Oct 2016</div>
+					<div class="recent-reviews__stars">
+						<div class="product__rating-star star-ratings-sprite">
+							<span style="width:80%" class="star-ratings-sprite-rating"></span>
+						</div>
+					</div>
+					<h6 class="recent-reviews__header">GORGEOUS!</h6>
+					<p class="recent-reviews__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aspernatur necessitatibus animi ut temporibus molestiae, at deleniti doloremque, fugit sapiente debitis incidunt corrupti neque! Facere commodi nesciunt repellendus eius mollitia!
+					</p>
+				</div>
+			</div>
+<!-- REVIEW END -->
+<!-- REVIEW START -->
+			<div class="recent-reviews__review">
+				<div class="recent-reviews__image-frame">
+					<img src="../images/static/product-2.jpg" alt="product" class="recent-reviews__image">
+				</div>
+				<div class="recent-reviews__text-box">
+					<h4 class="recent-reviews__product-header"><a href="#" class="recent-reviews__product-link">Grey Jacket</a></h4>
+					<div class="recent-reviews__date">28 Oct 2016</div>
+					<div class="recent-reviews__stars">
+						<div class="product__rating-star star-ratings-sprite">
+							<span style="width:80%" class="star-ratings-sprite-rating"></span>
+						</div>
+					</div>
+					<h6 class="recent-reviews__header">GORGEOUS!</h6>
+					<p class="recent-reviews__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis cum laboriosam quasi ex, quod, saepe nihil magni, repudiandae reprehenderit deserunt quis, in animi natus ab unde atque sit. Commodi.
+					</p>
+				</div>
+			</div>
+<!-- REVIEW END -->
+<!-- REVIEW START -->
+			<div class="recent-reviews__review">
+				<div class="recent-reviews__image-frame">
+					<img src="../images/static/product-5.jpg" alt="product" class="recent-reviews__image">
+				</div>
+				<div class="recent-reviews__text-box">
+					<h4 class="recent-reviews__product-header"><a href="#" class="recent-reviews__product-link">Mango People T-shirt</a></h4>
+					<div class="recent-reviews__date">28 Oct 2016</div>
+					<div class="recent-reviews__stars">
+						<div class="product__rating-star star-ratings-sprite">
+							<span style="width:80%" class="star-ratings-sprite-rating"></span>
+						</div>
+					</div>
+					<h6 class="recent-reviews__header">GORGEOUS!</h6>
+					<p class="recent-reviews__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quia tempore quo. Obcaecati, eum distinctio! Beatae magni, nisi id consequatur dolor. Ab fuga debitis, obcaecati minus voluptatum maxime aliquam soluta.
+					</p>
+				</div>
+			</div>
+<!-- REVIEW END -->
+		</section>
+<!-- RECENT REVIEWS END -->
+	</main>
+<!-- MAIN CONTENT END -->
+</div>
+<!-- DASHBOARD PAGE END -->
+<!-- FOOTER -->
+
+<footer class="footer">
+    <img src="../images/logo/logo-big.png" class="footer__logo">
+    <nav class="additional-menu">
+        <a href="#" class="additional-menu__item">Customer Service</a>
+        <a href="#" class="additional-menu__item">Privacy and Cookie Policy</a>
+        <a href="#" class="additional-menu__item">Orders and Returns</a>
+        <a href="#" class="additional-menu__item">About US</a>
+        <a href="#" class="additional-menu__item">Contact</a>
+    </nav>
+
+    <div class="socials">
+        <a href="#" class="socials__item">
+            <img src="../images/twitter.png">
+        </a>
+        <a href="#" class="socials__item ">
+            <img src="../images/gg+.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/pinterest.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/rss.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/fb.png">
+        </a>
+        <a href="#" class="socials__item">
+            <img src="../images/eath.png">
+        </a>
+
+    </div>
+    <p class="footer__coop">
+        Copyrights © 2016 by <a href="#" class="footer__link">BJORN</a>. All Rights Reserved.
+    </p>
+
+</footer>
+<!-- FOOTER END -->
+<!-- JS LINKS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../js/libs/jquery.touchSwipe.min.js"></script>
+	<script src="../js/libs/slick.min.js"></script>
+	<script src="../js/custom/jquery-search.js"></script>
+	<script src="../js/custom/jquery-menu.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/wishlist-page.js"></script>
+<!-- JS LINKS END -->
+</body>
+</html>
