@@ -60,7 +60,7 @@ jQuery(function($) {
 
 
   function hideList(event) {
-    console.log('faic');
+
     var $target = $(event.target);
     var $box = $target.closest('.fake-select');
     var $list = $box.find('.fake-select__list');
