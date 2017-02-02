@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mini-cart</title>
+	<link rel="stylesheet" href="../lib/dist/style.min.css">
+</head>
+<body>
+	<div class="mini-cart">
+		<div class="mini-cart__wrapper">
+			<span class="mini-cart__amount">19 items</span>
+			<button class="mini-cart__close delete-button"></button>
+			<div class="mini-cart__table">
+<!-- CART ITEM START -->
+				<div class="mini-cart__item">
+					<div class="mini-cart__image-frame">
+						<img src="../images/static/product-1.jpg" alt="product" class="mini-cart__image">
+					</div>
+					<div class="mini-cart__item-descr">
+						<h6 class="mini-cart__product-name"><a href="#" class="mini-cart__product-link">Zane Jacket</a></h6>
+						<div class="product__rating-star star-ratings-sprite">
+							<span style="width:80%" class="star-ratings-sprite-rating"></span>
+						</div>
+						<form class="mini-cart__product-quantity">
+							<label>Qty:</label>
+							<div class="mini-cart__quantity-handlers purchase__product-quantity-handlers">
+								<button class="mini-cart__quantity-handler purchase__product-quantity-handler purchase__product-quantity-handler--increase"></button>
+								<button class="mini-cart__quantity-handler purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></button>
+							</div>
+							<input type="number" class="mini-cart__input purchase__product-quantity"  min="0">
+						</form>
+					</div>
+					<div class="mini-cart__item-handlers">
+						<span class="mini-cart__product-price">$250</span>					
+						<button class="mini-cart__little-button mini-cart__edit-button"></button>
+						<button class="mini-cart__little-button mini-cart__delete-button"></button>
+					</div>
+				</div>
+<!-- CART ITEM END -->
+<!-- CART ITEM START -->
+				<div class="mini-cart__item">
+					<div class="mini-cart__image-frame">
+						<img src="../images/static/product-4.jpg" alt="product" class="mini-cart__image">
+					</div>
+					<div class="mini-cart__item-descr">
+						<h6 class="mini-cart__product-name"><a href="#" class="mini-cart__product-link">Zane Jacket</a></h6>
+						<div class="product__rating-star star-ratings-sprite">
+							<span style="width:80%" class="star-ratings-sprite-rating"></span>
+						</div>
+						<form class="mini-cart__product-quantity">
+							<label>Qty:</label>
+							<div class="mini-cart__quantity-handlers purchase__product-quantity-handlers">
+								<button class="mini-cart__quantity-handler purchase__product-quantity-handler purchase__product-quantity-handler--increase"></button>
+								<button class="mini-cart__quantity-handler purchase__product-quantity-handler purchase__product-quantity-handler--decrease"></button>
+							</div>
+							<input type="number" class="mini-cart__input purchase__product-quantity"  min="0">
+						</form>
+					</div>
+					<div class="mini-cart__item-handlers">
+						<span class="mini-cart__product-price">$250</span>					
+						<button class="mini-cart__little-button mini-cart__edit-button"></button>
+						<button class="mini-cart__little-button mini-cart__delete-button"></button>
+					</div>
+				</div>
+<!-- CART ITEM END -->
+			</div>
+			<p class="mini-cart__total-price">
+				<span class="mini-cart__total-price--label">TOTAL</span>
+				<span class="mini-cart__total-price--amount">$500.00</span>
+			</p>
+		</div>
+		<a href="#" class="popup-tabs__button">CHECKOUT</a>
+		<a href="#" class="mini-cart__link link-with-arrow">GO TO CART</a>
+	</div>
+<!-- JS LINKS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/libs/slick.min.js"></script>
+    <script src="../js/custom/jquery-search.js"></script>
+    <script src="../js/custom/jquery-menu.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/product-quantity-handler.js"></script>
+<!-- JS LINKS END -->
+</body>
+</html>
