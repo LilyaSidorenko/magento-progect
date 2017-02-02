@@ -140,27 +140,27 @@
 	}
 }
 
-.payment__card-number-label--visa {
+.card--visa {
 	@include sprite($i_visa);
 }
 
-.payment__card-number-label--master-card {
+.card--master-card {
 	@include sprite($i_master-card);
 }
 
-.payment__card-number-label--maestro {
+.card--maestro {
 	@include sprite($i_maestro);
 }
 
-.payment__card-number-label--pay-pal {
+.card--pay-pal {
 	@include sprite($i_pay-pal);
 }
 
-.payment__card-number-label--discover {
+.card--discover {
 	@include sprite($i_discover);
 }
 
-.payment__card-number-label--jcb {
+.card--jcb {
 	@include sprite($i_jcb);
 }
 

@@ -42,6 +42,31 @@
 	line-height: 59px;
 }
 
+.popup__input::-webkit-input-placeholder {
+	color: $black_absolute;
+	font-family: Avanti, sans-serif;
+	font-size: $font-size;
+	font-weight: normal;
+	letter-spacing: normal;
+	opacity: 1;
+}
+
+.popup__input::-moz-placeholder {
+	color: $black_absolute;
+	font-family: Avanti, sans-serif;
+	font-size: $font-size;
+	letter-spacing: normal;
+	opacity: 1;
+}
+
+.popup__input:-ms-input-placeholder {
+	color: $black_absolute;
+	font-family: Avanti, sans-serif;
+	font-size: $font-size;
+	letter-spacing: normal;
+	opacity: 1;
+}
+
 .popup__input--small {
 	width: 65px;
 	text-align: center;
@@ -116,106 +141,4 @@
 	top: 20px;
 	right: 10px;
 	@include sprite($i_arrows);
-}
-
-.popup-tabs__tab-labels {
-	width: 100%;
-	@include clearfix;
-}
-
-.popup-tabs__tab-label {
-	float: left;
-	width: 33.33%;
-	height: 60px;
-	border-right: 1px solid $white_absolute;
-	background-color: $white-grey;
-	text-align: center;
-}
-
-.popup-tabs__tab-label--active {
-	background-color: $white_absolute;
-}
-
-.popup-tabs__tab-label-link {
-	display: inline-block;
-	width: 100%;
-	line-height: 60px;
-}
-
-.popup-tabs__socials-block {
-	margin-top: 50px;
-	text-align: center;
-	@include clearfix;
-}
-
-.popup-tabs__social {
-	float: left;
-	width: 33.33%;
-	height: 21px;
-	font-size: $font-size-xs;
-	line-height: 21px;
-	text-transform: none;
-}
-
-.popup-tabs__social--google {
-	padding-left: 30px;
-	background-image: url('../../images/google-plus.png');
-	background-repeat: no-repeat;
-	color: #ee5567;
-}
-
-.popup-tabs__social--facebook {
-	padding-left: 15px;
-	background-image: url('../../images/facebook.png');
-	background-repeat: no-repeat;
-	color: #5d9cec;
-}
-
-.popup-tabs__social--tweeter {
-	padding-left: 30px;
-	background-image: url('../../images/tweeter.png');
-	background-repeat: no-repeat;
-	color: #4fc0e8;
-}
-
-.popup-tabs__line {
-	position: relative;
-	margin-top: 28px;
-	color: $grey_regular;
-	text-align: center;
-}
-
-.popup-tabs__line:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 160px;
-	border-bottom: 1px solid $white-grey;
-}
-
-.popup-tabs__line:after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 0;
-	width: 160px;
-	border-bottom: 1px solid $white-grey;
-}
-
-.popup-tabs__link {
-	float: right;
-	margin-top: 20px;
-	text-transform: none;
-}
-
-.popup-tabs__text {
-	margin-top: 30px;
-	font-size: $font-size-xs;
-	line-height: 2;
-	text-align: center;
-}
-
-.reg-wizard__form {
-	margin-top: 50px;
 }
