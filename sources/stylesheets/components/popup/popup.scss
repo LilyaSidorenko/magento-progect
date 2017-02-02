@@ -1,9 +1,12 @@
+.popup-background {
+	background-color: green;
+}
+
 .popup {
 	box-sizing: border-box;
 	position: relative;
 	padding: 31px 31px 0 0;
 	width: 543px;
-	border: 1px solid black;
 }
 
 .popup {
@@ -20,6 +23,7 @@
 
 .popup__wrapper {
 	padding: 50px 81px;
+	background-color: $white_absolute;
 }
 
 .popup__header {

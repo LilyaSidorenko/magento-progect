@@ -1,0 +1,78 @@
+.sys-message {
+	margin: 50px 0;
+	padding: 30px;
+	width: 100%;
+}
+
+.sys-message--success {
+	background-color: #4fd792;
+}
+
+.sys-message--warning {
+	background-color: #df732b;
+}
+
+.sys-message--info {
+	background-color: #43a7e1;
+}
+
+.sys-message--danger {
+	background-color: #d93d48;
+}
+
+.sys-message__box {
+	position: relative;
+	margin: auto;
+	max-width: 1037px;
+	@include clearfix;
+}
+
+.sys-message__icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-image: url('');
+	background-repeat: no-repeat;
+}
+
+.sys-message__icon--success {
+	background-image: url('../../images/sys-message-success.png');
+}
+
+.sys-message__icon--warning {
+	background-image: url('../../images/sys-message-warning.png');
+}
+
+.sys-message__icon--info {
+	background-image: url('../../images/sys-message-info.png');
+}
+
+.sys-message__icon--danger {
+	background-image: url('../../images/sys-message-danger.png');
+}
+
+.sys-message__text {
+	float: left;
+	margin-left: 30px;
+	font-size: 16px;
+	color: #fefefe;
+	line-height: 40px;
+}
+
+.sys-message__close-button {
+	top: 50%;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	transform: translateY(-50%);
+}
+
+.sys-message__close-button:before {
+	height: 23px;
+	background-color: $white_absolute;
+}
+
+.sys-message__close-button:after {
+	height: 23px;
+	background-color: $white_absolute;
+}
