@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reg Wizard</title>
+	<link rel="stylesheet" href="../lib/dist/style.min.css">
+</head>
+<body>
+	<div class="popup reg-wizard">
+		<div class="popup__wrapper">
+			<h2 class="popup__header">COMPLETE YOUR PROFILE</h2>
+			<form class="popup__form reg-wizard__form">
+				<input type="text" class="popup__input" placeholder="First name">
+				<input type="text" class="popup__input" placeholder="Second name">
+				<fieldset class="reg-wizard__fieldset">
+					<label class="popup__input-label">Date of birth</label>
+					<div class="popup__input-wrapper">
+						<input type="text" class="popup__input popup__input--x-small" placeholder="DD">
+						<span class="double-slash">//</span>
+						<input type="text" class="popup__input popup__input--x-small" placeholder="MM">
+						<span class="double-slash">//</span>
+						<input type="text" class="popup__input popup__input--x-small" placeholder="YY">
+					</div>
+				</fieldset>
+				<input type="tel" class="popup__input" placeholder="Phone number">
+				<div class="popup__select-wrapper">
+					<select class="popup__select">
+						<option value="Country" disabled selected>Country</option>
+						<option value="USA">USA</option>
+						<option value="Britain">Britain</option>
+						<option value="Germany">Germany</option>
+						<option value="Poland">Poland</option>
+					</select>
+				</div>
+				<div class="popup__select-wrapper">
+					<select class="popup__select">
+						<option value="State/Province" disabled selected>State/Province</option>
+						<option value="Montana">Montana</option>
+						<option value="Alaska">Alaska</option>
+						<option value="Verginia">Verginia</option>
+						<option value="Texas">Texas</option>
+					</select>
+				</div>
+				<input type="text" class="popup__input" placeholder="City">
+				<input type="text" class="popup__input" placeholder="Street address">
+				<input type="text" class="popup__input" placeholder="Zip/Postal code">
+				<button type="submit" class="popup__button">NEXT STEP</button>
+				<input type="checkbox" id="next-reg-step" class="popup__checkbox custom-checkbox-checkbox">
+				<label for="next-reg-step" class="popup__label custom-checkbox-label">Send me daily newsletters</label>
+			</form>
+			<button class="popup__close delete-button"></button>
+		</div>
+	</div>
+<!-- JS LINKS -->
+<!-- JS LINKS END -->
+</body>
+</html>

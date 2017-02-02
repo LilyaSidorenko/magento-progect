@@ -1,9 +1,9 @@
 .popup {
 	box-sizing: border-box;
-	position: fixed;
+	position: relative;
 	padding: 31px 31px 0 0;
-	border: 1px solid black;
 	width: 543px;
+	border: 1px solid black;
 }
 
 .popup {
@@ -16,6 +16,106 @@
 .popup__close {
 	top: 0;
 	right: 0;
+}
+
+.popup__wrapper {
+	padding: 50px 81px;
+}
+
+.popup__header {
+	font-size: 20px;
+}
+
+.popup__form {
+	@include clearfix;
+}
+
+.popup__fieldset {
+	color: $black_absolute;
+	@include clearfix;
+}
+
+.popup__input {
+	padding-left: 9px;
+	width: 100%;
+	height: 59px;
+	line-height: 59px;
+}
+
+.popup__input--small {
+	width: 65px;
+	text-align: center;
+}
+
+.popup__input--x-small {
+	width: 50px;
+	text-align: center;
+}
+
+.popup__button {
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+	height: 60px;
+	border: none;
+	background-color: $black_absolute;
+	color: $white_absolute;
+	font-family: Avanti, sans-serif;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.popup__label {
+	float: left;
+	margin-top: 20px;
+	height: 16px;
+	color: $black_absolute;
+}
+
+.popup__label:before {
+	float: left;
+	margin-right: 10px;
+}
+
+.popup__input-label {
+	padding-left: 9px;
+	color: $black_absolute;
+	line-height: 60px;
+}
+
+.popup__input-wrapper {
+	float: right;
+}
+
+.popup__select-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.popup__select {
+	padding-left: 10px;
+	width: 100%;
+	height: 58px;
+	border: none;
+	border-bottom: 1px solid $black_absolute;
+	border-radius: 0;
+	background-color: $white_absolute;
+	color: $black_absolute;
+	font-family: Avanti, sans-serif;
+	font-size: $font-size;
+	line-height: 57px;
+	outline: none;
+	appearance: none;
+}
+
+.popup__select-wrapper:after {
+	content: "";
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	@include sprite($i_arrows);
 }
 
 .popup-tabs__tab-labels {
@@ -40,14 +140,6 @@
 	display: inline-block;
 	width: 100%;
 	line-height: 60px;
-}
-
-.popup-tabs__sheet {
-	padding: 50px 81px;
-}
-
-.popup-tabs__header {
-	font-size: 20px;
 }
 
 .popup-tabs__socials-block {
@@ -111,44 +203,6 @@
 	border-bottom: 1px solid $white-grey;
 }
 
-.popup-tabs__form {
-	@include clearfix;
-}
-
-.popup-tabs__input {
-	padding-left: 9px;
-	width: 100%;
-	height: 59px;
-	line-height: 59px;
-}
-
-.popup-tabs__button {
-	margin-top: 30px;
-	display: block;
-	width: 100%;
-	height: 60px;
-	border: none;
-	background-color: $black_absolute;
-	color: $white_absolute;
-	font-family: Avanti, sans-serif;
-	font-weight: bold;
-	line-height: 60px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.popup-tabs__label {
-	float: left;
-	margin-top: 20px;
-	height: 16px;
-	color: $black_absolute;
-}
-
-.popup-tabs__label:before {
-	float: left;
-	margin-right: 10px;
-}
-
 .popup-tabs__link {
 	float: right;
 	margin-top: 20px;
@@ -160,4 +214,8 @@
 	font-size: $font-size-xs;
 	line-height: 2;
 	text-align: center;
+}
+
+.reg-wizard__form {
+	margin-top: 50px;
 }

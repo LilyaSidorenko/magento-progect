@@ -2,15 +2,12 @@
 
 jQuery(function($) {
 
-  $(window).swipe({
-    swipe: function(event, direction) {
+  $(window).on('swipeleft', function() {
+      $('.order-data__order-block').addClass('order-data__order-block--active');
+  });
 
-      if (direction === 'left') {
-          $('.order-data__order-block').addClass('order-data__order-block--active');
-      } else if (direction === 'right') {
-          $('.order-data__order-block').removeClass('order-data__order-block--active');
-      }
-    }
+  $(window).on('swiperight', function() {
+      $('.order-data__order-block').removeClass('order-data__order-block--active');
   });
   
 });

@@ -1,16 +1,13 @@
 'use strict';
 
 jQuery(function($) {
-  
-  $(window).swipe({
-    swipe: function(event, direction) {
 
-      if (direction === 'left') {
-          $('.sidebar').addClass('sidebar--show');
-      } else if (direction === 'right') {
-          $('.sidebar').removeClass('sidebar--show');
-      }
-    }
+  $(window).on('swipeleft', function() {
+      $('.sidebar').addClass('sidebar--show');
+  });
+
+  $(window).on('swiperight', function() {
+      $('.sidebar').removeClass('sidebar--show');
   });
 
 });
