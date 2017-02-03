@@ -1,0 +1,28 @@
+.delete-button {
+  position: absolute;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete-button:before,
+.delete-button:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 1px;
+  height: 28px;
+  background-color: $grey_regular;
+}
+
+.delete-button:before {
+  transform: rotate(45deg);
+}
+
+.delete-button:after {
+  transform: rotate(-45deg);
+}

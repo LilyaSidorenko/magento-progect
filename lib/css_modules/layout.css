@@ -585,6 +585,10 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus {
+  outline: none;
+}
+
 a.special-link:after {
   content: '';
   display: inline-block;
@@ -665,4 +669,13 @@ textarea::-webkit-input-placeholder {
   textarea {
     font-size: 16px;
   }
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
