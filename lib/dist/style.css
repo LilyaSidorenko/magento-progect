@@ -4641,7 +4641,7 @@ div {
   }
 }
 
-.search-results-page .product:nth-child(4) {
+.search-results-page .product:nth-child(4n) {
   margin-right: 0;
 }
 
