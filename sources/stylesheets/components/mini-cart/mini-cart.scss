@@ -1,7 +1,7 @@
 .mini-cart {
 	padding: 26px 15px 30px;
 	width: 255px;
-	border: 1px solid black;
+	background-color: $white_absolute;
 }
 
 .mini-cart__wrapper {
@@ -81,6 +81,12 @@
 .mini-cart__quantity-handler {
 	display: block;
 	padding: 0;
+	background-color: transparent;
+}
+
+.mini-cart__quantity-handler:before {
+	left: 0;
+	margin: 0;
 }
 
 .mini-cart__input {

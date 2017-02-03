@@ -146,3 +146,12 @@
 	right: 10px;
 	@include sprite($i_arrows);
 }
+
+.subscribe-modal {
+
+	.popup__wrapper {
+		background-image: url('../../images/popup-bg.jpg');
+		background-position: right bottom;
+		background-repeat: no-repeat;
+	}
+}

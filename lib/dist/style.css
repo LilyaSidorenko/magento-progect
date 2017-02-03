@@ -1941,14 +1941,20 @@ select:-moz-focusring {
 }
 
 .catalog--tiles .product__image-frame {
+  position: relative;
   float: none;
   width: 100%;
   height: 340px;
 }
 
 .catalog--tiles .product__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
   max-width: none;
   max-height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .catalog--tiles .product__text-box {
@@ -5347,6 +5353,12 @@ select:-moz-focusring {
   height: 12px;
 }
 
+.subscribe-modal .popup__wrapper {
+  background-image: url("../../images/popup-bg.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
 .popup-tabs__tab-labels {
   width: 100%;
 }
@@ -5398,21 +5410,21 @@ select:-moz-focusring {
 
 .popup-tabs__social--google {
   padding-left: 30px;
-  background-image: url("../../images/google-plus.png");
+  background-image: url("../../images/popup-google-plus.png");
   background-repeat: no-repeat;
   color: #ee5567;
 }
 
 .popup-tabs__social--facebook {
   padding-left: 15px;
-  background-image: url("../../images/facebook.png");
+  background-image: url("../../images/popup-facebook.png");
   background-repeat: no-repeat;
   color: #5d9cec;
 }
 
-.popup-tabs__social--tweeter {
+.popup-tabs__social--twitter {
   padding-left: 30px;
-  background-image: url("../../images/tweeter.png");
+  background-image: url("../../images/popup-twitter.png");
   background-repeat: no-repeat;
   color: #4fc0e8;
 }
@@ -5564,6 +5576,10 @@ select:-moz-focusring {
   line-height: 40px;
 }
 
+.sys-message__text--bold {
+  font-weight: bold;
+}
+
 .sys-message__close-button {
   top: 50%;
   right: 0;
@@ -5586,7 +5602,7 @@ select:-moz-focusring {
 .mini-cart {
   padding: 26px 15px 30px;
   width: 255px;
-  border: 1px solid black;
+  background-color: #ffffff;
 }
 
 .mini-cart__wrapper {
@@ -5676,6 +5692,12 @@ select:-moz-focusring {
 .mini-cart__quantity-handler {
   display: block;
   padding: 0;
+  background-color: transparent;
+}
+
+.mini-cart__quantity-handler:before {
+  left: 0;
+  margin: 0;
 }
 
 .mini-cart__input {
