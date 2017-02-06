@@ -1,0 +1,17 @@
+.custom-checkbox-checkbox {
+	display: none;
+}
+
+.custom-checkbox-label {
+	cursor: pointer;
+}
+
+.custom-checkbox-label:before {
+	content: "";
+	display: inline-block;
+	@include sprite($i_checkbox-empty);
+}
+
+.custom-checkbox-checkbox:checked + .custom-checkbox-label:before {
+	@include sprite($i_checkbox-checked);
+}

@@ -2,10 +2,14 @@
 @import '../mixins/mixins';
 @import '../sprites';
 
+@import "custom-components/custom-checkbox";
 @import "custom-components/custom-select";
 @import "custom-components/custom-input-number";
 @import "custom-components/tabs";
 @import "custom-components/rating";
+@import "custom-components/link-with-arrow";
+@import "custom-components/delete-button";
+@import "custom-components/double-slash";
 
 @import "sliders/main-slider";
 @import "sliders/brands-slider";
@@ -62,3 +66,12 @@
 @import 'fake-select/fake-select';
 
 @import 'contacts/contacts';
+
+@import 'popup/popup';
+@import 'popup/popup-tabs';
+@import 'popup/reg-wizard';
+@import 'popup/product-modal';
+
+@import 'sys-message/sys-message';
+
+@import 'mini-cart/mini-cart';

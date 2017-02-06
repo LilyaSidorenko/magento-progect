@@ -1,0 +1,17 @@
+.link-with-arrow {
+	color: $black_absolute;
+	font-size: $font-size;
+	font-weight: bold;
+}
+
+.link-with-arrow:after {
+	content: '';
+	display: inline-block;
+	margin: 0 0 2px 10px;
+	transition: all 600ms;
+	@include sprite($i_link-arrow);
+}
+
+.link-with-arrow:hover:after {
+	margin-left: 30px;
+}

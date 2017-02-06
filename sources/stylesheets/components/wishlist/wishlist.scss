@@ -68,8 +68,9 @@
 }
 
 .share-button:after {
+	content: "";
 	position: absolute;
-	top: 0;
+	top: 9px;
 	right: 0;
-	content: "\25BE";
+	@include sprite($i_arrow);
 }

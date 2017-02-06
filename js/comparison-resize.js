@@ -23,7 +23,7 @@ jQuery(function($) {
 
     var windowWidth = $window.width();
 
-    if (windowWidth < 768) {
+    if (windowWidth <= 768) {
       $('.comparison__product-wrapper').css('width', windowWidth / 2 - 2 * 10);
     } else {
       $('.comparison__product-wrapper').removeAttr('style');

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reg Wizard</title>
+	<link rel="stylesheet" href="../lib/dist/style.min.css">
+	<style>
+		body {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="popup reg-wizard">
+		<div class="popup__wrapper">
+			<h2 class="popup__header">COMPLETE YOUR PROFILE</h2>
+			<form class="popup__form reg-wizard__form">
+				<fieldset class="reg-wizard__fieldset reg-wizard__fieldset--card">
+					<input type="text" class="popup__input reg-wizard__card" placeholder="Credit card number" maxlength="16" pattern="\d{16}">
+					<label class="reg-wizard__card-label card--visa"></label>
+				</fieldset>
+				<fieldset class="reg-wizard__fieldset--short">
+					<label class="popup__input-label">Card verification number:</label>
+					<div class="popup__input-wrapper">
+						<input type="password" class="popup__input popup__input--small" maxlength="3" pattern="\d{3}">
+					</div>
+				</fieldset>
+				<fieldset class="reg-wizard__fieldset--short">
+					<label class="popup__input-label">Expiration date:</label>
+					<div class="popup__input-wrapper">
+						<input type="text" class="popup__input popup__input--small" placeholder="MM" maxlength="2" pattern="\d{2}">
+						<span class="double-slash">//</span>
+						<input type="text" class="popup__input popup__input--small" placeholder="YY" maxlength="2" pattern="\d{2}">
+					</div>
+				</fieldset>
+				<div class="reg-wizard__link-wrapper">
+					<a href="#" class="reg-wizard__link link-with-arrow">ADD ONE MORE CARD</a>
+				</div>
+				<button type="submit" class="popup__button">REGISTER</button>
+			</form>
+			<button class="popup__close delete-button"></button>
+		</div>
+	</div>
+<!-- JS LINKS -->
+<!-- JS LINKS END -->
+</body>
+</html>

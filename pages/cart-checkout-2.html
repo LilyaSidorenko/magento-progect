@@ -62,7 +62,7 @@
 					</p>
 					<fieldset class="payment__card-number-wrapper">
 						<input type="text" id="payment__card-number" class="payment__card-number" placeholder="Credit card number" maxlength="16" pattern="\d{16}">
-						<label for="payment__card-number" class="payment__card-number-label payment__card-number-label--visa"></label>
+						<label for="payment__card-number" class="payment__card-number-label card--visa"></label>
 					</fieldset>
 					<fieldset class="payment__card-verification-wrapper">
 						<label class="payment__card-verification-label">Card verification number:</label>
@@ -72,7 +72,7 @@
 						<label class="payment__card-date-label">Expiration date:</label>
 						<div class="payment__card-date-input-wrapper">
 							<input type="text" class="payment__card-date-input" placeholder="MM" maxlength="2" pattern="\d{2}">
-							<span class="payment__card-date-slash">//</span>
+							<span class="double-slash">//</span>
 							<input type="text" class="payment__card-date-input" placeholder="YY" maxlength="2" pattern="\d{2}">
 						</div>
 					</fieldset>
@@ -190,12 +190,9 @@
 </footer>
 <!-- FOOTER END -->
 <!-- JS LINKS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="../js/libs/jquery.touchSwipe.min.js"></script>
-	<script src="../js/libs/slick.min.js"></script>
-	<script src="../js/custom/jquery-search.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/cart-checkout-page.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="../js/libs/jquery.mobile-events.min.js"></script>
+	<script src="../js/swipe-order-handler.js"></script>
 <!-- JS LINKS END -->
 </body>
 </html>

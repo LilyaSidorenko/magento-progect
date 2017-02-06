@@ -28,26 +28,11 @@
 	@include clearfix;
 }
 
-.sidebar-block__checkbox {
-	display: none;
-}
-
 .sidebar-block__label {
 	position: absolute;
 	left: 11px;
 	top: 50%;
-	cursor: pointer;
 	transform: translateY(-50%);
-}
-
-.sidebar-block__label:before {
-	content: "";
-	display: inline-block;
-	@include sprite($i_checkbox-empty);
-}
-
-.sidebar-block__checkbox:checked + .sidebar-block__label:before {
-	@include sprite($i_checkbox-checked);
 }
 
 .sidebar-block__image-frame {

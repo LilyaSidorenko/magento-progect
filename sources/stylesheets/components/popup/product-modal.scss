@@ -1,0 +1,25 @@
+.product-modal {
+	position: relative;
+	padding: 31px 31px 0 0;
+	width: 1011px;
+}
+
+.product-modal {
+
+	.product-view {
+		margin: 0;
+	}
+
+	.image-box {
+		height: 605px;
+	}
+
+	.image-box .large-image {
+		height: 605px;
+	}
+}
+
+.product-modal__wrapper {
+	padding: 50px 30px 50px 35px;
+	background-color: $white_absolute;
+}

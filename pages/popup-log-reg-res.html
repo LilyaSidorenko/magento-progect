@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Popup</title>
+	<link rel="stylesheet" href="../lib/dist/style.min.css">
+	<style>
+		body {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="popup log-reg-res">
+		<div class="popup__tabs popup-tabs">
+			<ul class="popup-tabs__tab-labels">
+				<li class="popup-tabs__tab-label popup-tabs__tab-label--active"><a class="popup-tabs__tab-label-link" href="#" data-tab="popup-tabs__sheet--1">LOGIN</a></li>
+				<li class="popup-tabs__tab-label"><a class="popup-tabs__tab-label-link" href="#" data-tab="popup-tabs__sheet--2">REGISTRATION</a></li>
+				<li class="popup-tabs__tab-label"><a class="popup-tabs__tab-label-link" href="#" data-tab="popup-tabs__sheet--3">RESET PASSWORD</a></li>
+			</ul>
+			<div class="popup__wrapper popup-tabs__sheet popup-tabs__sheet--1">
+				<h2 class="popup__header">LOGIN INTO YOUR ACCOUNT</h2>
+				<div class="popup-tabs__socials-block">
+					<a href="#" class="popup-tabs__social popup-tabs__social--google">with google</a>
+					<a href="#" class="popup-tabs__social popup-tabs__social--facebook">with facebook</a>
+					<a href="#" class="popup-tabs__social popup-tabs__social--twitter">with twitter</a>
+				</div>
+				<p class="popup-tabs__line">or</p>
+				<form class="popup__form">
+					<input type="text" class="popup__input" placeholder="Your login">
+					<input type="password" class="popup__input" placeholder="Your password">
+					<button type="submit" class="popup__button">SIGN IN</button>
+					<input type="checkbox" id="remember-me" class="popup__checkbox custom-checkbox-checkbox">
+					<label for="remember-me" class="popup__label custom-checkbox-label">Remember me</label>
+					<a href="#" class="popup-tabs__link">Forgot password</a>
+				</form>
+			</div>
+			<div class="popup__wrapper popup-tabs__sheet popup-tabs__sheet--2" style="display: none">
+				<h2 class="popup__header">CREATE AN ACCOUNT</h2>
+				<div class="popup-tabs__socials-block">
+					<a href="#" class="popup-tabs__social popup-tabs__social--google">with google</a>
+					<a href="#" class="popup-tabs__social popup-tabs__social--facebook">with facebook</a>
+					<a href="#" class="popup-tabs__social popup-tabs__social--twitter">with twitter</a>
+				</div>
+				<p class="popup-tabs__line">or</p>				
+				<form class="popup__form">
+					<input type="email" class="popup__input" placeholder="Your e-mail">
+					<input type="password" class="popup__input" placeholder="Your password">
+					<input type="password" class="popup__input" placeholder="Confirm your password">
+					<a href="#" class="popup__button">REGISTER</a>
+					<input type="checkbox" id="send-newsletters" class="popup__checkbox custom-checkbox-checkbox">
+					<label for="send-newsletters" class="popup__label custom-checkbox-label">Send me daily newsletters</label>
+				</form>
+			</div>
+			<div class="popup__wrapper popup-tabs__sheet popup-tabs__sheet--3" style="display: none">
+				<h2 class="popup__header">FORGOT PASSWORD?</h2>
+				<p class="popup-tabs__text">Enter the email address you used when creating your account. We'll email you a password recovery link</p>
+				<form class="popup__form">
+					<input type="email" class="popup__input" placeholder="Your e-mail">
+					<a href="#" class="popup__button">RECOVER PASSWORD</a>
+				</form>
+			</div>
+		</div>
+		<button class="popup__close delete-button"></button>
+	</div>
+<!-- JS LINKS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/popup-tab-handler.js"></script>
+<!-- JS LINKS END -->
+</body>
+</html>

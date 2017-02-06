@@ -1,0 +1,36 @@
+.reg-wizard__form {
+	margin-top: 50px;
+}
+
+.reg-wizard__fieldset--short {
+	width: calc(100% - 64px);
+}
+
+.reg-wizard__fieldset--card {
+	position: relative;
+	padding-right: 64px;
+}
+
+.reg-wizard__card {
+	letter-spacing: 9px;
+}
+
+.reg-wizard__card-label {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.reg-wizard__link-wrapper {
+	margin-top: 60px;
+	@include clearfix;
+}
+
+.reg-wizard__link {
+	float: right;
+}
+
+.reg-wizard__link:hover:after {
+	margin-left: 10px;
+}

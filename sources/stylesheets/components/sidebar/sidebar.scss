@@ -26,10 +26,11 @@
 }
 
 .sidebar__main-link:after {
+	content: "";
 	position: absolute;
-	top: 25px;
+	top: 30px;
 	right: 10px;
-	content: "\25BE";
+	@include sprite($i_arrow);
 }
 
 .sidebar__main-link--current {
@@ -44,7 +45,7 @@
 }
 
 .sidebar__main-link--active:after {
-	content: "\25B4";
+	transform: rotate(180deg);
 }
 
 .sidebar__sub-list {
