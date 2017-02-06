@@ -11,13 +11,13 @@
 
 <!-- HEADER -->
 <header class="header">
-    <div class="g-main-wrapper header__wrap">
+    <div class="g-main-wrapper">
         <div class="menu-button__wrap">
             <button class="js-menu menu-button" type="button">
                 <span class="bar"></span>
             </button>
         </div>
-        <nav class="menu" role='navigation'>
+        <div class="menu" role='navigation'>
             <ul>
                 <li class="menu__item"><a href="#">Women</a>
                     <!-- HEADER submenu-->
@@ -97,7 +97,7 @@
                 </div>
                 <div class="header__cart">Cart</div>
             </div>
-        </nav>
+        </div>
         <a href="#" class="header__logo">
             <img src="../images/logo/logo.png">
         </a>
@@ -169,36 +169,50 @@
     <div class="categories">
 
         <div class="categories__item categories__item--special">
-                <div class="categories__title">
+            <div class="categories__title">
+                <a href="#">
                     <span class="categories__name">Women's</span>
 
                     <h3 class="categories__text">Skirts</h3>
-                    <a href="#" class="special-link">View now</a>
+                </a>
+                <a href="#" class="special-link">View now</a>
 
-                </div>
+            </div>
+            <a href="#">
                 <img src="../images/static/category-1.png">
+            </a>
         </div>
         <div class="categories__item">
             <div class="categories__title">
-                <span class="categories__name">Women's</span>
+                <a href="#">
 
-                <h3 class="categories__text">Shoes</h3>
+                    <span class="categories__name">Women's</span>
+
+                    <h3 class="categories__text">Shoes</h3>
+                </a>
                 <a href="#" class="special-link">View now</a>
 
             </div>
-            <img src="../images/static/category-2.png">
+            <a href="#">
 
+                <img src="../images/static/category-2.png">
+            </a>
         </div>
         <div class="categories__item categories__item--full">
             <div class="categories__title">
-                <span class="categories__name">Women's</span>
+                <a href="#">
 
-                <h3 class="categories__text">Scarf</h3>
+                    <span class="categories__name">Women's</span>
+
+                    <h3 class="categories__text">Scarf</h3>
+                </a>
                 <a href="#" class="special-link">View now</a>
 
             </div>
-            <img src="../images/static/category-3.png">
+            <a href="#">
 
+                <img src="../images/static/category-3.png">
+            </a>
         </div>
     </div>
 </div>
@@ -236,7 +250,7 @@
             <div class="product-top__wrap">
 
                 <div class="product-top__title">
-                    <span class="product-top__name">Navy Revenge Solid</span>
+                    <a href="#" class="product-top__name">Navy Revenge Solid</a>
 
                     <div class="product-top__price">
                         <span class="price__old">$140.50</span>
@@ -244,9 +258,9 @@
                     </div>
                     <a href="#" class="special-link">Shop now</a>
                 </div>
-                <div class="product-top__img">
+                <a href="#" class="product-top__img">
                     <img src="../images/static/product-top.png">
-                </div>
+                </a>
             </div>
 
         </div>
@@ -254,16 +268,17 @@
             <div class="product-top__wrap">
 
                 <div class="product-top__title">
-                    <span class="product-top__name">Navy Revenge Solid</span>
+                    <a href="#" class="product-top__name">Navy Revenge Solid</a>
 
                     <div class="product-top__price">
-                        <span class="price__old">$140.50</span> <span class="price__regular">$65.50</span>
+                        <span class="price__old">$140.50</span>
+                        <span class="price__regular">$65.50</span>
                     </div>
                     <a href="#" class="special-link">Shop now</a>
                 </div>
-                <div class="product-top__img">
+                <a href="#" class="product-top__img">
                     <img src="../images/static/product-top.png">
-                </div>
+                </a>
             </div>
 
         </div>
@@ -271,16 +286,17 @@
             <div class="product-top__wrap">
 
                 <div class="product-top__title">
-                    <span class="product-top__name">Navy Revenge Solid</span>
+                    <a href="#" class="product-top__name">Navy Revenge Solid</a>
 
                     <div class="product-top__price">
-                        <span class="price__old">$140.50</span> <span class="price__regular">$65.50</span>
+                        <span class="price__old">$140.50</span>
+                        <span class="price__regular">$65.50</span>
                     </div>
                     <a href="#" class="special-link">Shop now</a>
                 </div>
-                <div class="product-top__img">
+                <a href="#" class="product-top__img">
                     <img src="../images/static/product-top.png">
-                </div>
+                </a>
             </div>
 
         </div>
@@ -288,16 +304,17 @@
             <div class="product-top__wrap">
 
                 <div class="product-top__title">
-                    <span class="product-top__name">Navy Revenge Solid</span>
+                    <a href="#" class="product-top__name">Navy Revenge Solid</a>
 
                     <div class="product-top__price">
-                        <span class="price__old">$140.50</span> <span class="price__regular">$65.50</span>
+                        <span class="price__old">$140.50</span>
+                        <span class="price__regular">$65.50</span>
                     </div>
                     <a href="#" class="special-link">Shop now</a>
                 </div>
-                <div class="product-top__img">
+                <a href="#" class="product-top__img">
                     <img src="../images/static/product-top.png">
-                </div>
+                </a>
             </div>
 
         </div>
@@ -325,33 +342,25 @@
 <div class="g-margin-bottom g-main-wrapper">
 
     <div class="advantages">
-        <div class="advantages__item">
-            <img class="advantages__img" src="../images/i_adv-delivery.png">
-
+        <div class="advantages__item advantages__item--delivery">
             <div class="advantages__wrap">
                 <h4 class="advantages__title">Worldwide Delivery</h4>
                 <span class="advantages__text">On order over $250.00</span>
             </div>
         </div>
-        <div class="advantages__item">
-            <img class="advantages__img" src="../images/i_adv-service.png">
-
+        <div class="advantages__item advantages__item--service">
             <div class="advantages__wrap">
                 <h4 class="advantages__title">24/7 customer service</h4>
                 <span class="advantages__text">On order over $250.00</span>
             </div>
         </div>
-        <div class="advantages__item">
-            <img class="advantages__img" src="../images/i_adv-money.png">
-
+        <div class="advantages__item advantages__item--money">
             <div class="advantages__wrap">
                 <h4 class="advantages__title">money back guarantee</h4>
                 <span class="advantages__text">Within 30 days</span>
             </div>
         </div>
-        <div class="advantages__item">
-            <img class="advantages__img" src="../images/i_adv-ship.png">
-
+        <div class="advantages__item advantages__item--ship">
             <div class="advantages__wrap">
                 <h4 class="advantages__title">FREE SHIP IN USA</h4>
                 <span class="advantages__text">On order over $250.00</span>
@@ -375,23 +384,16 @@
     </nav>
 
     <div class="socials">
-        <a href="#" class="socials__item">
-            <img src="../images/twitter.png">
+        <a href="#" class="socials__item socials__item--tw"></a>
+        <a href="#" class="socials__item socials__item--gg">
         </a>
-        <a href="#" class="socials__item ">
-            <img src="../images/gg+.png">
+        <a href="#" class="socials__item socials__item--pn">
         </a>
-        <a href="#" class="socials__item">
-            <img src="../images/pinterest.png">
+        <a href="#" class="socials__item socials__item--rs">
         </a>
-        <a href="#" class="socials__item">
-            <img src="../images/rss.png">
+        <a href="#" class="socials__item socials__item--fb">
         </a>
-        <a href="#" class="socials__item">
-            <img src="../images/fb.png">
-        </a>
-        <a href="#" class="socials__item">
-            <img src="../images/eath.png">
+        <a href="#" class="socials__item socials__item--dr">
         </a>
 
     </div>

@@ -226,29 +226,45 @@
 
 .product__button--fav {
 	margin: 0 31px;
-	@include sprite($i_heart);
+
+	&:before {
+		content: '\f08a';
+		font-family: 'FontAwesome';
+		font-size: 17px;
+		font-weight: bold;
+		text-decoration: none;
+
+	}
 	@include media-breakpoint-down(small-tablet) {
 		margin: 0 15px;
 	}
 }
 
 .product__button--fav:hover {
-	@include sprite($i_heart-active);
+	color: $pinkish;
+	text-decoration: none;
+
 }
 
 .product__button--fav-active {
-	@include sprite($i_heart-active);
+	color: $pinkish;
 }
 
 .product__button--compare {
 	margin: 3px 0;
-	@include sprite($i_compare);
+	&:before {
+		content: '\f079';
+		font-family: 'FontAwesome';
+		font-size: 17px;
+	}
 }
 
 .product__button--compare:hover {
-	@include sprite($i_compare-active);
+	color: $pinkish;
+	text-decoration: none;
+
 }
 
 .product__button--compare-active {
-	@include sprite($i_compare-active);
+	color: $pinkish;
 }

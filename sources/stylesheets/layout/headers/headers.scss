@@ -7,18 +7,14 @@
   width: 100%;
   z-index: 12;
   background: $white_absolute;
-
-  &__wrap {
-    position: relative;
-    padding: 28px 0;
-
-  }
+  height: $header-height;
 
   &__logo {
     width: 10%;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+    line-height: $header-height;
 
     @include media-breakpoint-down(small-tablet) {
       width: 40%;
@@ -46,7 +42,7 @@
         display: block;
       }
 
-        .menu & {
+      .menu & {
         line-height: 3;
 
         select {
@@ -73,8 +69,10 @@
     display: inline-block;
 
     &:before {
-      @include sprite-inline;
+      font-family: 'FontAwesome';
+      font-size: 16px;
       margin-right: 10px;
+      vertical-align: middle;
     }
     .menu & {
       margin-left: 40px;
@@ -88,7 +86,7 @@
     z-index: 3;
 
     &:before {
-      @include sprite($i_search);
+      content: '\f002';
     }
     @include media-breakpoint-down(small-tablet) {
       position: static;
@@ -96,17 +94,17 @@
   }
   &__login {
     &:before {
-      @include sprite($i_profile);
-    }
-    &:after {
-      @include sprite-inline;
-      @include sprite($i_arrow);
-      margin-left: 7px;
+      content: '\f007';
+      &:after {
+        @include sprite-inline;
+        @include sprite($i_arrow);
+        margin-left: 7px;
+      }
     }
   }
   &__cart {
     &:before {
-      @include sprite($i_cart);
+      content: '\f290';
     }
   }
 

@@ -83,13 +83,10 @@
 
   padding: 0;
   right: 10%;
-  top: 25%;
   list-style: none;
 
   text-align: center;
-  @include media-breakpoint-down(tablet) {
-    top: 15%;
-  }
+
   @include media-breakpoint-down(small-tablet) {
     bottom: 5%;
     top: auto;

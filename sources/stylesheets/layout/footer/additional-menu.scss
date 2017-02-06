@@ -7,25 +7,16 @@
         font-size: $font-size;
         text-transform: uppercase;
         padding: 0 15px;
+        border-right: 1px solid;
 
-        @include media-breakpoint-down(small-tablet) {
+        @include media-breakpoint-down(tablet) {
             display: block;
             margin-bottom: 10px;
+            border-right: 0;
         }
 
-        &:after {
-            content: '|';
-            position: absolute;
-            right: 0;
-
-            @include media-breakpoint-down(small-tablet) {
-                content: none;
-            }
-        }
         &:last-child {
-            &:after {
-                content: none;
-            }
+            border-right: 0;
         }
 
         &:hover,

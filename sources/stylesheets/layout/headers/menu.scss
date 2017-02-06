@@ -11,7 +11,7 @@
     color: $grey_absolute;
     text-decoration: none;
     margin-right: 40px;
-    line-height: 3;
+    line-height: $header-height;
 
     &:after {
       @include sprite-inline;

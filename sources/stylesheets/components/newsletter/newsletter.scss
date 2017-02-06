@@ -18,11 +18,22 @@
             padding: 20px;
             font-size: 18px;
         }
+
     }
     &__email {
         width: 60%;
         padding: 10px 40px;
-        background: url("../../images/email-icon.png") 10px center no-repeat;
+        //background: url("../../images/email-icon.png") 10px center no-repeat;
+
+
+    }
+    &__form {
+        &:before {
+            content: '\f0e0';
+            font-family: 'FontAwesome';
+            vertical-align: middle;
+            position: absolute;
+        }
     }
     &__button {
         position: relative;

@@ -5,13 +5,49 @@
         padding: 0 12px;
         vertical-align: middle;
         text-align: center;
-        width: 20px;
-        height: 20px;
         display: inline-block;
+        font-size: 20px;
+        color: $white_absolute;
+        font-family: 'FontAwesome';
 
-        img {
+        &:after {
             vertical-align: middle;
-            height: 100%;
+        }
+        &--rs {
+            &:after {
+                content: "\f09e";
+            }
+        }
+        &--fb {
+            &:after {
+                content: "\f09a";
+            }
+        }
+        &--pn {
+            &:after {
+                content: "\f231";
+            }
+        }
+        &--gg {
+            &:after {
+                content: "\f0d5";
+            }
+        }
+        &--tw {
+            &:after {
+                content: "\f099";
+            }
+        }
+        &--dr {
+            &:after {
+                content: "\f17d";
+            }
+        }
+
+        &:hover {
+            color: $pinkish;
+            text-decoration: none;
+            @extend %transition;
         }
 
         &--special {
@@ -19,17 +55,20 @@
             padding: 5px;
             border-radius: 50%;
             margin-left: 20px;
+            width: 20px;
+            height: 20px;
+            font-size: 18px;
 
             &:hover {
                 background: $grey_absolute;
+                color: $white_absolute;
+
             }
             @include media-breakpoint-down(tablet) {
                 margin-left: 5px;
             }
         }
 
-        &:hover {
-            opacity: 0.8;
-        }
     }
+
 }

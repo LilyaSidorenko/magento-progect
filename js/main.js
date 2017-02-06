@@ -20,8 +20,30 @@
             ]
 
 
-
         });
+        $(window).on('load resize', function () {
+
+            if ($(window).outerWidth() > 767) {
+
+
+                $('.main-slider .slick-dots').css({
+                    top: '50%',
+                    marginTop: -($('.main-slider .slick-dots').height()) / 2
+                });
+                $('.main-slider .slick-prev').css({
+                    top: '50%',
+                    marginTop: -$('.main-slider .slick-dots').height()/1.5
+                });
+                $('.main-slider .slick-next').css({
+                    top: '50%',
+                    marginTop: $('.main-slider .slick-dots').height()/1.5
+                });
+            } else {
+                $('.main-slider .slick-dots').removeAttr('style')
+            }
+        });
+
+
         $('.brands-slider').slick({
             dots: false,
             infinite: false,
@@ -62,4 +84,6 @@
         });
 
     });
+
+
 })(jQuery);

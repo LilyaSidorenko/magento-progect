@@ -4,12 +4,12 @@
     &__item {
         float: left;
         width: 48%;
-        padding-right: 4%;
+        margin-right: 4%;
         font-size: 0;
         margin-bottom: 4%;
 
         &:nth-child(2n) {
-            padding-right: 0;
+            margin-right: 0;
         }
         &:nth-child(2),
         &:nth-child(3) {
@@ -32,6 +32,11 @@
                     transform: rotate(180deg);
                     margin-right: 10px;
                     margin-left: 0;
+                }
+                &:hover {
+                    &:after {
+                        transform: rotate(180deg) translate(10px,0);
+                    }
                 }
                 @include media-breakpoint-down(small-tablet) {
                     display: none;
