@@ -22,7 +22,7 @@
 
 .sidebar__main-link {
 	display: block;
-	padding: 25px 10px 24px;
+	padding: 25px 10px 25px;
 }
 
 .sidebar__main-link:after {
@@ -50,7 +50,7 @@
 
 .sidebar__sub-list {
 	display: none;
-	padding: 0 20px 15px;
+	padding: 0 0 15px 30px;
 	font-size: $font-size-xs;
 }
 
@@ -63,11 +63,12 @@
 }
 
 .sidebar__sub-item--active {
-	padding-left: 20px;
+	padding-left: 25px;
 }
 
 .sidebar__link {
 	color: $black_absolute;
+	font-size: $font-size-xs;
 }
 
 .sidebar__link--active {

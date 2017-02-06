@@ -1,8 +1,8 @@
 .popup {
 	box-sizing: border-box;
 	position: relative;
-	padding: 31px 31px 0 0;
-	width: 543px;
+	padding: 30px 30px 0 0;
+	width: 545px;
 }
 
 .popup {
@@ -18,7 +18,7 @@
 }
 
 .popup__wrapper {
-	padding: 50px 81px;
+	padding: 50px 80px;
 	background-color: $white_absolute;
 }
 
@@ -27,6 +27,7 @@
 }
 
 .popup__form {
+	margin-top: 25px;
 	@include clearfix;
 }
 

@@ -1,6 +1,6 @@
 .breadcrumbs {
 	position: relative;
-	margin-top: 101px;
+	margin-top: 100px;
 	height: 80px;
 	border-top: 1px solid $white-grey;
 	border-bottom: 1px solid $white-grey;
@@ -33,7 +33,7 @@
 
 .breadcrumbs__item:after {
 	display: inline-block;
-	margin: 0 6px;
+	margin: 0 5px;
 	content: "//";
 	color: $black_absolute;
 	letter-spacing: -2.4px;
@@ -46,6 +46,7 @@
 .breadcrumbs__link {
 	font-size: $font-size-xs;
 	color: $black_almost;
+	text-transform: none;
 }
 
 .breadcrumbs__current-page {

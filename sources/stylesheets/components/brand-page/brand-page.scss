@@ -1,6 +1,6 @@
 .brand-page {
-		margin: 50px auto 98px;
-		max-width: 1140px;
+		margin: 60px auto 100px;
+		max-width: 1125px;
 		@include clearfix;
 		@include media-breakpoint-down(small-tablet) {
 			margin-bottom: 50px;
@@ -19,7 +19,7 @@
 	.main {
 		float: left;
 		width: 77%;
-		padding: 0 30px;
+		padding: 0 15px 0 25px;
 		@include media-breakpoint-down(small-tablet) {
 			float: none;
 			padding: 0 5px;
@@ -59,13 +59,13 @@
 }
 
 .brand-page__slider-item {
-	padding-bottom: 68px;
+	padding-bottom: 60px;
 	text-align: center;
 	outline: none;
 }
 
 .brand-page__slider-text {
-	margin-top: 48px;
+	margin-top: 40px;
 	color: $black_absolute;
 	font-size: $font-size;
 	line-height: 24px;

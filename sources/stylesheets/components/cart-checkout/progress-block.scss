@@ -1,45 +1,46 @@
-.step-block {
+.progress-block {
 	position: relative;
-	margin: 150px 0 0 0;
+	margin: 150px auto 0;
 	padding: 2px 0 0 0;
+	max-width: 1110px;
 	height: 70px;
 	@include clearfix;
 	@include media-breakpoint-down(small-tablet) {
-		margin: 100px 0 0 0;
+		margin-top: 100px;
 	}
 }
 
-.step-block__big-line {
+.progress-block__big-line {
 	margin-top: 18px;
 	@include clearfix;
 }
 
-.step-block__line {
+.progress-block__line {
 	float: left;
 	width: 33.33%;
 	border: 1px solid $grey_regular;
 }
 
-.step-block__line--active {
+.progress-block__line--active {
 	border-color: $pinkish;
 }
 
-.step-block__label-box {
+.progress-block__label-box {
 	position: absolute;
 	top: 0;
 	width: 150px;
 	text-align: center;
 }
 
-.step-block__label-box--shipping{
+.progress-block__label-box--shipping{
 	left: calc(33.33% - 75px);
 }
 
-.step-block__label-box--payment{
+.progress-block__label-box--payment{
 	left: calc(66.66% - 75px);
 }
 
-.step-block__label {
+.progress-block__label {
 	position: relative;
 	display: inline-block;
 	width: 40px;
@@ -49,21 +50,21 @@
 	background-color: $white_absolute;
 }
 
-.step-block__label--active {
+.progress-block__label--active {
 	border-color: $pinkish;
 }
 
-.step-block__label-text {
+.progress-block__label-text {
 	margin: 10px 0 0 0;
 	color: $grey_regular;
 	font-size: $font-size;
 }
 
-.step-block__label-text--active {
+.progress-block__label-text--active {
 	color: $pinkish;
 }
 
-.step-block__icon {
+.progress-block__icon {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -72,14 +73,14 @@
 	margin: auto;
 }
 
-.step-block__icon--shipping {
+.progress-block__icon--shipping {
 	@include sprite($i_pink_cart);
 }
 
-.step-block__icon--payment {
+.progress-block__icon--payment {
 	@include sprite($i_card-grey);
 }
 
-.step-block__icon--payment.step-block__icon--active {
+.progress-block__icon--payment.progress-block__icon--active {
 	@include sprite($i_card-pink);
 }

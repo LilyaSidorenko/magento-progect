@@ -1,13 +1,13 @@
 .search-results-page {
-	margin: 81px auto 99px;
-	padding: 0 15px;
-	max-width: 1140px;
+	margin: 80px auto 100px;
+	max-width: 1125px;
 	@include clearfix;
-	@include media-breakpoint-down(tablet) {
-		padding: 0 5%;
+	@include media-breakpoint-down(desktop) {
+		padding: 0 8px;
 	}
 	@include media-breakpoint-down(small-tablet) {
 		margin-bottom: 50px;
+		padding: 0 5px;
 	}
 }
 
@@ -30,12 +30,12 @@
 		@include media-breakpoint-down(small-tablet) {
 			position: absolute;
 			bottom: 10px;
-			left: calc(25% - 26px);
+			left: calc(25% - 25px);
 		}
 	}
 
 	.catalog {
-		padding-top: 47px;
+		padding-top: 50px;
 	}
 
 	.product__image-frame {
@@ -72,11 +72,11 @@
 .search-product {
 	float: right;
 	position: relative;
-	margin-right: 4.5%;
+	margin-right: 7.5%;
 	width: 33%;
 	@include media-breakpoint-down(tablet) {
 		margin: 20px 0 0 4.5%;
-		width: 40%;
+		width: 44%;
 	}
 	@include media-breakpoint-down(small-tablet) {
 		margin: 0;

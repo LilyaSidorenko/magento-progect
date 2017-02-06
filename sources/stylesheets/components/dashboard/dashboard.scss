@@ -1,6 +1,6 @@
 .dashboard-page {
 	margin: 60px auto 50px;
-	max-width: 1140px;
+	max-width: 1125px;
 	@include clearfix;
 }
 
@@ -20,7 +20,7 @@
 	.main {
 		float: left;
 		width: 77%;
-		padding: 0 22px 0 30px;
+		padding: 0 10px 0 30px;
 		/*@include clearfix;*/
 		@include media-breakpoint-down(small-tablet) {
 			padding: 25px 15px 0 15px;
@@ -31,7 +31,7 @@
 
 .dashboard-page__section {
 	float: left;
-	margin-top: 97px;
+	margin-top: 90px;
 	width: 100%;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .recent-orders__thead th {
-	padding: 20px 0 24px;
+	padding: 20px 0;
 	font-size: $font-size-xs;
 }
 
@@ -184,4 +184,5 @@
 
 .recent-reviews__text {
 	margin-top: 10px;
+	font-size: $font-size-xs;
 }

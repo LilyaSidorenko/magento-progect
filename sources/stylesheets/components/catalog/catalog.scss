@@ -1,5 +1,5 @@
 .catalog {
-	padding: 58px 0 0 0;
+	padding: 50px 0 0 0;
 	@include clearfix;
 	@include media-breakpoint-down(small-tablet) {
 		padding: 0;
@@ -32,8 +32,8 @@
 }
 
 .product__delete-button {
-	top: 16px;
-	right: 16px;
+	top: 15px;
+	right: 15px;
 	width: 16px;
 	height: 16px;
 	z-index: 10;
@@ -99,7 +99,7 @@
 }
 
 .product__comment-button--edit-comment {
-	width: 42px;
+	width: 40px;
 }
 
 .product__comment-button-icon {
@@ -164,7 +164,7 @@
 }
 
 .product__price {
-	margin: 13px 0 0 0;
+	margin: 15px 0 0 0;
 }
 
 .product__price--old {
@@ -183,7 +183,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	@include media-breakpoint-down(small-tablet) {
-		margin-top: 13px;
+		margin-top: 15px;
 	}
 }
 
@@ -198,14 +198,14 @@
 }
 
 .product__description {
-	margin: 28px 0 0 0;
+	margin: 20px 0 0 0;
 	color: $black_almost;
 	font-size: $font-size-xs;
 	line-height: 2;
 }
 
 .product__links-block {
-	margin: 58px 0 0 0;
+	margin: 50px 0 0 0;
 	@include clearfix;
 	@include media-breakpoint-down(small-tablet) {
 		margin-top: 20px;
@@ -225,8 +225,7 @@
 }
 
 .product__button--fav {
-	margin: 0 31px;
-
+	margin: 0 30px;
 	&:before {
 		content: '\f08a';
 		font-family: 'FontAwesome';
@@ -243,7 +242,6 @@
 .product__button--fav:hover {
 	color: $pinkish;
 	text-decoration: none;
-
 }
 
 .product__button--fav-active {
@@ -262,7 +260,6 @@
 .product__button--compare:hover {
 	color: $pinkish;
 	text-decoration: none;
-
 }
 
 .product__button--compare-active {

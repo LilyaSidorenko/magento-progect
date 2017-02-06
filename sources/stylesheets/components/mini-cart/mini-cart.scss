@@ -1,5 +1,5 @@
 .mini-cart {
-	padding: 26px 15px 30px;
+	padding: 25px 15px 30px;
 	width: 255px;
 	background-color: $white_absolute;
 }
@@ -52,7 +52,7 @@
 
 .mini-cart__item-descr {
 	float: left;
-	padding: 20px 0 0 20px;
+	padding: 15px 0 0 20px;
 	width: 100px;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .mini-cart__total-price {
-	margin-top: 13px;
+	margin-top: 15px;
 	color: $black_absolute;
 	font-size: 16px;
 	font-weight: bold;
@@ -142,6 +142,11 @@
 
 .mini-cart__total-price--amount {
 	float: right;
+}
+
+.mini-cart__button {
+	height: 50px;
+	line-height: 50px;
 }
 
 .mini-cart__link {

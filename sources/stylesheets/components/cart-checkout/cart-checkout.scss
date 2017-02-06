@@ -9,7 +9,7 @@
 }
 
 .cart-checkout-page {
-	margin: 97px auto;
+	margin: 95px auto;
 	padding: 1px 15px 0;
 	max-width: 1140px;
 	@include clearfix;
@@ -19,8 +19,11 @@
 	}
 }
 
-.cart-check-header {
+.cart-check-header.header {
 	border-bottom: 1px solid $white-grey;
+	@include media-breakpoint-down(small-tablet) {
+		height: 60px;
+	}
 }
 
 .cart-check-header__wrap {
@@ -31,8 +34,12 @@
 	}
 }
 
+.cart-check-header__logo.header__logo {
+	line-height: inherit;
+}
+
 .cart-check__header {
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 	border-bottom: 1px solid $white-grey;
 	font-size: $font-size-l;
 	font-weight: bold;

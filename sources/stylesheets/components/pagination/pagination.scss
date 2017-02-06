@@ -34,8 +34,8 @@
 
 .pagination__button {
 	display: inline-block;
-	width: 24px;
-	height: 24px;
+	width: 25px;
+	height: 25px;
 }
 
 .pagination__button:before {
@@ -51,12 +51,12 @@
 
 .pagination__link {
 	display: inline-block;
-	width: 24px;
-	height: 24px;
+	width: 25px;
+	height: 25px;
 	border-radius: 50%;
 	font-size: $font-size;
 	color: $black_absolute;
-	line-height: 24px;
+	line-height: 25px;
 	text-align: center;
 }
 

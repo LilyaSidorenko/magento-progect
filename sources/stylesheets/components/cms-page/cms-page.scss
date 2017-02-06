@@ -1,6 +1,6 @@
 .cms-page {
-	margin: 61px auto 99px;
-	max-width: 1140px;
+	margin: 60px auto 100px;
+	max-width: 1125px;
 	@include clearfix;
 }
 
@@ -16,7 +16,7 @@
 	.main {
 		float: left;
 		width: 77%;
-		padding: 0 30px;
+		padding: 0 15px 0 25px;
 		@include media-breakpoint-down(small-tablet) {
 			padding: 0;
 			width: 100%;
@@ -38,9 +38,7 @@
 	}
 
 	.newsletter__email {
-		width: 74%;
-		height: 58px;
-		line-height: 58px;
+		width: 78%;
 		@include media-breakpoint-down(tablet) {
 			width: 90%;
 		}

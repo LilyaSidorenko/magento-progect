@@ -1,7 +1,7 @@
 .cart-page {
-	margin: 101px auto 50px;
+	margin: 100px auto 50px;
 	padding: 100px 0 0 0;
-	max-width: 1110px;
+	max-width: 1125px;
 	@include media-breakpoint-down(desktop) {
 		padding-left: 1%;
 		padding-right: 1%;
@@ -15,7 +15,6 @@
 	color: $black_absolute;
 	font-size: $font-size-xl;
 	font-weight: bold;
-	text-align: center;
 	@include media-breakpoint-down(small-tablet) {
 		font-size: $font-size-l;
 	}
@@ -27,6 +26,7 @@
 }
 
 .purchase__header {
+	font-size: $font-size-xs;
 	text-align: left;
 	@include media-breakpoint-down(small-tablet) {
 		display: none;
@@ -34,7 +34,7 @@
 }
 
 .purchase__header th {
-	padding: 0 30px 22px 0;
+	padding: 0 30px 20px 0;
 }
 
 .purchase__item {
@@ -79,7 +79,7 @@
 }
 
 .purchase__product-code {
-	margin-top: 14px;
+	margin-top: 10px;
 	color: $black_absolute;
 	font-size: $font-size;
 }
@@ -142,7 +142,7 @@
 
 .purchase__product-quantity {
 	border-color: $white-grey;
-	line-height: 58px;
+	line-height: 60px;
 	text-align: center;
 	@include media-breakpoint-down(small-tablet) {
 		width: 100%;
@@ -221,14 +221,14 @@
 .purchase__select {
 	padding-left: 10px;
 	width: 100%;
-	height: 58px;
+	height: 60px;
 	border: none;
 	border-bottom: 1px solid $white-grey;
 	border-radius: 0;
 	color: $black_absolute;
 	font-family: Avanti, sans-serif;
 	font-size: $font-size;
-	line-height: 57px;
+	line-height: 60px;
 	outline: none;
 	appearance: none;
 }
@@ -247,12 +247,15 @@
 	color: $black_absolute;
 }
 
-.purchase__buttons {
+.purchase__item .purchase__buttons {
 	position: relative;
+	padding: 0;
+	text-align: right;
 }
 
 .purchase__delete-button {
 	top: 20%;
+	right: 0;
 	@include media-breakpoint-down(small-tablet) {
 		position: relative;
 		top: 0;
@@ -277,7 +280,7 @@
 }
 
 .purchase__update td {
-	padding: 0 5px 48px;
+	padding: 0 0 45px;
 	@include media-breakpoint-down(small-tablet) {
 		display: block;
 		padding: 0 5% 25px;
@@ -303,17 +306,18 @@
 }
 
 .purchase__subtotal {
-	text-align: right;
+	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
 	color: $black_absolute;
 }
 
 .purchase__subtotal-label {
-	float: left;
+	/*float: left;*/
 }
 
 .purchase__subtotal-value {
+	float: right;
 }
 
 .purchase__promocode {	
@@ -322,7 +326,7 @@
 }
 
 .purchase__promocode td {
-	padding: 50px 5px;
+	padding: 50px 0;
 	@include media-breakpoint-down(small-tablet) {
 		display: block;
 		padding: 25px 5%;
@@ -340,7 +344,7 @@
 }
 
 .purchase__promocode-button {
-	margin-left: 19px;
+	margin-left: 20px;
 	padding: 0;
 	border: none;
 	background: none;
@@ -386,10 +390,9 @@
 	transform: rotate(180deg);
 }
 
-.purchase__go-to-checkout {
+.purchase__main-button {
 	float: right;
 	display: block;
-	width: 82%;
 	height: 50px;
 	background: $black_absolute;
 	color: $white_absolute;
@@ -401,4 +404,12 @@
 		margin: 0 auto;
 		width: 100%;
 	}
+}
+
+.purchase__go-to-checkout {
+	width: 100%;
+}
+
+.purchase__go-to-shipping {
+	width: 54%;
 }

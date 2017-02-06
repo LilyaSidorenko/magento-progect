@@ -1,6 +1,6 @@
 .sidebar-block {
 	position: relative;
-	padding-bottom: 50px;
+	padding-bottom: 45px;
 	border-bottom: 1px solid $grey_regular;
 	@include media-breakpoint-down(tablet) {
 		display: none;
@@ -8,18 +8,19 @@
 }
 
 .sidebar-block__header {
+	padding-left: 10px;
 	color: $black_absolute;
 	font-size: $font-size;
 }
 
 .sidebar-block__header--sup {
-	margin-left: 6px;
+	margin-left: 5px;
 	color: $grey_regular;
 	font-style: italic;
 }
 
 .sidebar-block__list {
-	margin: 47px 0 50px;
+	margin: 50px 0;
 }
 
 .sidebar-block__item {
@@ -30,7 +31,7 @@
 
 .sidebar-block__label {
 	position: absolute;
-	left: 11px;
+	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -53,7 +54,7 @@
 	top: 50%;
 	color: $black_absolute;
 	font-size: $font-size-xs;
-	line-height: 23px;
+	line-height: 24px;
 	transform: translateY(-50%);
 }
 
@@ -63,7 +64,7 @@
 
 .sidebar-block__button {
 	top: 50%;
-	right: 11px;
+	right: 15px;
 	margin-top: -4px;
 	width: 8px;
 	height: 8px;
@@ -76,12 +77,12 @@
 }
 
 .sidebar-block__link {
-	margin-left: 9px;
+	margin-left: 10px;
 }
 
 .sidebar-block__clear-compare-list {
 	bottom: 0;
-	right: 11px;
+	right: 15px;
 	margin-top: -8px;
 	width: 16px;
 	height: 16px;
@@ -102,10 +103,10 @@
 }
 
 .recent-orders-block__image-frame {
-	margin-left: 46px;
+	margin-left: 45px;
 }
 
 .recent-orders-block__name {
-	right: 11px;
+	right: 15px;
 	width: 115px;
 }

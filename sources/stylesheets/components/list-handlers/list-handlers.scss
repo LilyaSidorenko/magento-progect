@@ -35,7 +35,7 @@
 
 .list-handlers__select-block {
 	display: inline-block;
-	margin-right: 58px;
+	margin-right: 45px;
 	color: $black_almost;
 	font-size: $font-size;
 	@include media-breakpoint-down(small-tablet) {
@@ -49,7 +49,7 @@
 
 .list-handlers__label {
 	display: inline-block;
-	margin-right: 28px;
+	margin-right: 20px;
 }
 
 .list-handlers__handler .list-handlers__select {
@@ -57,9 +57,10 @@
 	background-color: $white_absolute;
 	font-family: Avanti, sans-serif;
 	font-style: italic;
+	font-size: $font-size-xs;
 	text-transform: none;
 	@include media-breakpoint-down(small-tablet) {
-		padding-right: 13px;
+		padding-right: 10px;
 	}
 }
 

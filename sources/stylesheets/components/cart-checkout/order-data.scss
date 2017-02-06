@@ -13,8 +13,8 @@
 	@include media-breakpoint-down(small-tablet) {
 		position: fixed;
 		top: 70px;
-		left: calc(100% - 24px);
-		padding: 0 24px;
+		left: calc(100% - 25px);
+		padding: 0 25px;
 		width: 88%;
 		height: 50px;
 		border: 1px solid #e5e5e5;
@@ -68,7 +68,7 @@
 }
 
 .order__product-code {
-	margin-top: 14px;
+	margin-top: 15px;
 	color: $black_absolute;
 	font-size: $font-size;
 }
@@ -79,14 +79,14 @@
 }
 
 .order__product-characteristic {
-	margin-top: 11px;
+	margin-top: 10px;
 	color: $black_absolute;
 	font-size: $font-size-xs;
 	font-weight: bold;
 }
 
 .order__product-characteristic--color {
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .order__product-characteristic-label {
@@ -127,7 +127,7 @@
 }
 
 .counting__item {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	color: $black_absolute;
 	font-size: 16px;
 	font-weight: bold;
@@ -142,7 +142,7 @@
 }
 
 .order-data__total-price {
-	margin-top: 30px;
+	margin-top: 25px;
 	color: $black_absolute;
 	font-size: 20px;
 	font-weight: bold;

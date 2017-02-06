@@ -1,11 +1,14 @@
 .brand-list-page {
-	margin: 87px auto 100px;
-	padding: 0 5%;
-	max-width: 1110px;
+	margin: 80px auto 100px;
+	max-width: 1125px;
+	@include media-breakpoint-down(small-tablet) {
+		margin-top: 50px;
+		padding: 0 5%;
+	}
 }
 
 .brand-list {
-	margin: 28px 0 100px 0;
+	margin: 25px 0 100px 0;
 	@include clearfix;
 }
 

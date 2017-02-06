@@ -3,7 +3,7 @@
 }
 
 .payment__form {
-	padding: 30px 0 50px;
+	padding: 30px 0 50px 10px;
 	border-bottom: 1px solid $white-grey;
 }
 
@@ -15,7 +15,7 @@
 	position: relative;
 	display: block;
 	margin-bottom: 30px;
-	padding-left: 36px;
+	padding-left: 35px;
 	height: 16px;
 	color: $black_absolute;
 	font-size: $font-size;
@@ -39,7 +39,7 @@
 }
 
 .payment__inner-box {
-	padding-left: 35px;
+	padding-left: 40px;
 	@include media-breakpoint-down(small-tablet) {
 		padding: 0;
 	}
@@ -75,18 +75,18 @@
 }
 
 .payment__user-data {
-	margin-top: 16px;
-	padding-left: 34px;
+	margin-top: 20px;
+	padding-left: 30px;
 	color: $black_absolute;
 	font-size: $font-size-xs;
 	font-style: italic;
-	line-height: 30px;
+	line-height: 25px;
 	white-space: pre-line;
 }
 
 .payment__card-number-wrapper {
 	position: relative;
-	margin-top: 17px;
+	margin-top: 20px;
 	width: 350px;
 	@include media-breakpoint-down(small-tablet) {
 		width: auto;
@@ -94,7 +94,7 @@
 }
 
 .payment__card-number {
-	padding-left: 9px;
+	padding-left: 10px;
 	width: 285px;
 	height: 60px;
 	letter-spacing: 9px;
@@ -135,7 +135,7 @@
 		position: static;
 		top: 0;
 		display: block;
-		margin: 9px;
+		margin: 10px;
 		transform: none;
 	}
 }
@@ -172,7 +172,7 @@
 .payment__card-verification-label {
 	height: 60px;
 	color: $black_absolute;
-	font-size: $font-size;
+	font-size: $font-size-xs;
 	font-style: italic;
 	line-height: 60px;
 }
@@ -220,6 +220,7 @@
 
 .payment__card-date-label {
 	height: 60px;
+	font-size: $font-size-xs;
 	font-style: italic;
 	line-height: 60px;
 }
@@ -261,7 +262,7 @@
 }
 
 .payment__gift-card-box {
-	padding: 54px 0 50px;
+	padding: 55px 0 50px;
 	border-bottom: 1px solid $white-grey;
 	@include media-breakpoint-down(small-tablet) {
 		padding: 25px 5px;
@@ -306,7 +307,7 @@
 .payment__gift-card-button {
 	position: relative;
 	top: 13px;
-	margin-left: 13px;
+	margin-left: 10px;
 	height: 35px;
 	border: none;
 	background: none;
