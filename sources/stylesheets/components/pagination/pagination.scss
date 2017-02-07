@@ -39,14 +39,17 @@
 }
 
 .pagination__button:before {
-	content: "";
 	display: inline-block;
-	margin: 8px 0;
-	@include sprite($i_link-arrow);
+	font-family: FontAwesome;
+	line-height: 25px;
 }
 
 .pagination__button--prev:before {
-	transform: rotate(180deg);
+	content: "\f177";
+}
+
+.pagination__button--next:before {
+	content: "\f178";
 }
 
 .pagination__link {

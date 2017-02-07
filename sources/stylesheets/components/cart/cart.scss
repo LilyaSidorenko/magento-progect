@@ -311,21 +311,13 @@
 }
 
 .purchase__update-button {
-	padding: 0;
-	border: none;
-	background: none;
-	cursor: pointer;
-	outline: none;
 	@include media-breakpoint-down(small-tablet) {
 		margin-top: 25px;
 	}
 }
 
-.purchase__update-button:after {
-	content: '';
-	display: inline-block;
-	margin-left: 10px;
-	@include sprite($i_link-arrow);
+.purchase__update-button:hover:after {
+	margin-left: 20px;
 }
 
 .purchase__subtotal {
@@ -406,23 +398,24 @@
 }
 
 .purchase__continue-shopping:before {
-	content: '';
+	content: "\f177";
 	display: inline-block;
 	margin-right: 10px;
-	@include sprite($i_link-arrow);
-	transform: rotate(180deg);
+	font-family: FontAwesome;
 }
 
 .purchase__main-button {
 	float: right;
 	display: block;
 	height: 50px;
+	border: none;
 	background: $black_absolute;
 	color: $white_absolute;
 	font-size: $font-size;
 	font-weight: bold;
 	line-height: 50px;
 	text-align: center;
+	cursor: pointer;
 	@include media-breakpoint-down(small-tablet) {
 		margin: 0 auto;
 		width: 100%;
