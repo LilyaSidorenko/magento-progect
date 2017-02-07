@@ -13,22 +13,27 @@
     margin-right: 40px;
     line-height: $header-height;
 
-    &:after {
-      @include sprite-inline;
-      @include sprite($i_arrow);
+    > a:after {
+      content: '\f0d7';
+      font-family: 'FontAwesome';
       margin-left: 5px;
+      font-size: 10px;
     }
 
     &.active, &:hover {
-      a {
+       a {
 
         text-decoration: none;
+
+      }
+      > a {
+        &:after {
+          transform: rotate(180deg);
+          @extend %transition;
+        }
       }
 
-      &:after {
-        transform: rotate(180deg);
-        @extend %transition;
-      }
+
       .submenu {
         display: block;
       }

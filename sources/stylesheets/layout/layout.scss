@@ -21,11 +21,16 @@
     }
 }
 .g-margin-bottom {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 
     @include media-breakpoint-down(tablet) {
         margin-bottom: 20px;
     }
+}
+.g-grey-wrap {
+    background: $background_color;
+    padding: 39px 0;
+    width: 100%;
 }
 a {
     text-transform: uppercase;
@@ -36,7 +41,9 @@ a {
 
     &:hover {
         text-decoration: underline;
+        opacity: 0.8;
     }
+
 
     &:focus {
       outline: none;
@@ -44,21 +51,23 @@ a {
 
     &.special-link {
         @extend %transitionSlow;
+        font-family: $font-bold;
 
         &:after {
-            @include sprite-inline;
-            @include sprite($i_link-arrow);
+            content: '\f178';
+            font-family: 'FontAwesome';
             margin-left: 10px;
             @extend %transitionSlow;
+            font-weight: 100;
 
         }
         &:hover {
             text-decoration: none;
-            font-weight: bold;
             @extend %transitionSlow;
 
             &:after {
-                transform: translate(10px,0);
+                //transform: translate(10px,0);
+                margin-left: 20px;
                 @extend %transitionSlow;
             }
         }
@@ -69,7 +78,8 @@ a {
 }
 h2 {
     font-size: 32px;
-    font-weight: bold;
+    font-family: $font-bold;
+
     text-transform: uppercase;
     color: $grey_absolute;
     text-align: center;

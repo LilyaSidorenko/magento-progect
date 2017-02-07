@@ -12,7 +12,8 @@
         appearance: none;
     }
     &:after {
-        @include sprite-inline;
-        @include sprite($i_arrow);
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        font-size: 10px;
     }
 }

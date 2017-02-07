@@ -6,14 +6,28 @@
 }
 
 @font-face {
+  font-family: Avanti_Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Avanti_Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti_Italic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: Exodus;
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/Exodus.otf");
 }
 
-.menu__item.active:after,
-.menu__item:hover:after,
+.menu__item.active > a:after,
+.menu__item:hover > a:after,
 .socials__item:hover {
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
@@ -70,7 +84,7 @@ a.special-link:hover:after {
 }
 
 .header__profile .custom-select {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
@@ -102,7 +116,7 @@ a.special-link:hover:after {
 .header__login,
 .header__cart,
 .header__search {
-  margin-left: 20px;
+  margin-left: 38px;
   display: inline-block;
 }
 
@@ -111,7 +125,6 @@ a.special-link:hover:after {
 .header__search:before {
   font-family: 'FontAwesome';
   font-size: 16px;
-  margin-right: 10px;
   vertical-align: middle;
 }
 
@@ -141,21 +154,26 @@ a.special-link:hover:after {
 
 .header__login:before {
   content: '\f007';
+  margin-right: 10px;
 }
 
-.header__login:before:after {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  background-image: url(../../lib/sprites/spritesheet.png);
-  background-position: -142px -80px;
-  width: 5px;
-  height: 3px;
-  margin-left: 7px;
+.header__login:after {
+  content: '\f0d7';
+  font-family: 'FontAwesome';
+  margin-left: 5px;
+  font-size: 10px;
 }
 
 .header__cart:before {
   content: '\f290';
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .header__cart {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
 }
 
 .menu {
@@ -174,15 +192,11 @@ a.special-link:hover:after {
   line-height: 102px;
 }
 
-.menu__item:after {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  background-image: url(../../lib/sprites/spritesheet.png);
-  background-position: -142px -80px;
-  width: 5px;
-  height: 3px;
+.menu__item > a:after {
+  content: '\f0d7';
+  font-family: 'FontAwesome';
   margin-left: 5px;
+  font-size: 10px;
 }
 
 .menu__item.active a,
@@ -190,8 +204,8 @@ a.special-link:hover:after {
   text-decoration: none;
 }
 
-.menu__item.active:after,
-.menu__item:hover:after {
+.menu__item.active > a:after,
+.menu__item:hover > a:after {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -333,7 +347,7 @@ a.special-link:hover:after {
   position: absolute;
   top: 100%;
   background: #ffffff;
-  padding: 60px 0 10px 0;
+  padding: 10px 0;
   font-size: 0;
 }
 
@@ -349,7 +363,7 @@ a.special-link:hover:after {
 .submenu__title {
   display: block;
   border-bottom: 1px solid #000000;
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -571,13 +585,19 @@ a.special-link:hover:after {
 }
 
 .g-margin-bottom {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1023px) {
   .g-margin-bottom {
     margin-bottom: 20px;
   }
+}
+
+.g-grey-wrap {
+  background: #f9f9f9;
+  padding: 39px 0;
+  width: 100%;
 }
 
 a {
@@ -590,31 +610,30 @@ a {
 
 a:hover {
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 a:focus {
   outline: none;
 }
 
+a.special-link {
+  font-family: Avanti_Bold, sans-serif;
+}
+
 a.special-link:after {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  background-image: url(../../lib/sprites/spritesheet.png);
-  background-position: -52px -121px;
-  width: 20px;
-  height: 7px;
+  content: '\f178';
+  font-family: 'FontAwesome';
   margin-left: 10px;
+  font-weight: 100;
 }
 
 a.special-link:hover {
   text-decoration: none;
-  font-weight: bold;
 }
 
 a.special-link:hover:after {
-  -webkit-transform: translate(10px, 0);
-  transform: translate(10px, 0);
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
@@ -625,7 +644,7 @@ a.special-link:hover:after {
 
 h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   text-transform: uppercase;
   color: #000000;
   text-align: center;

@@ -6,6 +6,20 @@
 }
 
 @font-face {
+  font-family: Avanti_Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Avanti_Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti_Italic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: Exodus;
   font-style: normal;
   font-weight: normal;
@@ -217,8 +231,12 @@ div {
   text-align: right;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text.bold {
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
 }
 
 .text.upper {

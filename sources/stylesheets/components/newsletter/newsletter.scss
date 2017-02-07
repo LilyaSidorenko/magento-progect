@@ -1,7 +1,7 @@
 .newsletter {
     background: $background_color;
     vertical-align: middle;
-    padding: 40px 0;
+    padding: 38px 0;
     font-size: 0;
     color: $grey_absolute;
 
@@ -42,8 +42,7 @@
         background: transparent;
         border: none;
         outline: none;
-        font-weight: bold;
-        font-family: $font-regular;
+        font-family: $font-bold;
         cursor: pointer;
         transition: top,left 400ms;
     }
@@ -56,8 +55,9 @@
         color: $grey_regular;
     }
     &__title {
-        font-weight: bold;
+        font-family: $font-bold;
         text-transform: uppercase;
+        font-size: 16px;
     }
     &__text {
         font-size: $font-size;

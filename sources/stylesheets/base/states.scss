@@ -30,8 +30,11 @@
   &-right {
     text-align: right;
   }
+  &-left {
+    text-align: left;
+  }
   &.bold {
-    font-weight: bold;
+    font-family: $font-bold;
   }
   &.upper {
     text-transform: uppercase;

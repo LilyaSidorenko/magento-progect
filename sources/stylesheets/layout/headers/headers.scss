@@ -36,7 +36,7 @@
 
     }
     .custom-select {
-      margin-left: 30px;
+      margin-left: 20px;
 
       @include media-breakpoint-down(small-tablet) {
         display: block;
@@ -65,13 +65,12 @@
   &__login,
   &__cart,
   &__search {
-    margin-left: 20px;
+    margin-left: 38px;
     display: inline-block;
 
     &:before {
       font-family: 'FontAwesome';
       font-size: 16px;
-      margin-right: 10px;
       vertical-align: middle;
     }
     .menu & {
@@ -95,16 +94,26 @@
   &__login {
     &:before {
       content: '\f007';
-      &:after {
-        @include sprite-inline;
-        @include sprite($i_arrow);
-        margin-left: 7px;
-      }
+      margin-right: 10px;
+
+
+    }
+    &:after {
+      content: '\f0d7';
+      font-family: 'FontAwesome';
+      margin-left: 5px;
+      font-size: 10px;
     }
   }
   &__cart {
     &:before {
       content: '\f290';
+      margin-right: 10px;
+
+    }
+    @include media-breakpoint-down(small-tablet) {
+      margin-left: 8px;
+      margin-top: 5px;
     }
   }
 

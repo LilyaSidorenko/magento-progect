@@ -4,7 +4,7 @@
     position: absolute;
     top: 100%;
     background: $white_absolute;
-    padding: 60px 0 10px 0;
+    padding: 10px 0;
     font-size: 0;
 
     &__item {
@@ -18,7 +18,7 @@
     &__title {
         display: block;
         border-bottom: 1px solid $grey_absolute;
-        font-weight: bold;
+        font-family: $font-bold;
         text-transform: uppercase;
         margin-bottom: 10px;
     }

@@ -242,10 +242,13 @@
 .product__button--fav:hover {
 	color: $pinkish;
 	text-decoration: none;
+	opacity: 1;
 }
 
 .product__button--fav-active {
 	color: $pinkish;
+	opacity: 1;
+
 }
 
 .product__button--compare {
@@ -260,8 +263,12 @@
 .product__button--compare:hover {
 	color: $pinkish;
 	text-decoration: none;
+	opacity: 1;
+
 }
 
 .product__button--compare-active {
 	color: $pinkish;
+	opacity: 1;
+
 }

@@ -8,6 +8,9 @@
         font-size: 0;
         margin-bottom: 4%;
 
+        background: $background_color;
+        padding: 50px;
+
         &:nth-child(2n) {
             margin-right: 0;
         }
@@ -15,7 +18,7 @@
         &:nth-child(3) {
             .product-top__title {
                 vertical-align: top;
-                margin-top: 70px;
+                margin-top: 50px;
 
                 @include media-breakpoint-down(small-tablet) {
                     margin-top: 0;
@@ -25,6 +28,7 @@
         &:nth-child(3),
         &:nth-child(4) {
             direction: rtl;
+            margin-bottom: 0;
 
             .special-link {
 
@@ -66,14 +70,13 @@
     &__img {
         width: 45%;
         display: inline-block;
-        height: 100%;
 
         @include media-breakpoint-down(small-tablet) {
             width: 30%;
-            height: auto;
         }
         img {
-            height: inherit;
+            max-height: 500px;
+
         }
     }
     &__title {
@@ -90,7 +93,7 @@
         display: block;
         font-family: $font-special;
         color: $grey_absolute;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         @include media-breakpoint-down(small-tablet) {
             font-size: 30px;
@@ -100,15 +103,10 @@
         font-size: $font-size;
     }
     &__wrap {
-        background: $background_color;
-        padding: 30px;
-        height: 600px;
-        @include media-breakpoint-down(small-tablet) {
-            height: auto;
-        }
+
     }
     &__price {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
 
             @include media-breakpoint-down(small-tablet) {
                 .price__old {

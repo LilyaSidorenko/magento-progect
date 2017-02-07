@@ -70,7 +70,7 @@
     position: absolute;
     display: block;
 }
-@each $font-face in Avanti {
+@each $font-face in Avanti, Avanti_Bold, Avanti_Italic {
   @font-face {
     font-family: $font-face; font-style: normal; font-weight: normal;
     src: url('../../fonts/#{$font-face}.ttf') format('truetype');
