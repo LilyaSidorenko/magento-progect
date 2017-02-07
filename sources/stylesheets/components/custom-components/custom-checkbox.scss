@@ -9,9 +9,15 @@
 .custom-checkbox-label:before {
 	content: "";
 	display: inline-block;
-	@include sprite($i_checkbox-empty);
+	width: 14px;
+	height: 14px;
+	border: 1px solid black;
+	color: black;
+	font-family: FontAwesome;
+	/*@include sprite($i_checkbox-empty);*/
 }
 
 .custom-checkbox-checkbox:checked + .custom-checkbox-label:before {
-	@include sprite($i_checkbox-checked);
+	content: "\f00c";
+	/*@include sprite($i_checkbox-checked);*/
 }

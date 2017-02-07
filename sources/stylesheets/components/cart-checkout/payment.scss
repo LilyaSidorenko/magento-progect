@@ -7,10 +7,6 @@
 	border-bottom: 1px solid $white-grey;
 }
 
-.payment__radio {
-	display: none;
-}
-
 .payment__label {
 	position: relative;
 	display: block;
@@ -27,15 +23,9 @@
 }
 
 .payment__label:before {
-	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	@include sprite($i_radio-empty);
-}
-
-.payment__radio:checked + .payment__label:before {
-	@include sprite($i_radio-checked);
 }
 
 .payment__inner-box {
@@ -63,15 +53,9 @@
 }
 
 .payment__same-data-label:before {
-	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	@include sprite($i_checkbox-empty);
-}
-
-.payment__same-data-checkbox:checked + .payment__same-data-label:before {
-	@include sprite($i_checkbox-checked);
 }
 
 .payment__user-data {

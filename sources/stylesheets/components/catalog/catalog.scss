@@ -107,11 +107,27 @@
 }
 
 .product__comment-button-icon--edit {
-	@include sprite($i_pencil);
+	/*@include sprite($i_pencil);*/
+}
+
+.product__comment-button-icon--edit:before {
+	content: "\f040";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 20px;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .product__comment-button-icon--comment {
-	@include sprite($i_comment);
+	/*@include sprite($i_comment);*/
+}
+
+.product__comment-button-icon--comment:before {
+	content: "\f0e5";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 22px;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .product__comment-text {

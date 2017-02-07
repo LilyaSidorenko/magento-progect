@@ -31,31 +31,47 @@
 .popup-tabs__social {
 	float: left;
 	width: 33.33%;
-	height: 21px;
+	height: 24px;
 	font-size: $font-size-xs;
-	line-height: 21px;
+	line-height: 24px;
+	text-align: justify;
 	text-transform: none;
 }
 
+.popup-tabs__social:before {
+	display: inline-block;
+	margin-right: 10px;
+	font-family: FontAwesome;
+	font-size: 24px;
+	line-height: 24px;
+	vertical-align: middle;
+}
+
 .popup-tabs__social--google {
-	padding-left: 30px;
-	background-image: url('../../images/popup-google-plus.png');
-	background-repeat: no-repeat;
+	text-align: left;
 	color: #ee5567;
 }
 
+.popup-tabs__social--google:before {
+	content: "\f0d5";
+}
+
 .popup-tabs__social--facebook {
-	padding-left: 15px;
-	background-image: url('../../images/popup-facebook.png');
-	background-repeat: no-repeat;
+	text-align: center;
 	color: #5d9cec;
 }
 
+.popup-tabs__social--facebook:before {
+	content: "\f09a";
+}
+
 .popup-tabs__social--twitter {
-	padding-left: 30px;
-	background-image: url('../../images/popup-twitter.png');
-	background-repeat: no-repeat;
+	text-align: right;
 	color: #4fc0e8;
+}
+
+.popup-tabs__social--twitter:before {
+	content: "\f099";
 }
 
 .popup-tabs__line {

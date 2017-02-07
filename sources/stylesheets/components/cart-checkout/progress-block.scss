@@ -71,16 +71,41 @@
 	left: 0;
 	right: 0;
 	margin: auto;
+	font-family: FontAwesome;
+	font-size: 20px;
+	line-height: 36px;
 }
 
-.progress-block__icon--shipping {
+/*.progress-block__icon--shipping {
 	@include sprite($i_pink_cart);
+}*/
+
+/*.progress-block__icon--shipping.progress-block__icon--done {
+	@include sprite($i_cart-check);
+}*/
+
+.progress-block__icon--shipping:before {
+	content: "\f0d1";
+	color: $pinkish;
 }
 
-.progress-block__icon--payment {
+.progress-block__icon--shipping.progress-block__icon--done:before {
+	content: "\f00c";
+}
+
+.progress-block__icon--payment:before {
+	content: "\f09d";
+	color: $grey_regular;
+}
+
+.progress-block__icon--payment.progress-block__icon--active:before {
+	color: $pinkish;
+}
+
+/*.progress-block__icon--payment {
 	@include sprite($i_card-grey);
-}
+}*/
 
-.progress-block__icon--payment.progress-block__icon--active {
+/*.progress-block__icon--payment.progress-block__icon--active {
 	@include sprite($i_card-pink);
-}
+}*/
