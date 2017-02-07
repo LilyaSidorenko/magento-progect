@@ -1,0 +1,27 @@
+.custom-radiobutton-radio {
+	display: none;
+}
+
+.custom-radiobutton-label {
+	cursor: pointer;
+}
+
+.custom-radiobutton-label:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid black;
+	border-radius: 50%;
+	color: black;
+	font-family: FontAwesome;
+	font-size: 10px;
+	line-height: 14px;
+	text-align: center;
+	/*@include sprite($i_radio-empty);*/
+}
+
+.custom-radiobutton-radio:checked + .custom-radiobutton-label:before {
+	content: "\f111";
+	/*@include sprite($i_radio-checked);*/
+}

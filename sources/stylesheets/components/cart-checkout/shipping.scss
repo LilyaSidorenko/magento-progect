@@ -85,27 +85,7 @@
 }
 
 .address__select {
-	padding-left: 10px;
 	width: 100%;
-	height: 60px;
-	border: none;
-	border-bottom: 1px solid $black_absolute;
-	border-radius: 0;
-	background-color: $white_absolute;
-	color: $black_absolute;
-	font-family: Avanti, sans-serif;
-	font-size: $font-size;
-	line-height: 60px;
-	outline: none;
-	appearance: none;
-}
-
-.address__select-wrapper:after {
-	content: "";
-	position: absolute;
-	top: 20px;
-	right: 10px;
-	@include sprite($i_arrows);
 }
 
 .address__textarea {
@@ -169,13 +149,7 @@
 }
 
 .shipping__label:before {
-	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
-	@include sprite($i_radio-empty);
-}
-
-.shipping__radio:checked + .shipping__label:before {
-	@include sprite($i_radio-checked);
 }
