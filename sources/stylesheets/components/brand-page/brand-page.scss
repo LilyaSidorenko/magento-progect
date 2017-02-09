@@ -37,20 +37,37 @@
 
 	.slick-arrow {
 		top: 65px;
-		@include sprite($i_link-arrow);
+		width: 25px;
+		height: 25px;
+		background: none;
+		transform: none;
 		@include media-breakpoint-down(small-tablet) {
 			top: 0;
 		}
 	}
 
+	.slick-arrow:before {
+		display: inline-block;
+		color: $black_absolute;
+		font-family: FontAwesome;
+		font-size: $font-size;
+		line-height: 25px;
+	}
+
 	.slick-prev {
 		left: 0;
-		transform: rotate(180deg);
+	}
+
+	.slick-prev:before {
+		content: "\f177";
 	}
 
 	.slick-next {
 		right: 0;
-		transform: none;
+	}
+
+	.slick-next:before {
+		content: "\f178";
 	}
 }
 

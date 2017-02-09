@@ -31,24 +31,43 @@
 	float: left;
 	width: 40px;
 	height: 40px;
-	background-image: url('');
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
+	color: $white_absolute;
+	font-family: FontAwesome;
+	font-size: 44px;
+	line-height: 40px;
 }
 
-.sys-message__icon--success {
+/*.sys-message__icon--success {
 	background-image: url('../../images/sys-message-success.png');
+}*/
+
+.sys-message__icon--success:before {
+	content: "\f058";
 }
 
-.sys-message__icon--warning {
+/*.sys-message__icon--warning {
 	background-image: url('../../images/sys-message-warning.png');
+}*/
+
+.sys-message__icon--warning:before {
+	content: "\f071";
 }
 
-.sys-message__icon--info {
+/*.sys-message__icon--info {
 	background-image: url('../../images/sys-message-info.png');
+}*/
+
+.sys-message__icon--info:before {
+	content: "\f06a";
 }
 
-.sys-message__icon--danger {
+/*.sys-message__icon--danger {
 	background-image: url('../../images/sys-message-danger.png');
+}*/
+
+.sys-message__icon--danger:before {
+	content: "\f057";
 }
 
 .sys-message__text {

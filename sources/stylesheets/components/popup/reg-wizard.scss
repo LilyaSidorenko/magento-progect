@@ -27,6 +27,10 @@
 	float: right;
 }
 
-.reg-wizard__link:hover:after {
+.reg-wizard__link.special-link {
+	transition: none;
+}
+
+.reg-wizard__link.special-link:hover:after {
 	margin-left: 10px;
 }
