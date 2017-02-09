@@ -6,6 +6,20 @@
 }
 
 @font-face {
+  font-family: Avanti_Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Avanti_Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Avanti_Italic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: Exodus;
   font-style: normal;
   font-weight: normal;
@@ -81,13 +95,9 @@
 }
 
 .custom-select:after {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 0;
-  border-top: 3px solid black;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
+  content: '\f0d7';
+  font-family: 'FontAwesome';
+  font-size: 10px;
 }
 
 .big-select-wrapper {
@@ -498,7 +508,7 @@
   position: absolute;
   display: block;
   background-image: url(../../lib/sprites/spritesheet.png);
-  background-position: -136px -63px;
+  background-position: -157px 0px;
   width: 1px;
   height: 30px;
   top: 100%;
@@ -651,7 +661,7 @@
 .brands-slider .slick-prev,
 .brands-slider .slick-next {
   top: 50%;
-  margin-top: -39px, 0px, -39px, 0px, 42px, 17px, 152px, 132px, "../../lib/sprites/spritesheet.png", "i_slider-arrow"/2;
+  margin-top: -39px, 0px, -39px, 0px, 42px, 17px, 158px, 132px, "../../lib/sprites/spritesheet.png", "i_slider-arrow"/2;
 }
 
 .brands-slider .slick-prev {
@@ -683,26 +693,34 @@
   background: #ffffff;
   width: 50%;
   display: inline-block;
-  vertical-align: middle;
-  padding: 60px 60px 10px 60px;
+  vertical-align: top;
+  padding: 100px 60px 10px 60px;
   box-sizing: border-box;
   font-size: 0;
+  max-height: 750px;
 }
 
 .categories__item img {
   vertical-align: middle;
-  width: 60%;
+  max-width: 60%;
+}
+
+@media (max-width: 1023px) {
+  .categories__item img {
+    max-width: 40%;
+    vertical-align: top;
+  }
 }
 
 @media (max-width: 767px) {
   .categories__item img {
-    width: 45%;
-    vertical-align: top;
+    max-width: 45%;
   }
 }
 
 .categories__item--special {
   margin-top: -130px;
+  padding: 10px 60px;
 }
 
 .categories__item--special .categories__title {
@@ -718,6 +736,7 @@
 
 .categories__item--full {
   width: 70%;
+  padding: 10px;
 }
 
 @media (max-width: 767px) {
@@ -730,6 +749,7 @@
 .categories__name {
   font-size: 14px;
   color: #aaaaaa;
+  font-family: Avanti_Italic, sans-serif;
 }
 
 .categories__text {
@@ -752,6 +772,12 @@
   text-align: left;
 }
 
+@media (max-width: 1023px) {
+  .categories__title {
+    width: 60%;
+  }
+}
+
 @media (max-width: 767px) {
   .categories__title {
     width: 55%;
@@ -759,11 +785,17 @@
   }
 }
 
-.categories__title a:hover {
+.categories__title a:first-child {
+  display: block;
+  border-left: 2px solid #aaaaaa;
+  padding-left: 10px;
+}
+
+.categories__title a:first-child:hover {
   text-decoration: none;
 }
 
-.categories__title a:hover .categories__text {
+.categories__title a:first-child:hover .categories__text {
   text-decoration: underline;
 }
 
@@ -781,7 +813,7 @@
 .price__regular {
   color: #000000;
   font-size: 16px;
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   padding: 0 5px 0 0;
 }
 
@@ -797,6 +829,8 @@
   margin-right: 4%;
   font-size: 0;
   margin-bottom: 4%;
+  background: #f9f9f9;
+  padding: 50px;
 }
 
 .product-top__item:nth-child(2n) {
@@ -806,7 +840,7 @@
 .product-top__item:nth-child(2) .product-top__title,
 .product-top__item:nth-child(3) .product-top__title {
   vertical-align: top;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 @media (max-width: 767px) {
@@ -819,6 +853,7 @@
 .product-top__item:nth-child(3),
 .product-top__item:nth-child(4) {
   direction: rtl;
+  margin-bottom: 0;
 }
 
 .product-top__item:nth-child(3) .special-link:after,
@@ -864,18 +899,16 @@
 .product-top__img {
   width: 45%;
   display: inline-block;
-  height: 100%;
 }
 
 @media (max-width: 767px) {
   .product-top__img {
     width: 30%;
-    height: auto;
   }
 }
 
 .product-top__img img {
-  height: inherit;
+  max-height: 500px;
 }
 
 .product-top__title {
@@ -895,7 +928,7 @@
   display: block;
   font-family: Exodus, sans-serif;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -908,20 +941,8 @@
   font-size: 14px;
 }
 
-.product-top__wrap {
-  background: #f9f9f9;
-  padding: 30px;
-  height: 600px;
-}
-
-@media (max-width: 767px) {
-  .product-top__wrap {
-    height: auto;
-  }
-}
-
 .product-top__price {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 767px) {
@@ -937,7 +958,7 @@
 .newsletter {
   background: #f9f9f9;
   vertical-align: middle;
-  padding: 40px 0;
+  padding: 38px 0;
   font-size: 0;
   color: #000000;
 }
@@ -979,8 +1000,7 @@
   background: transparent;
   border: none;
   outline: none;
-  font-weight: bold;
-  font-family: Avanti, sans-serif;
+  font-family: Avanti_Bold, sans-serif;
   cursor: pointer;
   -webkit-transition: top,left 400ms;
   transition: top,left 400ms;
@@ -997,8 +1017,9 @@
 }
 
 .newsletter__title {
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .newsletter__text {
@@ -1008,7 +1029,7 @@
 .brands {
   font-size: 0;
   background: #f9f9f9;
-  padding: 35px 0;
+  padding: 39px 0;
 }
 
 .brands__item {
@@ -1086,7 +1107,7 @@
 
 .advantages__title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -1746,10 +1767,12 @@
 .product__button--fav:hover {
   color: #db646e;
   text-decoration: none;
+  opacity: 1;
 }
 
 .product__button--fav-active {
   color: #db646e;
+  opacity: 1;
 }
 
 .product__button--compare {
@@ -1765,10 +1788,12 @@
 .product__button--compare:hover {
   color: #db646e;
   text-decoration: none;
+  opacity: 1;
 }
 
 .product__button--compare-active {
   color: #db646e;
+  opacity: 1;
 }
 
 .catalog--tiles .product {
@@ -1823,10 +1848,6 @@
   margin: 30px 0 0 0;
 }
 
-.catalog--tiles .product__price {
-  margin: 10px 0 0 0;
-}
-
 .catalog--tiles .product__rating {
   display: none;
 }
@@ -1836,7 +1857,7 @@
 }
 
 .catalog--tiles .product__links-block {
-  margin: 25px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .catalog--tiles .product__button--fav {
@@ -4886,8 +4907,7 @@
   outline: 0;
   padding: 15px 40px;
   display: inline-block;
-  font-family: Avanti, sans-serif;
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   cursor: pointer;
 }
 
@@ -5032,7 +5052,7 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #cccccc;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: Avanti_Bold, sans-serif;
   color: #000000;
   margin-bottom: 30px;
   line-height: 1;
