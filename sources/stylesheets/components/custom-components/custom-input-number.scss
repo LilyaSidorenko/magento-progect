@@ -2,18 +2,27 @@
   border-bottom: 1px solid rgba(0,0,0,0.1);
   overflow: hidden;
   position: relative;
-  height: 54px;
-  margin-bottom: 40px;
+  height: 60px;
+  margin-bottom: 50px;
+  font-size: 0;
+
+  span {
+    display: inline-block;
+    width: 50%;
+  }
 }
+
 
 .input-number input {
   border: none;
   display: inline-block;
   height: 100%;
-  padding: 0 10px;
   outline: none;
   position: relative;
-  width: 68%;
+  width: 50%;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 24px;
 }
 
 .input-number-increment,

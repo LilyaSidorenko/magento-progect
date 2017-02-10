@@ -1,13 +1,13 @@
-.star-ratings {
+.star-ratings-sprite {
   display: inline-block;
   position: relative;
   width: 85px;
-  height: 13px;
   font-family: FontAwesome;
   font-size: 13px;
   letter-spacing: 6px;
   overflow: hidden;
   vertical-align: middle;
+  margin-right: 20px;
 
   &:before {
     content: "\f005 \f005 \f005 \f005 \f005";
@@ -20,11 +20,14 @@
     left: 0;
     overflow: hidden;
 
+
+
     &:before {
-      height: 13px;
+      font-size: 13px;
       content: "\f005 \f005 \f005 \f005 \f005";
       color: $black_absolute;
     }
+
   }
 
 }

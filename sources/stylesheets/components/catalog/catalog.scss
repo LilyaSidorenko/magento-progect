@@ -211,6 +211,9 @@
 	color: $grey_regular;
 	font-size: $font-size-xs;
 	line-height: 22px;
+	a {
+		text-transform: none;
+	}
 }
 
 .product__description {

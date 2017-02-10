@@ -9,6 +9,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @include media-breakpoint-down(small-tablet) {
+      width: 100%;
+    }
   }
   a {
     display: block;
@@ -37,9 +41,9 @@
   margin-top: -1px;
 
   > div {
-    padding: 30px 0;
+    padding: 50px 0;
     font-size: 13px;
-    line-height: 1.7;
+    line-height: 2;
     color: $grey_absolute;
   }
 }

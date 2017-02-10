@@ -1,8 +1,8 @@
 
 .image-box {
   @include clearfix;
-  height: 700px;
-  overflow: hidden;
+  height: 760px;
+  font-size: 0;
 
 
   @include media-breakpoint-down(tablet) {
@@ -16,13 +16,17 @@
 
   }
   @include media-breakpoint-down(mobile) {
-    height: 250px;
+    height: 257px;
   }
   .thumbs {
     display: inline-block;
     vertical-align: top;
-    width: 18%;
-    margin-right: 5%;
+    width: 15%;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow: scroll;
+    height: 760px;
+
     li {
       margin: 3px 2px;
     }
@@ -30,7 +34,8 @@
     .thumb-img {
       display: block;
       max-height: 92px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      padding: 4px;
       box-sizing: border-box;
 
       &:hover {
@@ -38,27 +43,43 @@
 
       }
     }
+
+    @include media-breakpoint-down(mobile) {
+      width: 26%;
+    }
+    @include media-breakpoint-only(tablet) {
+      height: 500px;
+    }
+    @include media-breakpoint-down(large-mobile) {
+      height: 400px;
+
+    }
+    @include media-breakpoint-down(mobile) {
+      height: 257px;
+    }
   }
 
   .large-image {
     display: inline-block;
     vertical-align: top;
-    height: 700px;
-    width: 74%;
-    background-size: contain;
+    height: 760px;
+    width: 85%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 
 
-    &:hover {
-      cursor: url('../../images/lupa.png');
-    }
+      cursor: url(../../images/zoomin.cur), auto;
 
     @include media-breakpoint-down(large-mobile) {
       height: 400px;
     }
     @include media-breakpoint-down(mobile) {
       height: 300px;
+    }
+
+    @include media-breakpoint-down(large-mobile) {
+      width: 74%;
     }
   }
 }    

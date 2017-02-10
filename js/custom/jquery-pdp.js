@@ -29,8 +29,8 @@ $.fn.zoom = function() {
         });
     }, function() {
         $(this).css({
-            'background-position': 'center',
-            'background-size': 'contain'
+            'background-position': 'top',
+            'background-size': 'cover'
         });
     });
 

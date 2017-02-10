@@ -567,7 +567,7 @@ a.special-link:hover:after {
 
 @media (max-width: 1023px) {
   .socials__item--special {
-    margin-left: 5px;
+    margin-left: 3px;
   }
 }
 

@@ -1,8 +1,12 @@
 .review {
 
+  border-bottom: 1px solid lighten($special_text_color, 20%);
+  margin-bottom: 50px;
+
   &__item {
     font-size: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+
   }
   &__right {
     width: 80%;
@@ -12,12 +16,13 @@
 
   }
   &__title {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 1;
   }
   &__text {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   &__col {
     display: inline-block;
@@ -34,6 +39,7 @@
       width: 40%;
       padding-right: 20px;
       vertical-align: top;
+      line-height: 0;
     }
 
     &--60 {
@@ -44,28 +50,58 @@
       width: 80%;
     }
 
+    @include media-breakpoint-down(small-tablet) {
+      width: 100%;
+      padding-right: 0;
+      text-align: left;
+
+      .star-ratings-sprite {
+        float: right;
+      }
+    }
+
   }
   &__form {
     font-size: 0;
     width: 70%;
-    margin:  0 auto;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(tablet) {
+      width: 100%;
+
+    }
 
     .form-input {
       display: block;
       width: 100%;
-      padding: 0 5px 15px 5px;
-      margin-bottom: 30px;
+      padding: 0 5px 24px 5px;
+      margin-bottom: 50px;
 
       &--name {
-        margin: 71px 0 0 0 ;
+        margin: 103px 0 0 0;
+
+        @include media-breakpoint-down(small-tablet) {
+          margin: 50px 0;
+        }
+      }
+    }
+    .text {
+      @include media-breakpoint-down(small-tablet) {
+
+        padding: 0 0 0 5px;
+        font-size: 16px;
       }
     }
     textarea {
       resize: none;
     }
-    .product__stars > label:before {
+    .product__stars {
+      line-height: 0.4;
 
-      font-size: 20px;
+      & > label:before {
+
+        font-size: 20px;
+      }
     }
 
   }

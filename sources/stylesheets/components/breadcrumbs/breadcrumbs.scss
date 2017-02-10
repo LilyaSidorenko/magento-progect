@@ -1,6 +1,6 @@
 .breadcrumbs {
 	position: relative;
-	margin-top: 100px;
+	margin-top: $header-height;
 	height: 80px;
 	border-top: 1px solid $white-grey;
 	border-bottom: 1px solid $white-grey;
@@ -52,6 +52,6 @@
 .breadcrumbs__current-page {
 	color: $pinkish;
 	font-size: $font-size-l;
-	font-weight: bold;
+	font-family: $font-bold;
 	text-transform: uppercase;
 }
