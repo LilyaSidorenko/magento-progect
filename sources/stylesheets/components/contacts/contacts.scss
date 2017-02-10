@@ -28,10 +28,53 @@
 
     p {
       margin-bottom: 15px;
+      position: relative;
+      padding-left: 40px;
+      line-height: 2;
+
+      &:before {
+        font-family: 'FontAwesome';
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        top:0;
+        line-height: 1;
+      }
+
+      &.location {
+
+        &:before {
+
+          content: "\f041";
+        }
+      }
+      &.phone {
+
+        &:before {
+
+          content: "\f2a0";
+        }
+      }
+      &.email {
+
+        &:before {
+
+          content: "\f0e0";
+        }
+      }
+      &.time {
+
+        &:before {
+
+          content: "\f017";
+        }
+      }
     }
     @include media-breakpoint-down(small-tablet) {
       width: 100%;
     }
+
+
 
   }
   &__title {

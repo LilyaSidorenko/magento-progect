@@ -780,7 +780,7 @@ div {
   position: absolute;
   display: block;
   background-image: url(../../lib/sprites/spritesheet.png);
-  background-position: -157px 0px;
+  background-position: -154px 0px;
   width: 1px;
   height: 30px;
   top: 100%;
@@ -933,7 +933,7 @@ div {
 .brands-slider .slick-prev,
 .brands-slider .slick-next {
   top: 50%;
-  margin-top: -39px, 0px, -39px, 0px, 42px, 17px, 158px, 132px, "../../lib/sprites/spritesheet.png", "i_slider-arrow"/2;
+  margin-top: -39px, 0px, -39px, 0px, 42px, 17px, 155px, 132px, "../../lib/sprites/spritesheet.png", "i_slider-arrow"/2;
 }
 
 .brands-slider .slick-prev {
@@ -5401,6 +5401,34 @@ div {
 
 .contacts__info p {
   margin-bottom: 15px;
+  position: relative;
+  padding-left: 40px;
+  line-height: 2;
+}
+
+.contacts__info p:before {
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+}
+
+.contacts__info p.location:before {
+  content: "\f041";
+}
+
+.contacts__info p.phone:before {
+  content: "\f2a0";
+}
+
+.contacts__info p.email:before {
+  content: "\f0e0";
+}
+
+.contacts__info p.time:before {
+  content: "\f017";
 }
 
 @media (max-width: 767px) {
